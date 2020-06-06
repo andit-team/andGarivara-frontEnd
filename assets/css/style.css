@@ -183,10 +183,29 @@ figure {
 }
 
 /*--------------------------------
+    2.2 Theme Inner Color Style
+-----------------------------------*/
+.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a{
+    color: #fff;
+}
+/*--------------------------------
+    2.3 Theme Font Style
+-----------------------------------*/
+.font-bold, .footer-widget p{
+    font-weight: 700;
+}
+.font-14, .footer-widget a{
+    font-size: 14px;
+}
+
+/*--------------------------------
     2.4 Theme Margin and Padding
 -----------------------------------*/
 .mb-15 {
     margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
 }
 .mb-30, .hero-area-heading{
     margin-bottom: 30px;
@@ -719,8 +738,21 @@ button:focus {
 .andgarivara-footer-area {
     background-color: var(--heading-color);
 }
+/*Footer Upper CSS*/
+
+/*Footer Middle CSS*/
 .footer-widget a {
     color: #fff;
+}
+.footer-widget p {
+    color: var(--hover-color);
+    margin-bottom: 20px;
+}
+
+/*Footer Bottom CSS*/
+.footer-bottom-part {
+    display: flex;
+    justify-content: space-between;
 }
 /*-------------------------------------------
     21. Footer Area/Copyright Area End
