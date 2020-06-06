@@ -1,0 +1,1044 @@
+/*
+-------------------------------------------------
+  Theme Name: andgarivara - Ride Sharing Application
+  Theme URL: http://andgarivara.com
+  Author: andgarivara
+  Author URL:  
+  Creation Date: 06/06/2020
+  Description:A default stylesheet for andgarivara - Ride Sharing Application
+  Version: 1.00
+  Primary use: ride sharing, car rental, car leasing,
+  Support: andgarivara@gmail.com,
+
+  ---------------------------------------------------
+  Developed By: Suraiya Aysha
+  Developer URL: http://ayshatech.com/
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Chat Bot Area CSS
+  5. Scroll To Top Area
+  6.Preloader Area Start
+  7. Header Area
+  33. Responsive CSS
+
+------------------------------------------------ */
+
+
+/* Use font link */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/* Use style sheet */
+
+@import url('../vendor/bootstrap/css/bootstrap.min.css');
+@import url('../vendor/fontawesome-free/css/all.min.css');
+@import url('../vendor/flat-icon/flaticon.css');
+@import url('owl.carousel.min.css');
+@import url('owl.theme.default.min.css');
+@import url('venobox.css');
+@import url('animate.css');
+@import url('meanmenu.min.css');
+
+/***
+
+/*-----------------------------------------------
+            1. General Style
+-------------------------------------------------*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+  }
+
+  body,
+  html {
+      height: 100%;
+      margin: 0;
+  }
+
+body {
+    background: #fff none repeat scroll;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    color: #777c87;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
+}
+
+p{
+  line-height: 1.75;
+  color: #777c87;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: #02449b;
+}
+a:hover {
+}
+/* Theme All Transitions
+------------------------------- */
+a, #mainNav, .theme-button{
+    transition: all .5s ease-in-out;
+}
+
+.slow-transition{
+    transition: all .7s ease-in-out;
+}
+
+  ul li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  a,
+  a > * {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+      color: #0a8aff;
+  }
+
+  ::selection {
+      background-color: #93ebfb;
+  }
+  img::selection {
+    background: transparent;
+  }
+  .page-link:focus {
+    box-shadow: none;
+  }
+
+  /*----Form Control Reset CSS----*/
+
+.form-control {
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    height: 50px;
+    color: #777c87;
+}
+  .form-control:focus {
+      background-color: #fff;
+      border-color: #dddddd;
+      box-shadow: none;
+  }
+  .form-control::placeholder {
+      color: #a0a3aa;
+  }
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #02449b;
+}
+figure {
+    margin: 0 0 0;
+}
+
+/*--------------------------------
+            2.1 Theme Color
+-----------------------------------*/
+
+:root{
+    --white-color: #fff;
+    --heading-color: #02449b;
+    --text-color: #646464;
+    --hover-color: #018ec9;
+    --bg-color: #f1f1f1;
+    --border-color: #EDF1F4;
+}
+
+/*--------------------------------
+    2.4 Theme Margin and Padding
+-----------------------------------*/
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+
+/*----Template Main Section ----*/
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+.section-title-area {
+    margin-bottom: 60px;
+    text-align: center;
+}
+h2.section-heading {
+    font-size: 46px;
+    margin-bottom: 15px;
+    line-height: 36px;
+}
+section{
+    padding: 100px 0;
+    position: relative;
+    z-index: 9;
+}
+.padding-zero{
+    padding: 0 0;
+}
+/*Flat Icon Default Settings*/
+[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+    margin-left: 0;
+}
+
+/*------------------------------------------
+            2.  Typography End
+-------------------------------------------*/
+
+/*--------------------------------------------
+            3. Button Style
+---------------------------------------------*/
+.btn{
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button{
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+/*Slider Default Button CSS*/
+  .testi_prev, .testi_next {
+      cursor: pointer;
+      line-height: 39px;
+      position: absolute;
+      z-index: 9;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+/*Common Slier Dot CSS*/
+.owl-dots {
+    text-align: center;
+    display: block !important;
+}
+.owl-carousel button.owl-dot {
+    background-color: #dee5ec;
+    display: inline-block;
+    height: 15px;
+    margin: 0 8px;
+    width: 15px;
+    border-radius: 50%;
+}
+.owl-dot.active {
+    background-color: #4cbcf3 !important;
+    box-shadow: 0 0 0 6px rgba(76,188,243,.2);
+}
+
+/*-----Theme Button Style-----*/
+.theme-button {
+    position: relative;
+    color: #ffffff !important;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 10px 40px 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------
+           4. Nav Area CSS
+-------------------------------------------*/
+.menu-section-area {
+    padding: 0;
+    z-index: 999;
+}
+.menu-section-area .navbar {
+    padding: 0;
+}
+#mainNav {
+    background-color: #fff;
+    height: 94px;
+    display: flex !important;
+    transition: all ease .6s;
+    border-bottom: 1px solid var(--border-color);
+}
+#mainNav.navbar-shrink {
+    background-color: #fff;
+    box-shadow: 0 0 9px 3px rgba(50,29,154,.2);
+    top:0
+}
+#mainNav .navbar-brand {
+    position: relative;
+    top: -3px;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    padding: 0.75em 15px;
+    letter-spacing: 1px;
+    position: relative;
+    color: var(--heading-color);
+}
+#mainNav .navbar-nav .nav-item:last-child .nav-link{
+    padding-right: 0;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--hover-color);
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #0a8aff;
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
+    color: var(--hover-color);
+}
+#mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::after, #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link:hover::after{
+    width: 60%;
+    opacity: 1;
+    background: #321d9a;
+}
+/*---- Dropdown Menu CSS ----*/
+#mainNav ul.navbar-nav li.nav-item.dropdown-box {
+    position: relative;
+}
+#mainNav ul.navbar-nav li.nav-item.dropdown-box .dropdown-list {
+    background-color: #fff;
+    top: 213%;
+    position: absolute;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 12px 15px rgba(0,0,0,.10);
+    border: 1px solid #0a8aff;
+}
+#mainNav ul.navbar-nav li.nav-item.dropdown-box:hover .dropdown-list {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-list li a {
+    padding: 6px 10px;
+    display: block;
+}
+#mainNav .navbar-nav .nav-item .nav-link > i.fa-angle-down {
+    padding-left: 5px;
+    position: relative;
+    top: 2px;
+}
+@media (min-width: 992px) {
+
+}
+ /* Mean Menu / Mobile Menu Style */
+.mean-container .mean-nav ul {
+    margin: 14px 0 0 0;
+    background-color: transparent;
+}
+.mean-container .mean-nav ul li a:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+.mean-container .mean-bar {
+    background-color: var(--white-color);
+    height: 54px;
+    z-index: 999;
+    padding: 0;
+}
+.mean-container .mean-nav {
+    background-color: var(--white-color);
+    margin-top: 0;
+    height: 100%;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    padding: 0 !important;
+    margin-top: 3px;
+    top: -2px;
+    background: rgba(255,255,255,.1);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-logo {
+    position: relative;
+    top: 14px;
+    left: 16px;
+    height: 23px;
+}
+.mean-container a.meanmenu-reveal {
+    top: 5px;
+    color: #000;
+}
+.mean-container .mean-nav ul.menu {
+    margin: 0 0 0 0;
+    background-color: #2c303a;
+    display: flex;
+    position: relative;
+    top: 30px;
+}
+.mean-container a.meanmenu-reveal span {
+    background-color: #000;
+}
+  .mean-container .mean-nav ul li a{
+  }
+  .mean-container .mean-nav ul li a:hover {
+  }
+  .mean-container .mean-nav ul li.mean-last a.section-button:hover, .mean-container .mean-nav ul li.dropdown a:hover {
+  }
+  .mean-container .mean-nav ul li a {
+      color: #fff;
+  }
+.mean-container .mean-nav ul li.mean-last {
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+.mean-container .mean-nav ul li.mean-last a {
+    border-top: 0;
+}
+
+/*-------------------------------------------
+            4. Chat Bot Area
+-------------------------------------------*/
+.chat-bot-box {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 19px;
+    z-index: 9;
+}
+.chat-bot-box:hover{
+    box-shadow: 0 0 39px 4px rgba(205, 205, 205, 0.40);
+}
+/*-------------------------------------------
+            4. Chat Bot Area
+-------------------------------------------*/
+
+/*-------------------------------------------
+            6. Preloader Area Start
+-------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+}
+
+.loader {
+    position: absolute;
+    left: 53%;
+    top: 53%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    border: 10px solid #000;
+    border-radius: 50%;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media only screen and (min-width:300px) and (max-width:479px){
+    .loader {
+        margin: -100px 0 0 -60px;
+    }
+}
+/*-------------------------------------------
+            6. Preloader Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+            7. Andgarivara Hero Area
+-------------------------------------------*/
+.andgarivara-hero-area {
+    background-color: #F5F5F5;
+    min-height: 500px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+/*.hero-area-wrapper {*/
+/*    align-items: center;*/
+/*}*/
+
+/*Andgarivara Hero Left Content*/
+.andgarivara-left-content {
+    padding-right: 40px;
+}
+.andgarivara-hero-service-box {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);
+}
+.andgarivara-left-content .andgarivara-hero-service-box:last-child {
+    margin-bottom: 0;
+}
+.andgarivara-hero-service-box h6 {
+    font-weight: 400;
+    margin-top: 10px;
+}
+.andgarivara-hero-service-box i:before{
+    color: var(--heading-color);
+}
+
+/*Andgarivara Hero Right Img*/
+.andgarivara-hero-img {
+    text-align: center;
+}
+.andgarivara-hero-img img {
+    height: 450px;
+}
+/*-------------------------------------------
+            7. Andgarivara Hero End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    8. Andgarivara Call To Action Area Start
+-------------------------------------------*/
+.call-to-action-area {
+    background-color: indianred;
+    padding: 150px 0;
+}
+
+/*-------------------------------------------
+    8. Andgarivara Call To Action Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    17. Home Blog Posts Area Start
+-------------------------------------------*/
+.all-blog-posts-area {
+    padding: 100px 0 70px;
+}
+.all-blog-posts-area .section-subheading {
+    width: 53%;
+    margin: 18px auto 50px;
+}
+.single-blog-post {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow:0 14px 45px 0 rgba(205, 205, 205, 0.35);
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+.single-blog-post:hover {
+    box-shadow: 0 18px 33px 6px rgba(0,0,0,0.1);
+}
+.single-blog-post img {
+    width: 100%;
+}
+.single-blog-content {
+    padding: 30px 30px 38px;
+}
+.single-blog-content img {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+.single-blog-content h4, .single-blog-content h6{
+    text-transform: capitalize;
+}
+.single-blog-content h4 {
+    margin: 25px 0 15px;
+}
+.single-blog-content h6 i {
+    padding: 0 5px 0 20px;
+    position: relative;
+}
+
+/*-------------------------------------------
+    17. Home Blog Posts Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    18. FAQ Area Start
+-------------------------------------------*/
+.faq-area {
+    background-color: #721c24;
+    padding: 100px 0 80px;
+    overflow: hidden;
+}
+.faq-wrapper .section-title-area {
+    text-align: left;
+}
+.faq-img-box {
+    position: absolute;
+    left: -60px;
+    top: 74px;
+}
+.faq-img-box img {
+    height: 360px;
+}
+/*Accordion Area-----------*/
+#accordion6 .panel-heading,
+#accordion7 .panel-heading {
+    padding: 0;
+    position: relative;
+}
+#accordion6 .panel-title a > img,
+#accordion7 .panel-title a > img {
+    margin-right: 25px;
+}
+#accordion6 .panel,
+#accordion7 .panel {
+    padding: 22px 0 4px 20px;
+    border: 1px solid #2cd4d9;
+    box-shadow: -13px 0 33px -7px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+.panel-collapse {
+    padding: 0 17px 16px 2px;
+}
+#accordion6 .panel-title a,
+#accordion7 .panel-title a {
+    display: block;
+    border: none;
+    position: relative;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#accordion6 .panel-title a::before, #accordion6 .panel-title a.collapsed::before,
+#accordion7 .panel-title a::before, #accordion7 .panel-title a.collapsed::before {
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transition: all 0.5s ease 0s;
+}
+#accordion6 .panel-title a.collapsed:before, #accordion7 .panel-title a.collapsed:before{ content: "\f067"; }
+#accordion6 .panel-title a > i ,
+#accordion7 .panel-title a > i {
+    margin-right: 20px;
+}
+#accordion6 .panel-title a > i::before,
+#accordion7 .panel-title a > i::before {
+    font-size: 40px;
+    color: #7ad5f4;
+}
+#accordion6 .panel-body p,
+#accordion7 .panel-body p {
+    margin-bottom: 7px;
+    color: rgba(255,255,255,.9);
+}
+/*Accordion Area-----------*/
+/*-------------------------------------------
+    18. FAQ Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    21. Footer Area/Copyright Area
+-------------------------------------------*/
+.footer-area {
+    background: linear-gradient(to top, rgb(42, 22, 155) 39%, rgb(41, 137, 216) 78%, rgb(44, 212, 217) 95%);
+    padding: 100px 0 50px;
+    position: relative;
+    margin-top: 62px;
+}
+.footer-newsletter-form {
+    margin: 20px 0 0;
+}
+.footer-newsletter-form form input.form-control {
+    width: 360px;
+    min-width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.footer-newsletter-form form .theme-button {
+    padding: 12px 40px 14px;
+    margin-left: -2px;
+}
+.footer-newsletter-form form .theme-button, .footer-newsletter-form form .theme-button:after, .footer-newsletter-form form .theme-button:before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.footer-main-content-area {
+    padding: 70px 0 50px;
+}
+.footer-logo img {
+    margin-bottom: 20px;
+}
+.footer-logo p a {
+    display: block;
+}
+.footer-logo p a > i::before {
+    padding-right: 9px;
+    font-size: 13px;
+}
+.footer-links-list li {
+    padding-bottom: 10px;
+}
+.copyright-area {
+    padding: 22px 0
+}
+.copyright-text {
+    border-top: 1px solid rgba(44, 212, 217, .2);
+    padding-top: 50px;
+}
+.footer-social-links li a {
+    padding: 7px;
+}
+
+/*-------------------------------------------
+    21. Footer Area/Copyright Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    22. Video Play CSS Start
+-------------------------------------------*/
+.play-button {
+    color: #0a8aff;
+    background-color: #fff;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    top: 42%;
+    left: 45%;
+    line-height: 59px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    animation: shadow-pulse 2s infinite;
+
+    z-index: 9;
+}
+/*Video Play Button Effect */
+@keyframes shadow-pulse
+{
+    0% {
+        box-shadow: 0 0 0 0 rgba(44, 212, 217, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(44, 212, 217, 0);
+    }
+}
+
+@keyframes shadow-pulse-big
+{
+    0% {
+        box-shadow: 0 0 0 0 rgba(44, 212, 217, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 50px rgba(44, 212, 217, 0);
+    }
+}
+/*Video Play Button Effect */
+/*-------------------------------------------
+    22. Video Play CSS End
+-------------------------------------------*/
+
+
+/*-------------------------------------------
+    32. Login Page CSS End
+-------------------------------------------*/
+.login-form-1 {
+    padding: 5%;
+    box-shadow: 0 0 33px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+.login-form-1 h3{
+    text-align: center;
+}
+.login-wrapper .subm-btn.theme-button {
+    margin-bottom: 1em;
+}
+.login-container form{
+    padding: 10%;
+}
+
+.login-form-1 .login-yet a {
+    color: #0062cc;
+    display: inline-block;
+}
+/*-------------------------------------------
+    32. Login Page CSS End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    33. Responsive Design CSS
+-------------------------------------------*/
+
+/*=====================================
+    Extra Large Screen
+========================================*/
+
+  @media only screen and (min-width: 1920px){
+  }
+
+/*=====================================
+    For Large Screen
+========================================*/
+
+  /*------Max 1200px Width Screen------*/
+
+  @media only screen and (max-width: 1775px) {
+
+  }
+
+/*--------Max 1680px Width Screen---------*/
+@media only screen and (max-width: 1680px) {
+}
+
+/*--------Max 1366px Width Screen---------*/
+
+@media only screen and (max-width: 1366px) {
+
+    /*Default for Max 1366px Width Devices*/
+    body , .form-control{
+        font-size: 14px;
+    }
+    h2.section-heading {
+        font-size: 42px;
+    }
+    p.section-subheading{
+        font-size: 17px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+    .call-to-content h2 {
+        font-size: 31px;
+    }
+    .call-to-action-area .call-to-content h2 a {
+        font-size: 26px;
+    }
+    .call-to-action-area .call-to-content h2 a i {
+        font-size: 20px;
+    }
+
+    /*---- Header CSS ---*/
+
+}
+
+/*--------Max 1200px Width Screen---------*/
+
+  @media only screen and (max-width: 1200px) {
+      body {
+          font-size: 14px;
+      }
+      h2.section-heading {
+          font-size: 40px;
+      }
+      p.section-subheading{
+          font-size: 16px;
+      }
+      h4 {
+          font-size: 21px;
+      }
+  }
+
+/*--------Min 1200px Width Screen--------*/
+  @media only screen and (min-width: 1200px) {
+
+  }
+
+/*=====================================
+    For Medium Screen
+========================================*/
+
+@media only screen and (max-width: 1199px){
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /*Domain Area CSS*/
+    p{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+/*======================================
+        Tablet layout
+=========================================*/
+
+  @media only screen and (max-width: 991px) {
+      p {
+          font-size: 14px;
+      }
+
+
+  }
+  @media only screen and (min-width: 991px) {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+
+      /*Main Menu Bar*/
+      #mainNav, .top-nav{
+          display: none!important;
+      }
+
+  }
+
+@media only screen and (max-width: 768px) {
+    /*Main Menu Bar*/
+    #mainNav, .top-nav {
+        display: none !important;
+    }
+
+}
+
+/*=======================================
+        For Small Devices
+=========================================*/
+  @media only screen and (max-width: 767px) {
+      p.section-subheading {
+          width: 70%;
+          max-width: 100%;
+      }
+
+      /*Footer CSS*/
+      .footer-widget {
+          border-top: 1px solid rgba(44, 212, 217, .2);
+          padding: 30px 0 0 0;
+          margin-top: 30px;
+      }
+      .footer-logo {
+          padding: 0;
+      }
+      .footer-logo img {
+          margin-bottom: 20px;
+          padding: 15px;
+          background-color: #fff;
+      }
+
+  }
+
+  /*========================================
+            For large mobile
+  =========================================*/
+
+@media only screen and (max-width: 766px){
+    /*Header CSS*/
+    .home-banner-area, .hero-area-wrapper {
+        height: 550px;
+    }
+    .hero-area-content h1 {
+        font-size: 36px;
+        margin-bottom: 28px;
+    }
+
+}
+
+  @media only screen and (min-width: 480px) and (max-width: 766px){
+
+  }
+
+@media only screen and (max-width:480px){
+    .row.login-wrapper {
+        margin: 0 5%;
+    }
+
+}
+
+/*=========================================
+        For very little mobile
+=========================================*/
+  @media only screen and (min-width:300px) and (max-width:479px){
+    /*Header Area*/
+      .play-button {
+          height: 50px!important;
+          width: 50px!important;
+          top: 33% !important;
+          left: 42% !important;
+          font-size: 17px;
+      }
+
+      h2.section-heading {
+          font-size: 36px;
+      }
+
+  }
+  /*-------------------------------------------
+        24. Responsive Design End
+  -------------------------------------------*/
