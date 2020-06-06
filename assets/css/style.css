@@ -179,6 +179,7 @@ figure {
     --hover-color: #018ec9;
     --bg-color: #f1f1f1;
     --border-color: #EDF1F4;
+    --red-color: #ff4b54;
 }
 
 /*--------------------------------
@@ -187,7 +188,7 @@ figure {
 .mb-15 {
     margin-bottom: 15px;
 }
-.mb-30{
+.mb-30, .hero-area-heading{
     margin-bottom: 30px;
 }
 
@@ -276,16 +277,21 @@ button:focus {
 /*-----Theme Button Style-----*/
 .theme-button {
     position: relative;
-    color: #ffffff !important;
+    color: #fff;
     display: inline-block;
     cursor: pointer;
     transition: all 0.7s ease 0s;
     outline: none;
     text-transform: capitalize;
     z-index: 99;
-    padding: 10px 40px 14px;
+    padding: 14px 16px 14px;
     font-weight: bold;
     border-radius: 5px;
+    background-color: var(--heading-color);
+}
+.theme-button:hover{
+    background-color: var(--hover-color);
+    color: #fff;
 }
 
 /*-------------------------------------------
@@ -528,6 +534,9 @@ button:focus {
 .andgarivara-left-content {
     padding-right: 40px;
 }
+.andgarivara-left-content h6 {
+    margin-top: 20px;
+}
 .andgarivara-hero-service-box {
     background-color: #fff;
     margin-bottom: 20px;
@@ -563,9 +572,12 @@ button:focus {
 /*-------------------------------------------
     8. Andgarivara Call To Action Area Start
 -------------------------------------------*/
-.call-to-action-area {
-    background-color: indianred;
-    padding: 150px 0;
+.andgarivara-call-to-action-area {
+    background-color: var(--red-color);
+    padding: 44px 0;
+}
+.call-to-action-content h4 {
+    color: var(--white-color);
 }
 
 /*-------------------------------------------
@@ -704,56 +716,12 @@ button:focus {
 /*-------------------------------------------
     21. Footer Area/Copyright Area
 -------------------------------------------*/
-.footer-area {
-    background: linear-gradient(to top, rgb(42, 22, 155) 39%, rgb(41, 137, 216) 78%, rgb(44, 212, 217) 95%);
-    padding: 100px 0 50px;
-    position: relative;
-    margin-top: 62px;
+.andgarivara-footer-area {
+    background-color: var(--heading-color);
 }
-.footer-newsletter-form {
-    margin: 20px 0 0;
+.footer-widget a {
+    color: #fff;
 }
-.footer-newsletter-form form input.form-control {
-    width: 360px;
-    min-width: 100%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.footer-newsletter-form form .theme-button {
-    padding: 12px 40px 14px;
-    margin-left: -2px;
-}
-.footer-newsletter-form form .theme-button, .footer-newsletter-form form .theme-button:after, .footer-newsletter-form form .theme-button:before {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.footer-main-content-area {
-    padding: 70px 0 50px;
-}
-.footer-logo img {
-    margin-bottom: 20px;
-}
-.footer-logo p a {
-    display: block;
-}
-.footer-logo p a > i::before {
-    padding-right: 9px;
-    font-size: 13px;
-}
-.footer-links-list li {
-    padding-bottom: 10px;
-}
-.copyright-area {
-    padding: 22px 0
-}
-.copyright-text {
-    border-top: 1px solid rgba(44, 212, 217, .2);
-    padding-top: 50px;
-}
-.footer-social-links li a {
-    padding: 7px;
-}
-
 /*-------------------------------------------
     21. Footer Area/Copyright Area End
 -------------------------------------------*/
