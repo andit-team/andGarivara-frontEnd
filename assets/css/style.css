@@ -622,6 +622,9 @@ button:focus {
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area Start
 -------------------------------------------*/
+.service-shocase-wrap {
+    margin-bottom: 100px;
+}
 .home-service-box {
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -631,12 +634,81 @@ button:focus {
 .h-s-left h4 {
     margin-bottom: 15px;
 }
-.home-service-box .h-s-left h4, .home-service-box .h-s-left h5 {
+.home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .home-popular-leasing-cars .home-service-box .h-s-left h5 {
     color: #000;
 }
 .home-service-box .h-s-right p {
     margin-bottom: 10px;
 }
+
+/*Popular Rental Cars CSS*/
+.home-popular-rental-cars .home-service-box {
+    /*border: 1px solid var(--border-color);*/
+    /*border-radius: 5px;*/
+    padding: 0;
+    /*box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);*/
+    display: block;
+    overflow: hidden;
+}
+.home-popular-rental-cars .h-s-left {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.rental-car-img-tag {
+    background-color: var(--heading-color);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    right: 0;
+    top: 14px;
+}
+.rental-car-img-tag h5, .rental-car-img-tag p{
+    color: #fff;
+}
+.home-popular-rental-cars .h-s-img img {
+    width: 100%;
+}
+.home-popular-rental-cars .rental-car-ratings img {
+    height: 13px;
+    margin-bottom: 8px;
+}
+.home-popular-rental-cars .popular-rental-car-title , .home-popular-leasing-cars .popular-rental-car-title{
+    font-size: 21px !important;
+    margin-bottom: 6px !important;
+}
+.rental-car-owner-photo img {
+    height: 44px;
+}
+
+/*Popular Leasing Cars CSS*/
+.home-popular-leasing-cars .home-service-box {
+    /*border: 1px solid var(--border-color);*/
+    /*border-radius: 5px;*/
+    padding: 0;
+    /*box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);*/
+    display: block;
+    overflow: hidden;
+}
+.home-popular-leasing-cars .h-s-img img {
+    height: 200px;
+}
+.home-popular-leasing-cars .h-s-left {
+    padding: 10px;
+}
+.home-popular-leasing-cars .rental-car-img-tag {
+    background-color: var(--red-color);
+    border-radius: 50%;
+    left: 23px;
+    top: 27px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area End
 -------------------------------------------*/
