@@ -185,7 +185,7 @@ figure {
 /*--------------------------------
     2.2 Theme Inner Color Style
 -----------------------------------*/
-.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a{
+.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a, .footer-upper-download-app-area h2, .footer-upper-download-app-area p, .footer-widget a{
     color: #fff;
 }
 /*--------------------------------
@@ -203,6 +203,9 @@ figure {
 -----------------------------------*/
 .mb-15 {
     margin-bottom: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 .mb-20 {
     margin-bottom: 20px;
@@ -737,22 +740,50 @@ button:focus {
 -------------------------------------------*/
 .andgarivara-footer-area {
     background-color: var(--heading-color);
+    padding: 100px 0;
 }
 /*Footer Upper CSS*/
+/*.footer-upper-wrap {*/
+/*    padding: 0 0 50px;*/
+/*}*/
+.footer-upper-left-part img {
+    position: absolute;
+    left: 0;
+    top: -142px;
+    height: 242px;
+}
+.footer-upper-download-app-area .download-button a img {
+    height: 40px;
+    margin-right: 15px;
+}
+.footer-upper-download-app-area p {
+    margin: 15px 0 20px;
+}
+.footer-upper-area hr, .footer-middle-area hr {
+    background-color: #232323;
+    margin: 50px 0;
+}
 
 /*Footer Middle CSS*/
 .footer-widget a {
-    color: #fff;
+    padding: 6px 0;
+    display: block;
 }
 .footer-widget p {
-    color: var(--hover-color);
+    color: #29b2ec;
     margin-bottom: 20px;
+    font-size: 20px;
 }
-
 /*Footer Bottom CSS*/
 .footer-bottom-part {
     display: flex;
     justify-content: space-between;
+}
+.bottom-footer-left ul li a {
+    padding: 0 15px 0 0;
+}
+.social-media li a {
+    padding: 8px;
 }
 /*-------------------------------------------
     21. Footer Area/Copyright Area End
