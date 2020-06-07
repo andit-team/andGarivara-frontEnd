@@ -174,6 +174,7 @@ figure {
 
 :root{
     --white-color: #fff;
+    --black-color: #000;
     --heading-color: #02449b;
     --text-color: #646464;
     --hover-color: #018ec9;
@@ -197,6 +198,12 @@ figure {
 .font-14, .footer-widget a{
     font-size: 14px;
 }
+.font-15, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+    font-size: 15px;
+}
+.font-18, .home-service-box .h-s-right h4 {
+    font-size: 18px;
+}
 
 /*--------------------------------
     2.4 Theme Margin and Padding
@@ -212,6 +219,12 @@ figure {
 }
 .mb-30, .hero-area-heading{
     margin-bottom: 30px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10, .service-showcase-title p {
+    margin-bottom: 10px;
 }
 
 /*--------------------------------
@@ -604,6 +617,28 @@ button:focus {
 
 /*-------------------------------------------
     8. Andgarivara Call To Action Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    9. Andgarivara Services Showcase Area Start
+-------------------------------------------*/
+.home-service-box {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);
+}
+.h-s-left h4 {
+    margin-bottom: 15px;
+}
+.home-service-box .h-s-left h4, .home-service-box .h-s-left h5 {
+    color: #000;
+}
+.home-service-box .h-s-right p {
+    margin-bottom: 10px;
+}
+/*-------------------------------------------
+    9. Andgarivara Services Showcase Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
