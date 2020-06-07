@@ -195,7 +195,7 @@ figure {
 .font-bold, .footer-widget p{
     font-weight: 700;
 }
-.font-14, .footer-widget a{
+.font-14, .footer-widget a, .blog-author-box p{
     font-size: 14px;
 }
 .font-15, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
@@ -642,7 +642,7 @@ button:focus {
 }
 
 /*Popular Rental Cars CSS*/
-.home-popular-rental-cars .home-service-box {
+.home-popular-rental-cars .home-service-box, .home-blog-area .home-service-box {
     /*border: 1px solid var(--border-color);*/
     /*border-radius: 5px;*/
     padding: 0;
@@ -673,7 +673,7 @@ button:focus {
     height: 13px;
     margin-bottom: 8px;
 }
-.home-popular-rental-cars .popular-rental-car-title , .home-popular-leasing-cars .popular-rental-car-title{
+.home-popular-rental-cars .popular-rental-car-title , .home-popular-leasing-cars .popular-rental-car-title, .home-blog-area .popular-rental-car-title{
     font-size: 21px !important;
     margin-bottom: 6px !important;
 }
@@ -683,17 +683,14 @@ button:focus {
 
 /*Popular Leasing Cars CSS*/
 .home-popular-leasing-cars .home-service-box {
-    /*border: 1px solid var(--border-color);*/
-    /*border-radius: 5px;*/
     padding: 0;
-    /*box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);*/
     display: block;
     overflow: hidden;
 }
 .home-popular-leasing-cars .h-s-img img {
     height: 200px;
 }
-.home-popular-leasing-cars .h-s-left {
+.home-popular-leasing-cars .h-s-left, .home-blog-area .h-s-left {
     padding: 10px;
 }
 .home-popular-leasing-cars .rental-car-img-tag {
@@ -709,54 +706,17 @@ button:focus {
     font-size: 14px;
 }
 
-/*-------------------------------------------
-    9. Andgarivara Services Showcase Area End
--------------------------------------------*/
-
-/*-------------------------------------------
-    17. Home Blog Posts Area Start
--------------------------------------------*/
-.all-blog-posts-area {
-    padding: 100px 0 70px;
-}
-.all-blog-posts-area .section-subheading {
-    width: 53%;
-    margin: 18px auto 50px;
-}
-.single-blog-post {
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow:0 14px 45px 0 rgba(205, 205, 205, 0.35);
-    text-align: center;
-    transition: all ease-in-out 0.5s;
-}
-.single-blog-post:hover {
-    box-shadow: 0 18px 33px 6px rgba(0,0,0,0.1);
-}
-.single-blog-post img {
+/*Andgarivara Blog CSS*/
+.home-blog-area .h-s-img.position-relative img {
+    height: auto;
     width: 100%;
 }
-.single-blog-content {
-    padding: 30px 30px 38px;
+.blog-author-box img {
+    height: 40px;
+    margin-right: 12px;
 }
-.single-blog-content img {
-    height: 35px;
-    width: 35px;
-    margin-right: 10px;
-}
-.single-blog-content h4, .single-blog-content h6{
-    text-transform: capitalize;
-}
-.single-blog-content h4 {
-    margin: 25px 0 15px;
-}
-.single-blog-content h6 i {
-    padding: 0 5px 0 20px;
-    position: relative;
-}
-
 /*-------------------------------------------
-    17. Home Blog Posts Area End
+    9. Andgarivara Services Showcase Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
