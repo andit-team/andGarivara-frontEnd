@@ -33,16 +33,14 @@
 
 /* Use font link */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Use style sheet */
 
 @import url('../vendor/bootstrap/css/bootstrap.min.css');
 @import url('../vendor/fontawesome-free/css/all.min.css');
 @import url('../vendor/flat-icon/flaticon.css');
-@import url('owl.carousel.min.css');
-@import url('owl.theme.default.min.css');
+@import url('../vendor/bangla-fonts/solaimanlipi.css');
 @import url('venobox.css');
 @import url('animate.css');
 @import url('meanmenu.min.css');
@@ -70,7 +68,7 @@ body {
     background: #fff none repeat scroll;
     font-size: 16px;
     font-weight: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: 'SolaimanLipi', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #777c87;
     letter-spacing: 0.05em;
     overflow-x: hidden;
@@ -159,7 +157,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     margin: 0;
     color: #02449b;
@@ -333,7 +330,7 @@ button:focus {
            4. Nav Area CSS
 -------------------------------------------*/
 .menu-section-area {
-    padding: 0;
+    padding: 0 20px;
     z-index: 999;
 }
 .menu-section-area .navbar {
@@ -390,11 +387,13 @@ button:focus {
     transition: .5s;
     visibility: hidden;
     opacity: 0;
-    width: 200px;
+    width: 150px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 12px 15px rgba(0,0,0,.10);
-    border: 1px solid #0a8aff;
+    border: 1px solid var(--heading-color);
+    z-index: 99;
+    left: -86px;
 }
 #mainNav ul.navbar-nav li.nav-item.dropdown-box:hover .dropdown-list {
     top: 100%;
@@ -404,6 +403,9 @@ button:focus {
 .dropdown-list li a {
     padding: 6px 10px;
     display: block;
+}
+#mainNav .navbar-nav .nav-item .nav-link > i.fas.fa-globe {
+    padding-right: 5px;
 }
 #mainNav .navbar-nav .nav-item .nav-link > i.fa-angle-down {
     padding-left: 5px;
