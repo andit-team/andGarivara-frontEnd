@@ -437,7 +437,7 @@ button:focus {
     background-color: transparent;
 }
 .mean-container .mean-nav ul li a:hover {
-    background-color: #000;
+    background-color: rgba(255, 255, 255, .1);
     color: #fff !important;
 }
 .mean-container .mean-bar {
@@ -468,7 +468,7 @@ button:focus {
     position: relative;
     top: 9px;
     left: 16px;
-    height: 34px;
+    height: 38px;
 }
 .mean-container a.meanmenu-reveal {
     top: 5px;
@@ -476,22 +476,21 @@ button:focus {
 }
 .mean-container .mean-nav ul.menu {
     margin: 0 0 0 0;
-    background-color: #2c303a;
+    background-color: var(--heading-color);
     display: flex;
     position: relative;
-    top: 30px;
+    top: 20px;
 }
 .mean-container a.meanmenu-reveal span {
     background-color: var(--heading-color);
 }
   .mean-container .mean-nav ul li a{
+      color: #fff;
+      border-top: 1px solid rgba(44, 212, 217, .2);
   }
   .mean-container .mean-nav ul li a:hover {
   }
   .mean-container .mean-nav ul li.mean-last a.section-button:hover, .mean-container .mean-nav ul li.dropdown a:hover {
-  }
-  .mean-container .mean-nav ul li a {
-      color: #fff;
   }
 .mean-container .mean-nav ul li.mean-last {
     border-top: 1px solid rgba(0, 0, 0, .4);
@@ -641,6 +640,9 @@ button:focus {
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area Start
 -------------------------------------------*/
+.andgarivara-services-showcase-area {
+    padding: 100px 0 0;
+}
 .service-showcase-wrap {
     margin-bottom: 100px;
 }
@@ -858,7 +860,7 @@ button:focus {
     margin: 15px 0 20px;
 }
 .footer-upper-area hr, .footer-middle-area hr {
-    background-color: #232323;
+    background-color: rgba(44, 212, 217, .2);
     margin: 50px 0;
 }
 
@@ -1102,6 +1104,10 @@ button:focus {
       .blog-author-box img {
           height: 35px;
       }
+      /*Footer CSS*/
+      .footer-middle-area .row .col-12:last-child .footer-widget {
+          display: none;
+      }
 
   }
   @media only screen and (min-width: 991px) {
@@ -1129,9 +1135,9 @@ button:focus {
         For Small Devices
 =========================================*/
   @media only screen and (max-width: 767px) {
-      p.section-subheading {
-          width: 70%;
-          max-width: 100%;
+
+      .mean-container .mean-nav ul li.dropdown a > i::before {
+          padding-right: 5px;
       }
       /*Hero Area CSS*/
       .andgarivara-left-content {
@@ -1143,11 +1149,23 @@ button:focus {
           margin-bottom: 20px;
       }
       /*Home Services CSS*/
+      .andgarivara-services-showcase-area {
+          padding: 100px 0;
+      }
       .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
           width: 150px;
       }
       .home-service-box {
           margin-bottom: 20px;
+      }
+      .home-services-wrap-inner .col-12:last-child .home-service-box {
+          margin-bottom: 0;
+      }
+      .home-services-subtitle {
+          flex-direction: column;
+      }
+      .home-services-subtitle a {
+          margin-top: 6px;
       }
 
       /*Footer CSS*/
@@ -1156,13 +1174,9 @@ button:focus {
           padding: 30px 0 0 0;
           margin-top: 30px;
       }
-      .footer-logo {
-          padding: 0;
-      }
-      .footer-logo img {
-          margin-bottom: 20px;
-          padding: 15px;
-          background-color: #fff;
+      .footer-upper-left-part img {
+          top: -188px;
+          height: 160px;
       }
 
   }
@@ -1173,7 +1187,7 @@ button:focus {
 
 @media only screen and (max-width: 766px){
     /*Header CSS*/
-    .home-banner-area, .hero-area-wrapper {
+    .home-banner-area {
         height: 550px;
     }
     .hero-area-content h1 {
@@ -1181,6 +1195,12 @@ button:focus {
         margin-bottom: 28px;
     }
 
+}
+
+@media only screen and (max-width: 575px){
+    .andgarivara-hero-img img {
+        height: 250px;
+    }
 }
 
   @media only screen and (min-width: 480px) and (max-width: 766px){
@@ -1209,6 +1229,22 @@ button:focus {
 
       h2.section-heading {
           font-size: 36px;
+      }
+
+      /*Home Services CSS*/
+      .andgarivara-hero-img img {
+          height: 164px;
+      }
+
+      /*Footer CSS*/
+      .footer-bottom-part, .bottom-footer-left ul {
+          flex-direction: column;
+      }
+      /*.bottom-footer-left ul {*/
+      /*    flex-direction: column;*/
+      /*}*/
+      .bottom-footer-left ul li {
+          margin-bottom: 12px;
       }
 
   }
