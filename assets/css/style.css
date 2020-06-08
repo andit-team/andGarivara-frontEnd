@@ -654,7 +654,6 @@ button:focus {
 }
 .home-popular-rental-cars .h-s-left {
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
 }
 .rental-car-img-tag {
