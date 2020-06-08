@@ -68,13 +68,14 @@ body {
     background: #fff none repeat scroll;
     font-size: 16px;
     font-weight: normal;
-    font-family: 'SolaimanLipi', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #777c87;
     letter-spacing: 0.05em;
     overflow-x: hidden;
 }
 
 p{
+  font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.75;
   color: #777c87;
   margin-bottom: 0;
@@ -157,6 +158,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'SolaimanLipiBold', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin: 0;
     color: #02449b;
@@ -192,14 +194,28 @@ figure {
 .font-bold, .footer-widget p{
     font-weight: 700;
 }
-.font-14, .footer-widget a, .blog-author-box p{
+.font-14, .blog-author-box p{
     font-size: 14px;
 }
-.font-15, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+.font-15{
     font-size: 15px;
+}
+.font-16, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+    font-size: 16px;
 }
 .font-18, .home-service-box .h-s-right h4 {
     font-size: 18px;
+}
+
+/*--------------------------------
+    2.4 Theme Font Family
+-----------------------------------*/
+.bangla-font-regular, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+    font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.english-font-arimo, .home-popular-rental-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h5,
+.bottom-footer-left ul li a{
+    font-family: 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 /*--------------------------------
@@ -429,6 +445,7 @@ button:focus {
     height: 54px;
     z-index: 999;
     padding: 0;
+    box-shadow: 0 2px 9px rgba(216, 212, 212, 0.6);
 }
 .mean-container .mean-nav {
     background-color: var(--white-color);
@@ -449,13 +466,13 @@ button:focus {
 }
 .mobile-logo {
     position: relative;
-    top: 14px;
+    top: 9px;
     left: 16px;
-    height: 23px;
+    height: 34px;
 }
 .mean-container a.meanmenu-reveal {
     top: 5px;
-    color: #000;
+    color: var(--heading-color);
 }
 .mean-container .mean-nav ul.menu {
     margin: 0 0 0 0;
@@ -465,7 +482,7 @@ button:focus {
     top: 30px;
 }
 .mean-container a.meanmenu-reveal span {
-    background-color: #000;
+    background-color: var(--heading-color);
 }
   .mean-container .mean-nav ul li a{
   }
@@ -600,7 +617,7 @@ button:focus {
     text-align: center;
 }
 .andgarivara-hero-img img {
-    height: 450px;
+    height: 390px;
 }
 /*-------------------------------------------
             7. Andgarivara Hero End
@@ -624,14 +641,23 @@ button:focus {
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area Start
 -------------------------------------------*/
-.service-shocase-wrap {
+.service-showcase-wrap {
     margin-bottom: 100px;
+}
+.home-services-subtitle a i {
+    margin-left: 7px;
+}
+.home-services-subtitle a i::before {
+    font-size: 16px;
 }
 .home-service-box {
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);
+}
+.home-popular-rental-cars .home-service-box .h-s-left, .home-popular-leasing-cars .home-service-box .h-s-left, .home-blog-area .home-service-box .h-s-left {
+    padding: 15px 20px;
 }
 .h-s-left h4 {
     margin-bottom: 15px;
@@ -645,16 +671,20 @@ button:focus {
 
 /*Popular Rental Cars CSS*/
 .home-popular-rental-cars .home-service-box, .home-blog-area .home-service-box {
-    /*border: 1px solid var(--border-color);*/
-    /*border-radius: 5px;*/
     padding: 0;
-    /*box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);*/
     display: block;
     overflow: hidden;
 }
 .home-popular-rental-cars .h-s-left {
     justify-content: space-between;
     padding: 10px;
+}
+.home-popular-rental-cars .popular-rental-car-title {
+    white-space: nowrap;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 .rental-car-img-tag {
     background-color: var(--heading-color);
@@ -975,21 +1005,15 @@ button:focus {
     h4 {
         font-size: 22px;
     }
-
-    #mainNav .navbar-nav .nav-item .nav-link {
-        font-size: 14px;
-    }
-    .call-to-content h2 {
-        font-size: 31px;
-    }
-    .call-to-action-area .call-to-content h2 a {
-        font-size: 26px;
-    }
-    .call-to-action-area .call-to-content h2 a i {
-        font-size: 20px;
+    /*Hero Area CSS*/
+    .andgarivara-hero-img img {
+        height: 370px;
     }
 
-    /*---- Header CSS ---*/
+    /*Home Services Showcase CSS*/
+    .home-services-subtitle a {
+        font-size: 16px;
+    }
 
 }
 
@@ -1008,6 +1032,14 @@ button:focus {
       h4 {
           font-size: 21px;
       }
+      /*Hero Area*/
+      .andgarivara-hero-img img {
+          height: 350px;
+      }
+      .andgarivara-left-content {
+          padding-right: 0;
+      }
+
   }
 
 /*--------Min 1200px Width Screen--------*/
@@ -1020,7 +1052,9 @@ button:focus {
 ========================================*/
 
 @media only screen and (max-width: 1199px){
-
+    .andgarivara-hero-img img {
+        height: 295px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -1043,7 +1077,31 @@ button:focus {
       p {
           font-size: 14px;
       }
-
+      /*Hero Area CSS*/
+      .hero-area-heading h1 {
+          font-size: 32px;
+      }
+      .andgarivara-hero-area {
+          height: auto;
+      }
+      /*Home Services CSS*/
+      .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
+          white-space: nowrap;
+          width: 72px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+      }
+      .home-popular-rental-cars .popular-rental-car-title {
+          width: 215px;
+      }
+      .home-popular-leasing-cars .h-s-img img {
+          height: auto;
+          width: 100%;
+      }
+      .blog-author-box img {
+          height: 35px;
+      }
 
   }
   @media only screen and (min-width: 991px) {
@@ -1074,6 +1132,22 @@ button:focus {
       p.section-subheading {
           width: 70%;
           max-width: 100%;
+      }
+      /*Hero Area CSS*/
+      .andgarivara-left-content {
+          padding-right: 0;
+      }
+
+      /*Call to action*/
+      .call-to-action-content {
+          margin-bottom: 20px;
+      }
+      /*Home Services CSS*/
+      .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
+          width: 150px;
+      }
+      .home-service-box {
+          margin-bottom: 20px;
       }
 
       /*Footer CSS*/
