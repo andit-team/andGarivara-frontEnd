@@ -62,7 +62,7 @@
 <body>
 
 <!-- Page Main Area Start -->
-<div class="main">
+<div class="main rides-page-main">
 
     <!-- Pre Loader Area start -->
     <!--<div id="preloader">-->
@@ -151,7 +151,6 @@
     </header>
     <!-- Menu Area End -->
 
-
     <!-- Rides Page Area Start -->
     <section class="andgarivara-rides-page-area">
         <div class="container">
@@ -160,6 +159,64 @@
                 <!-- Rides Page Left Side Start -->
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="rides-left-search-filters">
+
+                        <!-- Range slider Start -->
+                        <div class="range-slider-container">
+                            <div class="d-flex justify-content-between">
+                                <p>Radius</p>
+                                <div>
+                                    <span id="range-value"></span>
+                                    <span>km</span>
+                                </div>
+                            </div>
+                            <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
+                        </div>
+                        <!-- Range slider End -->
+
+                        <!-- Rides Luggage  Checkbox Start -->
+                        <form>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="luggageCheck" name="luggage">
+                                <label class="custom-control-label" for="luggageCheck">আংশিক রুটগুলি লুকান</label>
+                            </div>
+                        </form>
+                        <!-- Rides Luggage  Checkbox End -->
+
+                        <!-- Rides Partial Routes Checkbox Start -->
+                        <form>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="partial_routes">
+                                <label class="custom-control-label" for="customCheck">আংশিক রুটগুলি লুকান</label>
+                            </div>
+                        </form>
+                        <!-- Rides Partial Routes Checkbox End -->
+
+                        <!-- Rides Comfort Checkbox Start -->
+                        <form>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="comfortCheck" name="comfort_routes">
+                                <label class="custom-control-label" for="comfortCheck">পিছনের সিটে সর্বোচ্চ 2 জন</label>
+                            </div>
+                        </form>
+                        <!-- Rides Comfort Checkbox End -->
+
+                        <!-- Rides Preferences  Checkbox Start -->
+                        <form>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="preferencesCheck" name="preference_route">
+                                <label class="custom-control-label" for="preferencesCheck">পিসঙ্গীত</label>
+                                <input type="checkbox" class="custom-control-input" id="preferencesCheck2" name="preference_route">
+                                <label class="custom-control-label" for="preferencesCheck2">জীবজন্তু</label>
+                                <input type="checkbox" class="custom-control-input" id="preferencesCheck3" name="preference_route">
+                                <label class="custom-control-label" for="preferencesCheck3">শিশু</label>
+                                <input type="checkbox" class="custom-control-input" id="preferencesCheck4" name="preference_route">
+                                <label class="custom-control-label" for="preferencesCheck4">ধূমপান</label>
+                            </div>
+                        </form>
+                        <!-- Rides Preferences  Checkbox End -->
+
+                        <button class="theme-button">আপডেট</button>
+
                     </div>
                 </div>
                 <!-- Rides Page Left Side End -->
@@ -175,7 +232,10 @@
                                 <a href="ride-details.html" class="ride-list">
                                     <div class="card d-flex">
                                         <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
+                                            <div class="ride-owner-img-box position-relative">
+                                                <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Rental">
+                                                <span class="position-absolute"><img src="assets/img/rides-img/award.svg" alt="Andgarivara"></span>
+                                            </div>
                                             <p>সুরাইয়া আয়শা</p>
                                             <div class="rental-car-ratings">
                                                 <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
@@ -187,14 +247,19 @@
                                         </div>
 
                                         <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>আজ রাত ৯:৪৫</h5>
+                                                <span>
+                                                    <i class="fas fa-user-friends" data-toggle="tooltip" data-placement="top" title="ড্রাইভার পিছনের সিটে সর্বোচ্চ ২ জন যাত্রীর গ্যারান্টি দেয়"></i>
+                                                </span>
+                                            </div>
                                             <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
                                             <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
                                         </div>
 
                                         <div class="ride-list-last-content d-flex">
                                             <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="৩টি সিট খালি আছে">
                                                 <i class="fas fa-circle ride-not-available"></i>
                                                 <i class="fas fa-circle"></i>
                                                 <i class="fas fa-circle"></i>
@@ -210,7 +275,10 @@
                                 <a href="ride-details.html" class="ride-list">
                                     <div class="card d-flex">
                                         <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
+                                            <div class="ride-owner-img-box position-relative">
+                                                <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Rental">
+                                                <span class="position-absolute"><img src="assets/img/rides-img/award.svg" alt="Andgarivara"></span>
+                                            </div>
                                             <p>সুরাইয়া আয়শা</p>
                                             <div class="rental-car-ratings">
                                                 <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
@@ -222,14 +290,24 @@
                                         </div>
 
                                         <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>আজ রাত ৯:৪৫</h5>
+                                                <span>
+                                                    <i class="fas fa-bolt" data-toggle="tooltip" data-placement="top" title="এই যাত্রায় বুকিংয়ের জন্য ড্রাইভারের গ্রহণযোগ্যতা প্রয়োজন নেই"></i>
+                                                    <i class="fas fa-user-friends" data-toggle="tooltip" data-placement="top" title="ড্রাইভার পিছনের সিটে সর্বোচ্চ ২ জন যাত্রীর গ্যারান্টি দেয়"></i>
+                                                </span>
+                                            </div>
                                             <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
                                             <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
                                         </div>
 
                                         <div class="ride-list-last-content d-flex">
                                             <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="৩টি সিট খালি আছে">
+                                                <i class="fas fa-circle ride-not-available"></i>
+                                                <i class="fas fa-circle"></i>
+                                                <i class="fas fa-circle"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -241,7 +319,10 @@
                                 <a href="ride-details.html" class="ride-list">
                                     <div class="card d-flex">
                                         <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
+                                            <div class="ride-owner-img-box position-relative">
+                                                <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Rental">
+                                                <span class="position-absolute"><img src="assets/img/rides-img/award.svg" alt="Andgarivara"></span>
+                                            </div>
                                             <p>সুরাইয়া আয়শা</p>
                                             <div class="rental-car-ratings">
                                                 <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
@@ -253,14 +334,25 @@
                                         </div>
 
                                         <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>আজ রাত ৯:৪৫</h5>
+                                                <span>
+                                                    <i class="fas fa-bolt" data-toggle="tooltip" data-placement="top" title="এই যাত্রায় বুকিংয়ের জন্য ড্রাইভারের গ্রহণযোগ্যতা প্রয়োজন নেই"></i>
+                                                    <i class="fas fa-ship" data-toggle="tooltip" data-placement="top" title="যাত্রাটি মতিঝিল হয়ে যাত্রাবাড়িতে যায়"></i>
+                                                    <i class="fas fa-user-friends" data-toggle="tooltip" data-placement="top" title="ড্রাইভার পিছনের সিটে সর্বোচ্চ ২ জন যাত্রীর গ্যারান্টি দেয়"></i>
+                                                </span>
+                                            </div>
                                             <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
                                             <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
                                         </div>
 
                                         <div class="ride-list-last-content d-flex">
                                             <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="৩টি সিট খালি আছে">
+                                                <i class="fas fa-circle ride-not-available"></i>
+                                                <i class="fas fa-circle"></i>
+                                                <i class="fas fa-circle"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -272,26 +364,34 @@
                                 <a href="ride-details.html" class="ride-list">
                                     <div class="card d-flex">
                                         <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
+                                            <div class="ride-owner-img-box position-relative">
+                                                <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Rental">
+                                            </div>
                                             <p>সুরাইয়া আয়শা</p>
                                             <div class="rental-car-ratings">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
+                                                <p>নতুন সদস্য</p>
                                             </div>
                                         </div>
 
                                         <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>আজ রাত ৯:৪৫</h5>
+                                                <span>
+                                                    <i class="fas fa-ship" data-toggle="tooltip" data-placement="top" title="যাত্রাটি মতিঝিল হয়ে যাত্রাবাড়িতে যায়"></i>
+                                                    <i class="fas fa-user-friends" data-toggle="tooltip" data-placement="top" title="ড্রাইভার পিছনের সিটে সর্বোচ্চ ২ জন যাত্রীর গ্যারান্টি দেয়"></i>
+                                                </span>
+                                            </div>
                                             <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
                                             <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
                                         </div>
 
                                         <div class="ride-list-last-content d-flex">
                                             <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
+                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="৩টি সিট খালি আছে">
+                                                <i class="fas fa-circle ride-not-available"></i>
+                                                <i class="fas fa-circle"></i>
+                                                <i class="fas fa-circle"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -303,124 +403,39 @@
                                 <a href="ride-details.html" class="ride-list">
                                     <div class="card d-flex">
                                         <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
+                                            <div class="ride-owner-img-box position-relative">
+                                            </div>
                                             <p>সুরাইয়া আয়শা</p>
                                             <div class="rental-car-ratings">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
+                                                <p>নতুন সদস্য</p>
                                             </div>
                                         </div>
 
                                         <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
+                                            <div class="d-flex justify-content-between">
+                                                <h5>আজ রাত ৯:৪৫</h5>
+                                                <span>
+                                                    <i class="fas fa-ship" data-toggle="tooltip" data-placement="top" title="যাত্রাটি মতিঝিল হয়ে যাত্রাবাড়িতে যায়"></i>
+                                                    <i class="fas fa-user-friends" data-toggle="tooltip" data-placement="top" title="ড্রাইভার পিছনের সিটে সর্বোচ্চ ২ জন যাত্রীর গ্যারান্টি দেয়"></i>
+                                                </span>
+                                            </div>
                                             <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
                                             <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
                                         </div>
 
                                         <div class="ride-list-last-content d-flex">
                                             <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- Ride List End -->
-
-                            <!-- Ride List Start -->
-                            <li>
-                                <a href="ride-details.html" class="ride-list">
-                                    <div class="card d-flex">
-                                        <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
-                                            <p>সুরাইয়া আয়শা</p>
-                                            <div class="rental-car-ratings">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
+                                            <div class="ride-availability-info" data-toggle="tooltip" data-placement="top" title="৩টি সিট খালি আছে">
+                                                <i class="fas fa-circle ride-not-available"></i>
+                                                <i class="fas fa-circle"></i>
+                                                <i class="fas fa-circle"></i>
                                             </div>
                                         </div>
-
-                                        <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
-                                            <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
-                                            <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
-                                        </div>
-
-                                        <div class="ride-list-last-content d-flex">
-                                            <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
-                                        </div>
                                     </div>
                                 </a>
                             </li>
                             <!-- Ride List End -->
 
-                            <!-- Ride List Start -->
-                            <li>
-                                <a href="ride-details.html" class="ride-list">
-                                    <div class="card d-flex">
-                                        <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
-                                            <p>সুরাইয়া আয়শা</p>
-                                            <div class="rental-car-ratings">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                            </div>
-                                        </div>
-
-                                        <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
-                                            <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
-                                            <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
-                                        </div>
-
-                                        <div class="ride-list-last-content d-flex">
-                                            <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- Ride List End -->
-
-                            <!-- Ride List Start -->
-                            <li>
-                                <a href="ride-details.html" class="ride-list">
-                                    <div class="card d-flex">
-                                        <div class="ride-owner-box">
-                                            <img src="assets/img/rental-cars-img/rental-car-owner.png" alt="Andgarivara Rental Car Owner">
-                                            <p>সুরাইয়া আয়শা</p>
-                                            <div class="rental-car-ratings">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                                <img src="assets/img/rental-cars-img/icon-star-yellow.svg" alt="Rental Car">
-                                            </div>
-                                        </div>
-
-                                        <div class="ride-list-middle-content">
-                                            <div class="d-flex justify-content-between"><h5>Today at 9:45</h5><span><i class="fas fa-user-friends"></i></span></div>
-                                            <div class="d-flex flex-column"><h6>যাত্রাবাড়ী</h6><p>যাত্রাবাড়ী মল্লিক রোড</p></div>
-                                            <div class="d-flex flex-column"><h6>মতিঝিল</h6><p>মতিঝিল সেন বাড়ি</p></div>
-                                        </div>
-
-                                        <div class="ride-list-last-content d-flex">
-                                            <div><h6>টাকা - ১০৫</h6></div>
-                                            <div class="ride-availability-info"><i class="fas fa-circle ride-not-available"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <!-- Ride List End -->
                         </ul>
                     </div>
                 </div>

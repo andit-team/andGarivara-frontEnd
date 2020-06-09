@@ -40,7 +40,16 @@
   // MAIN MENU SCRIPT END
 
   // Tooltip JS
-  $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Range Slider JS
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("range-value");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
 
   //----- Initialize WOW JS ------
   new WOW().init();

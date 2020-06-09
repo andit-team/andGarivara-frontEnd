@@ -178,6 +178,7 @@ figure {
     --bg-color: #f1f1f1;
     --border-color: #EDF1F4;
     --red-color: #ff4b54;
+    --bg-secondary: #F7F8FA;
 }
 
 /*--------------------------------
@@ -192,6 +193,9 @@ figure {
 }
 .text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p{
     color: var(--black-color);
+}
+.different-bg, .rides-page-main section{
+    background-color: var(--bg-secondary);
 }
 /*--------------------------------
     2.3 Theme Font Style
@@ -832,6 +836,60 @@ button:focus {
     10. Andgarivara Rides Page Area Start
 -------------------------------------------*/
 
+/*Andgarivara Rides Page Left Side CSS Start*/
+
+.rides-left-search-filters {
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 15px;
+}
+
+/*Range Slider CSS*/
+.range-slider-container {
+    width: 100%;
+}
+
+.range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 25px;
+}
+
+.range-slider:hover {
+    opacity: 1;
+}
+
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--hover-color);
+    background: var(--white-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--hover-color);
+    background: var(--white-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/*Andgarivara Rides Page Left Side CSS End*/
+
+
+/*Andgarivara Rides Page Right Side CSS Start*/
+
 /*Ride List CSS*/
 .ride-list {
     margin-bottom: 30px;
@@ -845,8 +903,28 @@ button:focus {
     padding: 30px;
     min-height: 200px;
 }
+.ride-owner-img-box {
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.ride-owner-box {
+    text-align: center;
+}
+.ride-owner-img-box span {
+    right: 12px;
+    bottom: 0;
+}
+.ride-owner-img-box span img {
+    height: 24px;
+}
 .ride-list .card .rental-car-ratings img {
     height: 14px;
+}
+.rental-car-ratings p {
+    margin-top: 0;
+    color: var(--text-color);
 }
 /*Ride Card Middle Content*/
 .ride-list .card .ride-list-middle-content {
@@ -858,6 +936,16 @@ button:focus {
 .ride-list-middle-content div:last-child {
     margin-bottom: 0;
 }
+.ride-list-middle-content div span i {
+    margin-right: 5px;
+}
+.ride-list-middle-content div span i.fas.fa-bolt {
+    color: #f2cc04;
+    font-size: 18px;
+}
+.ride-list-middle-content div span i.fas.fa-ship {
+    color: var(--heading-color);
+}
 
 /*Ride Card Last Content*/
 .ride-list-last-content {
@@ -866,7 +954,7 @@ button:focus {
     justify-content: space-between;
 }
 .ride-availability-info i {
-    padding: 0 5px;
+    padding: 0 2px;
 }
 .ride-availability-info{
     color: #0DCEB2;
