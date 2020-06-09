@@ -171,7 +171,7 @@ figure {
 
 :root{
     --white-color: #fff;
-    --black-color: #000;
+    --black-color: #1B2530;
     --heading-color: #02449b;
     --text-color: #646464;
     --hover-color: #018ec9;
@@ -187,8 +187,11 @@ figure {
     color: #fff;
 }
 .text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
-.home-blog-area .home-service-box:hover .h-s-left h4{
+.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i{
     color: var(--hover-color);
+}
+.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p{
+    color: var(--black-color);
 }
 /*--------------------------------
     2.3 Theme Font Style
@@ -223,6 +226,9 @@ figure {
 /*--------------------------------
     2.5 Theme Margin and Padding
 -----------------------------------*/
+.mt-10, .ride-owner-box p{
+    margin-top: 10px;
+}
 .mb-15 {
     margin-bottom: 15px;
 }
@@ -682,7 +688,6 @@ button:focus {
 .call-to-action-content h4 {
     color: var(--white-color);
 }
-
 /*-------------------------------------------
     8. Andgarivara Call To Action Area End
 -------------------------------------------*/
@@ -821,6 +826,57 @@ button:focus {
 }
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    10. Andgarivara Rides Page Area Start
+-------------------------------------------*/
+
+/*Ride List CSS*/
+.ride-list {
+    margin-bottom: 30px;
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+}
+.ride-list .card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    min-height: 200px;
+}
+.ride-list .card .rental-car-ratings img {
+    height: 14px;
+}
+/*Ride Card Middle Content*/
+.ride-list .card .ride-list-middle-content {
+    width: 60%;
+}
+.ride-list-middle-content div {
+    margin-bottom: 15px;
+}
+.ride-list-middle-content div:last-child {
+    margin-bottom: 0;
+}
+
+/*Ride Card Last Content*/
+.ride-list-last-content {
+    flex-direction: column;
+    min-height: 130px;
+    justify-content: space-between;
+}
+.ride-availability-info i {
+    padding: 0 5px;
+}
+.ride-availability-info{
+    color: #0DCEB2;
+}
+.ride-not-available{
+    color: #FF766B;
+}
+
+/*-------------------------------------------
+    10. Andgarivara Rides Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
