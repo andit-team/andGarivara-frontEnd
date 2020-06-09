@@ -86,11 +86,10 @@ p{
 a {
   color: #02449b;
 }
-a:hover {
-}
+
 /* Theme All Transitions
 ------------------------------- */
-a, #mainNav, .theme-button{
+a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
     transition: all .5s ease-in-out;
 }
 
@@ -132,7 +131,6 @@ a, #mainNav, .theme-button{
   }
 
   /*----Form Control Reset CSS----*/
-
 .form-control {
     border-radius: 5px;
     border: none;
@@ -185,8 +183,12 @@ figure {
 /*--------------------------------
     2.2 Theme Inner Color Style
 -----------------------------------*/
-.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a, .footer-upper-download-app-area h2, .footer-upper-download-app-area p, .footer-widget a{
+.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a, .footer-upper-download-app-area h2, .footer-upper-download-app-area p, .footer-widget a, .copyright-text{
     color: #fff;
+}
+.text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
+.home-blog-area .home-service-box:hover .h-s-left h4{
+    color: var(--hover-color);
 }
 /*--------------------------------
     2.3 Theme Font Style
@@ -214,7 +216,7 @@ figure {
     font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 .english-font-arimo, .home-popular-rental-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h5,
-.bottom-footer-left ul li a{
+.bottom-footer-left ul li a, .bottom-footer-left ul li a{
     font-family: 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
@@ -276,6 +278,11 @@ section{
     text-overflow: ellipsis;
     max-width: 100%;
 }
+
+.link-text-hover-style, .footer-widget a:hover, .bottom-footer-left ul li a:hover, .bottom-footer-right ul li a:hover {
+    text-decoration: underline;
+}
+
 /*Flat Icon Default Settings*/
 [class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
     margin-left: 0;
@@ -595,6 +602,9 @@ button:focus {
 .andgarivara-left-content {
     padding-right: 40px;
 }
+.andgarivara-left-content .hero-area-heading h6 {
+    font-size: 22px;
+}
 .andgarivara-left-content h6 {
     margin-top: 20px;
 }
@@ -606,7 +616,7 @@ button:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);
+    box-shadow: 0 0 8px 6px rgba(2,68,155,.03);
 }
 .andgarivara-left-content .andgarivara-hero-service-box:last-child {
     margin-bottom: 0;
@@ -617,6 +627,38 @@ button:focus {
 }
 .andgarivara-hero-service-box i:before{
     color: var(--heading-color);
+}
+
+/*Hero Area Arrow Effect*/
+.andgarivara-hero-service-box:hover i{
+    position: relative;
+    animation-name:arrow;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-delay:.5s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:arrow;
+    -webkit-animation-duration:2s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:.5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+}
+
+@keyframes arrow
+{
+    0%   {left:-5px;}
+    75% {left:5px;}
+    100% {left:-5px;}
+}
+@-webkit-keyframes arrow
+{
+    0%   {left:-5px;}
+    75% {left:5px;}
+    100% {left:-5px;}
 }
 
 /*Andgarivara Hero Right Img*/
@@ -664,7 +706,10 @@ button:focus {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0px 0px 8px 6px rgba(2,68,155,.03);
+    box-shadow: 0 0 8px 6px rgba(2,68,155,.03);
+}
+.home-service-box:hover {
+    border-color: #DAE0E3;
 }
 .home-popular-rental-cars .home-service-box .h-s-left, .home-popular-leasing-cars .home-service-box .h-s-left, .home-blog-area .home-service-box .h-s-left {
     padding: 15px 20px;
@@ -728,8 +773,18 @@ button:focus {
     display: block;
     overflow: hidden;
 }
+.home-popular-leasing-cars .h-s-img {
+    overflow: hidden;
+}
 .home-popular-leasing-cars .h-s-img img {
-    height: 200px;
+    height: auto;
+    transform: scale(1);
+    transition: .5s;
+    width: 100%;
+}
+.home-popular-leasing-cars .h-s-img img:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-color);
 }
 .home-popular-leasing-cars .h-s-left, .home-blog-area .h-s-left {
     padding: 10px;
@@ -745,12 +800,17 @@ button:focus {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    z-index: 9;
 }
 
 /*Andgarivara Blog CSS*/
-/*.home-blog-area .home-service-box .h-s-left h4 {*/
-/*    width: 140px;*/
-/*}*/
+.home-blog-area .home-service-box h4 {
+    min-height: 54px;
+}
+.home-blog-area .home-service-box p {
+    height: auto;
+    max-height: 91px;
+}
 .home-blog-area .h-s-img.position-relative img {
     height: auto;
     width: 100%;
@@ -891,7 +951,7 @@ button:focus {
     justify-content: space-between;
 }
 .bottom-footer-left ul li a {
-    padding: 0 15px 0 0;
+    padding: 0 0 0 15px;
 }
 .social-media li a {
     padding: 8px;
