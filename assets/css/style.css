@@ -383,7 +383,7 @@ button:focus {
 }
 #mainNav {
     background-color: #fff;
-    height: 94px;
+    height: 70px;
     display: flex !important;
     transition: all ease .6s;
     border-bottom: 1px solid var(--border-color);
@@ -416,15 +416,63 @@ button:focus {
 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
     color: var(--hover-color);
 }
-#mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::after, #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link:hover::after{
-    width: 60%;
-    opacity: 1;
-    background: #321d9a;
+/*#mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::after, #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link:hover::after{*/
+/*    width: 60%;*/
+/*    opacity: 1;*/
+/*    background: #321d9a;*/
+/*}*/
+
+#mainNav .navbar-nav .nav-item .nav-link i.fa-comment-dots {
+    font-size: 30px;
 }
+
 /*---- Dropdown Menu CSS ----*/
-#mainNav ul.navbar-nav li.nav-item.dropdown-box {
-    position: relative;
+.dropdown-toggle::after {
+    display: none;
 }
+/*#mainNav ul.navbar-nav li.nav-item.dropdown-box {*/
+/*    position: relative;*/
+/*}*/
+
+.dropdown-box .dropdown-menu {
+    padding: 1.2rem 0;
+    width: 210px;
+    margin: 0 0;
+}
+.dropdown-menu.dropdown-menu-right li {
+    position: relative;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    /* font-weight: 700; */
+    padding: 0 1.2rem;
+}
+.dropdown-menu.dropdown-menu-right li span {
+    color: var(--text-color);
+}
+.dropdown-menu.dropdown-menu-right li span.points-overview-number {
+    background-color: var(--red-color);
+    position: absolute;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 4px;
+    height: 21px;
+    width: auto;
+    right: 9px;
+    font-size: 12px;
+}
+.dropdown-menu.dropdown-menu-right li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 3px 0;
+    display: block;
+    font-weight: 400;
+    color: var(--black-color);
+}
+.dropdown-menu .dropdown-divider {
+    border-top: 1px solid #e5e5e5;
+}
+
 #mainNav ul.navbar-nav li.nav-item.dropdown-box .dropdown-list {
     /*background-color: #fff;*/
     /*top: 213%;*/
@@ -474,6 +522,7 @@ button:focus {
     padding-left: 5px;
     position: relative;
     top: 2px;
+    color: #c1c1c1;
 }
 @media (min-width: 992px) {
 
@@ -554,9 +603,10 @@ button:focus {
     text-align: center;
     padding: 10px 8px 8px;
     width: 100px;
+    margin: 0 15px;
 }
 .dropdown-box img {
-    height: 34px;
+    height: 30px;
 }
 /*After Login Menu CSS End*/
 
@@ -891,11 +941,18 @@ button:focus {
     border: 1px solid rgba(0,0,0,.125);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
 }
+.earn-point-left img {
+    height: 50px;
+}
 .earn-point-right {
     margin-left: 20px;
 }
-.earn-point-left img {
-    height: 50px;
+.rides-right-title-area a {
+    border: 1px solid var(--secondary-btn-border);
+    padding: 9px 12px;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--white-color);
 }
 /*Andgarivara Rides Page Earn Points CSS End*/
 
@@ -970,14 +1027,22 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 48px;
+    justify-content: flex-end;
 }
-/*.ride-left-luggage-box .custom-control-label i {*/
-/*    color: #bab9b9;*/
-/*}*/
 .ride-left-luggage-box .custom-control i {
-    font-size: 22px;
+    font-size: 28px;
     color: #bab9b9;
 }
+.ride-left-luggage-wrap .ride-left-luggage-box:nth-child(1) i {
+    font-size: 16px !important;
+}
+.ride-left-luggage-wrap .ride-left-luggage-box:nth-child(2) i {
+    font-size: 20px !important;
+}
+/*.ride-left-luggage-wrap .ride-left-luggage-box:nth-child(1) i {*/
+/*    font-size: 18px !important;*/
+/*}*/
 .ride-left-luggage-box .custom-control-label::after, .ride-left-luggage-box .custom-checkbox .custom-control-label::before {
     opacity: 0;
 }
