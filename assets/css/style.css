@@ -191,7 +191,7 @@ figure {
 .home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i{
     color: var(--hover-color);
 }
-.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p{
+.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p, .ride-left-single-filter p{
     color: var(--black-color);
 }
 .different-bg, .rides-page-main section{
@@ -232,6 +232,9 @@ figure {
 -----------------------------------*/
 .mt-10, .ride-owner-box p{
     margin-top: 10px;
+}
+.mb-10, .ride-left-single-filter p{
+    margin-bottom: 10px;
 }
 .mb-15 {
     margin-bottom: 15px;
@@ -841,9 +844,24 @@ button:focus {
 .rides-left-search-filters {
     background-color: #fff;
     border: 1px solid gray;
+    padding: 15px 0;
+}
+.rides-left-search-filters .ride-left-single-filter {
+    border-bottom: 1px solid var(--border-color);
     padding: 15px;
 }
-
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: var(--hover-color);
+    background-color: var(--hover-color);
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+.theme-button {
+    width: 140px;
+    padding: 10px 16px;
+}
 /*Range Slider CSS*/
 .range-slider-container {
     width: 100%;
@@ -885,6 +903,32 @@ button:focus {
     border-radius: 50%;
 }
 
+/*Ride Left Luggage CSS*/
+.ride-left-luggage-box .custom-control-label {
+    display: flex;
+    flex-direction: column;
+}
+.ride-left-luggage-box .custom-control i {
+    font-size: 22px;
+}
+.ride-left-luggage-box .custom-control-label::after, .ride-left-luggage-box .custom-checkbox .custom-control-label::before {
+    opacity: 0;
+}
+.ride-left-luggage-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label, .ride-left-luggage-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label i {
+    color: var(--hover-color);
+}
+.ride-left-luggage-box .custom-control {
+    padding-left: 0;
+}
+
+/*Ride Left Preferences CSS*/
+.ride-left-preference-wrap {
+    justify-content: space-between;
+}
+.ride-left-preference-box {
+    display: flex;
+    flex-direction: column;
+}
 /*Andgarivara Rides Page Left Side CSS End*/
 
 

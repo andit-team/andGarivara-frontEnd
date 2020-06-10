@@ -155,67 +155,122 @@
     <section class="andgarivara-rides-page-area">
         <div class="container">
             <div class="row">
-
+                <div class="ride-page-top-search-menu">
+                    
+                </div>
+            </div>
+            <div class="row">
                 <!-- Rides Page Left Side Start -->
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="rides-left-search-filters">
+                        <form>
 
-                        <!-- Range slider Start -->
-                        <div class="range-slider-container">
-                            <div class="d-flex justify-content-between">
-                                <p>Radius</p>
-                                <div>
-                                    <span id="range-value"></span>
-                                    <span>km</span>
+                            <!-- Range slider Start -->
+                            <div class="ride-left-single-filter">
+                                <div class="d-flex justify-content-between">
+                                    <p>Radius</p>
+                                    <div>
+                                        <span id="range-value"></span>
+                                        <span>km</span>
+                                    </div>
+                                </div>
+                                <div class="range-slider-container">
+                                    <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
                                 </div>
                             </div>
-                            <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
-                        </div>
-                        <!-- Range slider End -->
+                            <!-- Range slider End -->
 
-                        <!-- Rides Luggage  Checkbox Start -->
-                        <form>
-                            <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" class="custom-control-input" id="luggageCheck" name="luggage">
-                                <label class="custom-control-label" for="luggageCheck">আংশিক রুটগুলি লুকান</label>
+                            <!-- Rides Luggage  Checkbox Start -->
+
+                            <div class="ride-left-single-filter">
+                                <p>ভ্রমণকারীর মালপত্র</p>
+                                <div class="ride-left-luggage-wrap d-flex justify-content-between">
+
+                                    <div class="ride-left-luggage-box">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="luggageCheck" name="luggage">
+                                            <label class="custom-control-label" for="luggageCheck">
+                                                <i class="fas fa-suitcase"></i>
+                                                ছোট
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="ride-left-luggage-box">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="luggageCheck2" name="luggage">
+                                            <label class="custom-control-label" for="luggageCheck2">
+                                                <i class="fas fa-briefcase"></i>
+                                                মধ্যম
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="ride-left-luggage-box">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="luggageCheck3" name="luggage">
+                                            <label class="custom-control-label" for="luggageCheck3">
+                                                <i class="fas fa-suitcase-rolling"></i>
+                                                বড়
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Rides Luggage  Checkbox End -->
+
+                            <!-- Rides Partial Routes Checkbox Start -->
+                            <div class="ride-left-single-filter">
+                                <p>রাইড</p>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck" name="partial_routes">
+                                    <label class="custom-control-label" for="customCheck">আংশিক রুটগুলি লুকান</label>
+                                </div>
+                            </div>
+                            <!-- Rides Partial Routes Checkbox End -->
+
+                            <!-- Rides Comfort Checkbox Start -->
+                            <div class="ride-left-single-filter">
+                                <p>স্বাচ্ছন্দ্য</p>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="comfortCheck" name="comfort_routes">
+                                    <label class="custom-control-label" for="comfortCheck">পিছনের সিটে সর্বোচ্চ 2 জন</label>
+                                </div>
+                            </div>
+                            <!-- Rides Comfort Checkbox End -->
+
+                            <!-- Rides Preferences  Checkbox Start -->
+                            <div class="ride-left-single-filter">
+                                <p>পছন্দসমূহ</p>
+                                <div class="ride-left-preference-wrap d-flex">
+                                    <div class="ride-left-preference-box">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="preferencesCheck" name="preference_route">
+                                            <label class="custom-control-label" for="preferencesCheck">পিসঙ্গীত</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="preferencesCheck2" name="preference_route">
+                                            <label class="custom-control-label" for="preferencesCheck2">শিশু</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="ride-left-preference-box">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="preferencesCheck3" name="preference_route">
+                                            <label class="custom-control-label" for="preferencesCheck3">জীবজন্তু</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="preferencesCheck4" name="preference_route">
+                                            <label class="custom-control-label" for="preferencesCheck4">ধূমপান</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Rides Preferences  Checkbox End -->
+                            <div class="ride-left-filter-button mt-20 text-center">
+                                <button class="theme-button">আপডেট</button>
                             </div>
                         </form>
-                        <!-- Rides Luggage  Checkbox End -->
-
-                        <!-- Rides Partial Routes Checkbox Start -->
-                        <form>
-                            <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" class="custom-control-input" id="customCheck" name="partial_routes">
-                                <label class="custom-control-label" for="customCheck">আংশিক রুটগুলি লুকান</label>
-                            </div>
-                        </form>
-                        <!-- Rides Partial Routes Checkbox End -->
-
-                        <!-- Rides Comfort Checkbox Start -->
-                        <form>
-                            <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" class="custom-control-input" id="comfortCheck" name="comfort_routes">
-                                <label class="custom-control-label" for="comfortCheck">পিছনের সিটে সর্বোচ্চ 2 জন</label>
-                            </div>
-                        </form>
-                        <!-- Rides Comfort Checkbox End -->
-
-                        <!-- Rides Preferences  Checkbox Start -->
-                        <form>
-                            <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" class="custom-control-input" id="preferencesCheck" name="preference_route">
-                                <label class="custom-control-label" for="preferencesCheck">পিসঙ্গীত</label>
-                                <input type="checkbox" class="custom-control-input" id="preferencesCheck2" name="preference_route">
-                                <label class="custom-control-label" for="preferencesCheck2">জীবজন্তু</label>
-                                <input type="checkbox" class="custom-control-input" id="preferencesCheck3" name="preference_route">
-                                <label class="custom-control-label" for="preferencesCheck3">শিশু</label>
-                                <input type="checkbox" class="custom-control-input" id="preferencesCheck4" name="preference_route">
-                                <label class="custom-control-label" for="preferencesCheck4">ধূমপান</label>
-                            </div>
-                        </form>
-                        <!-- Rides Preferences  Checkbox End -->
-
-                        <button class="theme-button">আপডেট</button>
 
                     </div>
                 </div>
