@@ -179,6 +179,7 @@ figure {
     --border-color: #EDF1F4;
     --red-color: #ff4b54;
     --bg-secondary: #F7F8FA;
+    --secondary-btn-border: #d6d6d6;
 }
 
 /*--------------------------------
@@ -191,7 +192,7 @@ figure {
 .home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i{
     color: var(--hover-color);
 }
-.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p, .ride-left-single-filter p{
+.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
     color: var(--black-color);
 }
 .different-bg, .rides-page-main section{
@@ -245,7 +246,7 @@ figure {
 .mb-20 {
     margin-bottom: 20px;
 }
-.mb-30, .hero-area-heading{
+.mb-30, .hero-area-heading, .rides-right-title-area{
     margin-bottom: 30px;
 }
 .mt-10 {
@@ -425,20 +426,38 @@ button:focus {
     position: relative;
 }
 #mainNav ul.navbar-nav li.nav-item.dropdown-box .dropdown-list {
+    /*background-color: #fff;*/
+    /*top: 213%;*/
+    /*position: absolute;*/
+    /*transition: .5s;*/
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+    /*width: 150px;*/
+    /*padding: 10px;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 12px 15px rgba(0,0,0,.10);*/
+    /*border: 1px solid var(--heading-color);*/
+    /*z-index: 99;*/
+    /*left: -86px;*/
+}
+
+
+#mainNav ul.navbar-nav li.nav-item.dropdown-box .dropdown-list {
     background-color: #fff;
     top: 213%;
     position: absolute;
     transition: .5s;
     visibility: hidden;
     opacity: 0;
-    width: 150px;
+    width: 199px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 12px 15px rgba(0,0,0,.10);
     border: 1px solid var(--heading-color);
     z-index: 99;
-    left: -86px;
+    left: -140px;
 }
+
 #mainNav ul.navbar-nav li.nav-item.dropdown-box:hover .dropdown-list {
     top: 100%;
     visibility: visible;
@@ -526,6 +545,20 @@ button:focus {
 .mean-container .mean-nav ul li.mean-last a {
     border-top: 0;
 }
+
+/*After Login Menu CSS Start*/
+#mainNav .navbar-nav .nav-item .nav-link.theme-button {
+    background-color: transparent;
+    font-weight: 400;
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    padding: 10px 8px 8px;
+    width: 100px;
+}
+.dropdown-box img {
+    height: 34px;
+}
+/*After Login Menu CSS End*/
 
 /*-------------------------------------------
             4. Chat Bot Area
@@ -840,102 +873,44 @@ button:focus {
 -------------------------------------------*/
 
 /*Andgarivara Rides Page Top Search Menu CSS Start*/
-
 .ride-page-top-search-menu {
     background-color: #f6eddd;
     padding: 100px 0;
     width: 100%;
 }
-
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-#map {
-    height: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-#description {
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-}
-
-#infowindow-content .title {
-    font-weight: bold;
-}
-
-#infowindow-content {
-    display: none;
-}
-
-#map #infowindow-content {
-    display: inline;
-}
-
-.pac-card {
-    margin: 10px 10px 0 0;
-    border-radius: 2px 0 0 2px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    font-family: Roboto;
-}
-
-#pac-container {
-    padding-bottom: 12px;
-    margin-right: 12px;
-}
-
-.pac-controls {
-    display: inline-block;
-    padding: 5px 11px;
-}
-
-.pac-controls label {
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: 300;
-}
-
-#pac-input {
-    background-color: #fff;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    margin-left: 12px;
-    padding: 0 11px 0 13px;
-    text-overflow: ellipsis;
-    width: 400px;
-}
-
-#pac-input:focus {
-    border-color: #4d90fe;
-}
-
-#title {
-    color: #fff;
-    background-color: #4d90fe;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 6px 12px;
-}
 /*Andgarivara Rides Page Top Search Menu CSS End*/
+
+/*Andgarivara Rides Page Earn Points CSS Start*/
+.rides-right-earn-points {
+    background: #fff;
+}
+.rides-right-earn-points {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+}
+.earn-point-right {
+    margin-left: 20px;
+}
+.earn-point-left img {
+    height: 50px;
+}
+/*Andgarivara Rides Page Earn Points CSS End*/
 
 /*Andgarivara Rides Page Left Side CSS Start*/
 .rides-left-search-filters {
     background-color: #fff;
-    border: 1px solid gray;
+    border: 1px solid rgba(0,0,0,.125);
     padding: 15px 0;
 }
 .rides-left-search-filters .ride-left-single-filter {
     border-bottom: 1px solid var(--border-color);
     padding: 15px;
+}
+.custom-control-label, .custom-control {
+    cursor: pointer;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
@@ -994,9 +969,14 @@ html, body {
 .ride-left-luggage-box .custom-control-label {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
+/*.ride-left-luggage-box .custom-control-label i {*/
+/*    color: #bab9b9;*/
+/*}*/
 .ride-left-luggage-box .custom-control i {
     font-size: 22px;
+    color: #bab9b9;
 }
 .ride-left-luggage-box .custom-control-label::after, .ride-left-luggage-box .custom-checkbox .custom-control-label::before {
     opacity: 0;
@@ -1197,6 +1177,7 @@ html, body {
     left: 0;
     top: -142px;
     height: 242px;
+    z-index: 9;
 }
 .footer-upper-download-app-area .download-button a img {
     height: 40px;
