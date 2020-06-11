@@ -164,7 +164,12 @@ h6 {
 figure {
     margin: 0 0 0;
 }
-
+.card-body{
+    padding: 0;
+}
+.card-title {
+    margin-bottom: 0;
+}
 /*--------------------------------
             2.1 Theme Color
 -----------------------------------*/
@@ -192,7 +197,7 @@ figure {
 .home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i{
     color: var(--hover-color);
 }
-.text-black-color, .ride-list .card h5, .ride-list .card h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
+.text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
     color: var(--black-color);
 }
 .different-bg, .rides-page-main section{
@@ -234,7 +239,7 @@ figure {
 .mt-10, .ride-owner-box p{
     margin-top: 10px;
 }
-.mb-10, .ride-left-single-filter p{
+.mb-10, .ride-left-single-filter p, .dont-find-a-ride img{
     margin-bottom: 10px;
 }
 .mb-15 {
@@ -641,7 +646,6 @@ button:focus {
     border: 1px solid #d6d6d6;
     text-align: center;
     padding: 10px 8px 8px;
-    width: 100px;
     margin: 0 15px;
 }
 .dropdown-box img {
@@ -729,9 +733,6 @@ button:focus {
     display: flex;
     align-items: center;
 }
-/*.hero-area-wrapper {*/
-/*    align-items: center;*/
-/*}*/
 
 /*Andgarivara Hero Left Content*/
 .andgarivara-left-content {
@@ -1016,7 +1017,7 @@ button:focus {
 .custom-control-input:focus~.custom-control-label::before {
     box-shadow: none;
 }
-.theme-button {
+.ride-left-filter-button .theme-button {
     width: 140px;
     padding: 10px 16px;
 }
@@ -1102,21 +1103,21 @@ button:focus {
 }
 /*Andgarivara Rides Page Left Side CSS End*/
 
-
 /*Andgarivara Rides Page Right Side CSS Start*/
 
 /*Ride List CSS*/
-.ride-list {
+.ride-list-card {
     margin-bottom: 30px;
     display: block;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    min-height: 200px;
 }
-.ride-list .card {
+.ride-list-card .ride-list {
+/*.ride-list .card {*/
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    min-height: 200px;
 }
 .ride-owner-img-box {
     background-color: #d1d1d1;
@@ -1134,7 +1135,8 @@ button:focus {
 .ride-owner-img-box span img {
     height: 24px;
 }
-.ride-list .card .rental-car-ratings img {
+.ride-list-card .ride-list .rental-car-ratings img {
+/*.ride-list .card .rental-car-ratings img {*/
     height: 14px;
 }
 .rental-car-ratings p {
@@ -1142,7 +1144,8 @@ button:focus {
     color: var(--text-color);
 }
 /*Ride Card Middle Content*/
-.ride-list .card .ride-list-middle-content {
+.ride-list-card .ride-list .ride-list-middle-content {
+/*.ride-list .card .ride-list-middle-content {*/
     width: 60%;
 }
 .ride-list-middle-content div {
@@ -1178,8 +1181,41 @@ button:focus {
     color: #FF766B;
 }
 
+/*Don't' Find A Ride CSS*/
+.dont-find-a-ride img {
+    height: 200px;
+}
+.dont-find-a-ride .card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    padding: 30px;
+}
+.dont-find-a-ride .card-text {
+    margin: 20px 0;
+}
+
 /*-------------------------------------------
     10. Andgarivara Rides Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    11. Andgarivara Rental Page Area Start
+-------------------------------------------*/
+
+/*Rental Google Map Area CSS*/
+.andgarivara-rental-page-area.padding-zero {
+    height: calc(100% - 70px);
+}
+.rental-map-area {
+    max-height: 100%;
+    height: 92vh;
+    min-height: 400px;
+}
+.rental-map-area iframe {
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------------
+    11. Andgarivara Rental Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
@@ -1552,6 +1588,15 @@ button:focus {
           display: none!important;
       }
 
+      /*Ride Page CSS Start*/
+      .ride-list-card .ride-list {
+          padding: 20px;
+      }
+      .ride-list-card .ride-list .ride-list-middle-content {
+          width: 54%;
+      }
+      /*Ride Page CSS End*/
+
   }
 
 @media only screen and (max-width: 768px) {
@@ -1599,6 +1644,15 @@ button:focus {
           margin-top: 6px;
       }
 
+      /*Ride Page CSS Start*/
+      .rides-left-search-filters {
+          margin-bottom: 30px;
+      }
+      .ride-list-card .ride-list .ride-list-middle-content {
+          width: 52%;
+      }
+      /*Ride Page CSS End*/
+
       /*Footer CSS*/
       .footer-widget {
           border-top: 1px solid rgba(44, 212, 217, .2);
@@ -1632,6 +1686,37 @@ button:focus {
     .andgarivara-hero-img img {
         height: 250px;
     }
+}
+@media only screen and (max-width: 510px){
+
+    /*Ride Page  Start*/
+    .ride-list-card .ride-list {
+        flex-direction: column;
+    }
+    .ride-owner-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .ride-owner-img-box {
+        height: 60px;
+        width: 60px;
+        margin: 0 auto;
+    }
+    .ride-owner-img-box img {
+        height: auto;
+        width: 100%;
+    }
+    .ride-list-card .ride-list .ride-list-middle-content {
+        width: 100%;
+    }
+    .ride-list-last-content {
+        flex-direction: row;
+        min-height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*Ride Page  Start*/
+
 }
 
   @media only screen and (min-width: 480px) and (max-width: 766px){
