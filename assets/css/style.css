@@ -601,6 +601,7 @@ button:focus {
     display: flex;
     position: relative;
     top: 16px;
+    overflow: scroll!important;
 }
 .mean-container a.meanmenu-reveal span {
     background-color: var(--heading-color);
