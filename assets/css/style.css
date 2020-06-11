@@ -203,11 +203,17 @@ figure {
 .different-bg, .rides-page-main section{
     background-color: var(--bg-secondary);
 }
+.default-p-color{
+    color: #777c87;
+}
 /*--------------------------------
     2.3 Theme Font Style
 -----------------------------------*/
 .font-bold, .footer-widget p{
     font-weight: 700;
+}
+.font-12, .rental-car-location p{
+    font-size: 12px;
 }
 .font-14, .blog-author-box p{
     font-size: 14px;
@@ -1125,6 +1131,10 @@ button:focus {
     height: 80px;
     width: 80px;
 }
+.ride-owner-img-box img {
+    height: auto;
+    width: 100%;
+}
 .ride-owner-box {
     text-align: center;
 }
@@ -1157,7 +1167,7 @@ button:focus {
 .ride-list-middle-content div span i {
     margin-right: 5px;
 }
-.ride-list-middle-content div span i.fas.fa-bolt {
+.ride-list-middle-content div span i.fas.fa-bolt, .rental-car-list-content div span i.fas.fa-bolt {
     color: #f2cc04;
     font-size: 18px;
 }
@@ -1200,7 +1210,37 @@ button:focus {
 /*-------------------------------------------
     11. Andgarivara Rental Page Area Start
 -------------------------------------------*/
-
+/*Rental Car List Left Side*/
+.rental-car-list-card {
+    min-height: 180px;
+}
+.rental-car-list-card .rental-list {
+    padding: 0;
+    justify-content: flex-start;
+}
+.rental-car-list-photo-wrap img {
+    height: 185px;
+}
+.rental-car-list-content {
+    padding: 15px;
+}
+.rental-car-list-footer {
+    border-top: 1px solid #EDF0F2;
+    padding: 15px;
+}
+.andgarivara-rental-page-area .ride-owner-img-box {
+    height: 40px;
+    width: 40px;
+}
+.rental-owner-name-ratings {
+    margin-left: 10px;
+}
+.rental-owner-name-ratings p {
+    margin-top: 0;
+}
+.rental-car-location p i{
+   margin-right: 5px;
+}
 /*Rental Google Map Area CSS*/
 .andgarivara-rental-page-area.padding-zero {
     height: calc(100% - 70px);
