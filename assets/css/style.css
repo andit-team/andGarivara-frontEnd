@@ -529,11 +529,11 @@ button:focus {
 }
  /* Mean Menu / Mobile Menu Style */
 .mean-container .mean-nav ul {
-    margin: 14px 0 0 0;
+    margin: 0 0 0 0;
     background-color: transparent;
 }
 .mean-container .mean-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, .1);
+    /*background-color: rgba(255, 255, 255, .1);*/
     color: #fff !important;
 }
 .mean-container .mean-bar {
@@ -549,16 +549,41 @@ button:focus {
     height: 100%;
 }
 .mean-container .mean-nav ul li a.mean-expand {
+    /*padding: 0 !important;*/
+    /*margin-top: 3px;*/
+    /*top: -2px;*/
+    /*background: rgba(255,255,255,.1);*/
+    /*width: 45px;*/
+    /*height: 45px;*/
+    /*text-align: center;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+.mean-container .mean-nav ul li a.mean-expand {
     padding: 0 !important;
     margin-top: 3px;
-    top: -2px;
-    background: rgba(255,255,255,.1);
-    width: 45px;
-    height: 45px;
-    text-align: center;
+    top: -5px;
+    /*background: rgba(255,255,255,.1);*/
+    width: 100%;
+    height: 51px;
+    text-align: right;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    left: -20px;
+}
+.mean-container .mean-nav ul li li a {
+    /*width: 80%;*/
+    /*padding: 1em 13% 1em 7%;*/
+    /*border-top: 1px solid #f1f1f1;*/
+    /*border-top: 1px solid rgba(0, 0, 0, .25);*/
+    /*!* opacity: .75; *!*/
+    /*filter: alpha(opacity=75);*/
+    /*text-shadow: none !important;*/
+    /*visibility: visible;*/
+    font-size: inherit;
+    background: rgba(255,255,255,.1);
 }
 .mobile-logo {
     position: relative;
@@ -575,7 +600,7 @@ button:focus {
     background-color: var(--heading-color);
     display: flex;
     position: relative;
-    top: 20px;
+    top: 16px;
 }
 .mean-container a.meanmenu-reveal span {
     background-color: var(--heading-color);
@@ -583,6 +608,7 @@ button:focus {
   .mean-container .mean-nav ul li a{
       color: #fff;
       border-top: 1px solid rgba(44, 212, 217, .2);
+      font-size: 14px;
   }
   .mean-container .mean-nav ul li a:hover {
   }
