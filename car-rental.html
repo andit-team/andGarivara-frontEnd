@@ -225,8 +225,41 @@
 
             <div class="row">
                 <!-- Rental Page Left Side Start -->
-                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 padding-zero">
                     <div class="rental-left-side-area">
+
+                        <!-- Location And Datepicker Search Area Start -->
+                        <div class="location-datepicker-search">
+                            <div class="location-search-box">
+                                <form>
+                                    <div class="input-group mb-3 position-relative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Find a car near you...">
+                                        <span class="use-my-location position-absolute"><i class="fas fa-paper-plane"></i>Use my location</span>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="datepicker-search-box-wrap">
+                                <form>
+                                    <div class="datepicker-search-box">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                            </div>
+<!--                                            <input type="text" id="datepicker" class="form-control" placeholder="Username">-->
+                                            <input id="datepicker" width="276" />
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <!-- Location And Datepicker Search Area End -->
 
                         <ul class="all-rental-cars-list-wrap">
 
@@ -430,7 +463,7 @@
                                         <div class="rental-car-list-footer d-flex justify-content-between align-items-center">
                                             <div class="ride-owner-box d-flex align-items-center">
                                                 <div class="ride-owner-img-box position-relative">
-                                                    <img src="assets/img/rides-img/owner1.png" alt="Rental">
+                                                    <img src="assets/img/rides-img/owner.png" alt="Rental">
                                                 </div>
                                                 <div class="rental-owner-name-ratings">
                                                     <p>সুরাইয়া আয়শা</p>
@@ -588,7 +621,7 @@
                 <!-- Rental Page Left Side End -->
 
                 <!-- Rental Page Right Side Start -->
-                <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7 padding-zero">
                     <div class="rental-map-area">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.692894099336!2d89.56553290859522!3d22.81369757864095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c2c74d47ef49bb!2sAND%20IMPEX%20BANGLADESH!5e0!3m2!1sen!2sbd!4v1583742696221!5m2!1sen!2sbd" style="border:0;" allowfullscreen=""></iframe>
                     </div>
@@ -621,6 +654,9 @@
 
 <!--Owl Carousel JS Script-->
 <script src="assets/js/owl.carousel.min.js"></script>
+
+<!--Datepicker JS Script-->
+<script src="assets/vendor/datepicker/datepicker.min.js"></script>
 
 <!--Mean Menu/Mobile Menu Script-->
 <script src="assets/js/jquery.meanmenu.min.js"></script>

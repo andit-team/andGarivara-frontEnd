@@ -40,6 +40,7 @@
 @import url('../vendor/bootstrap/css/bootstrap.min.css');
 @import url('../vendor/fontawesome-free/css/all.min.css');
 @import url('../vendor/flat-icon/flaticon.css');
+@import url('../vendor/datepicker/datepicker.min.css');
 @import url('../vendor/bangla-fonts/solaimanlipi.css');
 @import url('venobox.css');
 @import url('animate.css');
@@ -137,6 +138,7 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
     background-color: #fff;
     height: 50px;
     color: #777c87;
+    border: 1px solid #B9C1C9;
 }
   .form-control:focus {
       background-color: #fff;
@@ -1210,7 +1212,58 @@ button:focus {
 /*-------------------------------------------
     11. Andgarivara Rental Page Area Start
 -------------------------------------------*/
+.andgarivara-rental-page-area {
+    height: calc(100% - 70px);
+}
+
 /*Rental Car List Left Side*/
+
+/* Location and Datepicker Search Area CSS Start*/
+
+/* Location Field CSS Start*/
+.andgarivara-rental-page-area .input-group-text {
+    background-color: transparent;
+    color: var(--hover-color);
+}
+.andgarivara-rental-page-area .location-search-box form input {
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.use-my-location {
+    background-color: #EDF0F2;
+    right: 9px;
+    top: 8px;
+    bottom: 0;
+    height: 33px;
+    font-size: 12px;
+    color: #1B2530;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.use-my-location.position-absolute i {
+    margin-right: 5px;
+}
+/* Location Field CSS End*/
+
+/* Date And Time Picker Component Field CSS Start*/
+
+/* Date And Time Picker Component Field CSS End*/
+
+/* Location Search Component Start*/
+
+/* Location Search Component End*/
+
+/* Location and Datepicker Search Area CSS End*/
+
+.rental-left-side-area {
+    height: 864px;
+    overflow-y: scroll;
+    padding: 15px 15px 0;
+}
 .rental-car-list-card {
     min-height: 180px;
 }
@@ -1241,14 +1294,10 @@ button:focus {
 .rental-car-location p i{
    margin-right: 5px;
 }
+
 /*Rental Google Map Area CSS*/
-.andgarivara-rental-page-area.padding-zero {
-    height: calc(100% - 70px);
-}
 .rental-map-area {
-    max-height: 100%;
-    height: 92vh;
-    min-height: 400px;
+    height: calc(100% - 3px);
 }
 .rental-map-area iframe {
     width: 100%;
@@ -1262,7 +1311,6 @@ button:focus {
     18. FAQ Area Start
 -------------------------------------------*/
 .faq-area {
-    background-color: #721c24;
     padding: 100px 0 80px;
     overflow: hidden;
 }

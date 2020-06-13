@@ -42,14 +42,21 @@
   // Tooltip JS
     $('[data-toggle="tooltip"]').tooltip();
 
-    // Range Slider JS
+    // Datepicker JS Start
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
+    // Datepicker JS End
+
+    // Range Slider JS Start
     var slider = document.getElementById("myRange");
     var output = document.getElementById("range-value");
     output.innerHTML = slider.value;
 
     slider.oninput = function() {
         output.innerHTML = this.value;
-    }
+    };
+    // Range Slider JS End
 
   //----- Initialize WOW JS ------
   new WOW().init();
