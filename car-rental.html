@@ -225,7 +225,7 @@
 
             <div class="row">
                 <!-- Rental Page Left Side Start -->
-                <div class="col-12 col-sm-12 col-md-6 col-lg-5 padding-zero">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 padding-zero">
                     <div class="rental-left-side-area">
 
                         <!-- Location And Datepicker Search Area Start -->
@@ -243,18 +243,91 @@
                             </div>
 
                             <div class="datepicker-search-box-wrap">
-                                <form>
-                                    <div class="datepicker-search-box">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                <form class="d-flex">
+                                    <div class="date-time-wrap-box">
+                                        <div class="date-time-picker-container d-flex mb-3">
+                                            <div class="datepicker-search-box">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <input id="datepicker" placeholder="06/14/2020" />
+                                                </div>
                                             </div>
-<!--                                            <input type="text" id="datepicker" class="form-control" placeholder="Username">-->
-                                            <input id="datepicker" width="276" />
+                                            <div class="time-search-box">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <select id="time-dropdown">
+                                                        <option value="1">00:30</option>
+                                                        <option value="2">02:30</option>
+                                                        <option value="3">03:30</option>
+                                                        <option value="4">4:30</option>
+                                                        <option value="5">05:30</option>
+                                                        <option value="6">06:30</option>
+                                                        <option value="7">07:30</option>
+                                                        <option value="8">08:30</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-
+                                    </div>
+                                    <div class="date-time-wrap-box">
+                                        <div class="date-time-picker-container d-flex mb-3">
+                                            <div class="datepicker-search-box">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <input id="datepicker2" placeholder="06/14/2020" />
+                                                </div>
+                                            </div>
+                                            <div class="time-search-box">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <select id="time-dropdown2">
+                                                        <option value="1">00:30</option>
+                                                        <option value="2">02:30</option>
+                                                        <option value="3">03:30</option>
+                                                        <option value="4">4:30</option>
+                                                        <option value="5">05:30</option>
+                                                        <option value="6">06:30</option>
+                                                        <option value="7">07:30</option>
+                                                        <option value="8">08:30</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
+                            </div>
+
+                            <div class="search-car-model-brand-area mb-3">
+                                <div class="search-car-model-brand-inner mb-3">
+                                    <form class="d-flex justify-content-between align-items-center">
+                                        <div class="input-group position-relative">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Search for car model or brand...">
+                                        </div>
+                                        <button class="theme-button">Filters</button>
+                                    </form>
+                                </div>
+                                <div class="rental-cars-filter-result d-flex justify-content-between">
+                                    <p>Showing 40 of 100+ cars for rent</p>
+
+                                    <form>
+                                        <label for="rental-filters">Short by:</label>
+                                        <select name="rental-filters" id="rental-filters">
+                                            <option value="Recommended">Recommended</option>
+                                            <option value="Price(Lowest first)">Price(Lowest first)</option>
+                                        </select>
+                                    </form>
+                                </div>
                             </div>
 
                         </div>
@@ -621,7 +694,7 @@
                 <!-- Rental Page Left Side End -->
 
                 <!-- Rental Page Right Side Start -->
-                <div class="col-12 col-sm-12 col-md-6 col-lg-7 padding-zero">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-6 padding-zero">
                     <div class="rental-map-area">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.692894099336!2d89.56553290859522!3d22.81369757864095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c2c74d47ef49bb!2sAND%20IMPEX%20BANGLADESH!5e0!3m2!1sen!2sbd!4v1583742696221!5m2!1sen!2sbd" style="border:0;" allowfullscreen=""></iframe>
                     </div>

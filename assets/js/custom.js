@@ -46,7 +46,15 @@
     $('#datepicker').datepicker({
         uiLibrary: 'bootstrap4'
     });
+    $('#datepicker2').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
     // Datepicker JS End
+
+    // Select Time Picker JS Start
+    $('#time-dropdown').dropdown();
+    $('#time-dropdown2').dropdown();
+    // Select Time Picker JS End
 
     // Range Slider JS Start
     var slider = document.getElementById("myRange");
