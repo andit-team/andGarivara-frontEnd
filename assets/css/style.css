@@ -1655,6 +1655,33 @@ button:focus {
 -------------------------------------------*/
 
 /*-------------------------------------------
+    19. Sticky Menu Header Area Start
+-------------------------------------------*/
+.sticky-menu-header {
+    background-color: gray;
+    /*padding: 15px 0;*/
+    /*position: sticky;*/
+    height: 70px;
+    /*top: 0;*/
+    /*z-index: 99;*/
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.sticky-menu-header ul li {
+    display: inline;
+}
+.sticky-menu-header ul li a {
+    display: inline-block;
+    padding: 15px;
+}
+/*-------------------------------------------
+    19. sticky-menu-header Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
     21. Footer Area/Copyright Area
 -------------------------------------------*/
 .andgarivara-footer-area {
