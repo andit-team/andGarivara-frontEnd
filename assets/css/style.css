@@ -297,6 +297,23 @@ section{
 .padding-zero{
     padding: 0 0;
 }
+.page-banner-area {
+    min-height: 500px;
+    height: auto;
+    background-color: #018ec9;
+    background-image: url("../img/leasing-cars-img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.page-banner-overlay {
+    background: rgba(24,198,242,.5);
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
 .default-text-shortness, .home-popular-rental-cars .popular-rental-car-title,
 .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5, .home-popular-rental-cars .popular-rental-car-title {
     white-space: nowrap;
@@ -2043,6 +2060,11 @@ button:focus {
       }
 
   }
+@media only screen and (max-width:320px){
+    .rental-car-list-photo-wrap img {
+        height: 196px !important;
+    }
+}
   /*-------------------------------------------
         24. Responsive Design End
   -------------------------------------------*/
