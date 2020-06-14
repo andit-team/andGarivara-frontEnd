@@ -202,11 +202,17 @@ figure {
 .text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
     color: var(--black-color);
 }
-.different-bg, .rides-page-main section{
+.bg-white, .location-datepicker-search{
+    background-color: #fff;
+}
+.different-bg, .rides-page-main section, .rental-cars-filter-result{
     background-color: var(--bg-secondary);
 }
 .default-p-color{
     color: #777c87;
+}
+.svg-green-40{
+    fill: #018ec9!important;
 }
 /*--------------------------------
     2.3 Theme Font Style
@@ -226,7 +232,7 @@ figure {
 .font-16, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
     font-size: 16px;
 }
-.font-18, .home-service-box .h-s-right h4 {
+.font-18, .home-service-box .h-s-right h4, .call-to-action-content p {
     font-size: 18px;
 }
 
@@ -840,7 +846,7 @@ button:focus {
     background-color: var(--red-color);
     padding: 44px 0;
 }
-.call-to-action-content h4 {
+.call-to-action-content h4, .call-to-action-content p {
     color: var(--white-color);
 }
 /*-------------------------------------------
@@ -854,7 +860,7 @@ button:focus {
     padding: 100px 0 0;
 }
 .service-showcase-wrap {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 .home-services-subtitle a i {
     margin-left: 7px;
@@ -866,6 +872,7 @@ button:focus {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 30px;
     box-shadow: 0 0 8px 6px rgba(2,68,155,.03);
 }
 .home-service-box:hover {
@@ -942,14 +949,14 @@ button:focus {
     transition: .5s;
     width: 100%;
 }
-.home-popular-leasing-cars .h-s-img img:hover {
+.home-popular-leasing-cars .home-service-box:hover .h-s-img img {
     transform: scale(1.1);
     background-color: var(--hover-color);
 }
 .home-popular-leasing-cars .h-s-left, .home-blog-area .h-s-left {
     padding: 10px;
 }
-.home-popular-leasing-cars .rental-car-img-tag {
+.home-popular-leasing-cars .rental-car-img-tag{
     background-color: var(--red-color);
     border-radius: 50%;
     left: 23px;
@@ -1231,6 +1238,7 @@ button:focus {
 -------------------------------------------*/
 .andgarivara-rental-page-area {
     height: calc(100% - 70px);
+    background-color: var(--bg-secondary);
 }
 
 /*Rental Car List Left Side*/
@@ -1365,7 +1373,11 @@ button:focus {
 /* Rental Car Name Brand Search End*/
 
 /* Rental Car Filter Results Start*/
+.rental-cars-filter-result {
+    padding-top: 20px;
+}
 .rental-cars-filter-result select {
+    background-color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.76297 11.8899C9.54611 11.547 10.1726 10.3225 10.7991 9.68571C11.2299 9.19589 11.5823 8.70607 11.9347 8.11829C12.248 7.62847 13.2269 6.69782 13.3052 6.69782C14.5191 6.35495 14.01 4.00382 12.7962 4.34669C11.8172 4.5916 11.0732 5.71818 10.4076 6.59985C9.82021 7.38356 8.99791 8.16727 8.48887 9.04894C8.41056 9.09792 8.33224 9.19589 8.29309 9.24487C8.21477 9.19589 8.17561 9.1469 8.05814 9.04894C7.70573 8.26523 6.88343 7.53051 6.37438 6.94273C5.51293 6.01207 4.57316 4.88549 3.51592 4.19975C3.39845 4.10178 3.24182 4.00382 3.04603 4.00382C3.00687 4.00382 3.00687 4.00382 2.96772 4.00382C1.98879 3.90586 1.63638 5.71818 2.45867 6.30596C3.79002 7.18763 5.00389 8.65709 6.06113 9.97959C6.7268 10.8613 7.62741 12.4287 8.76297 11.8899Z' fill='%23909BA3' /%3E%3C/svg%3E%0A") !important;
     background-position: calc(100% - 12px);
     background-repeat: no-repeat;
@@ -1457,6 +1469,58 @@ button:focus {
 }
 /*-------------------------------------------
     11. Andgarivara Rental Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    12. Andgarivara Leasing Page Area Start
+-------------------------------------------*/
+/*Leasing Title*/
+.leasing-section-title {
+    margin-bottom: 70px;
+}
+.leasing-section-title p {
+    margin-top: 20px;
+    font-family: 'SolaimanLipiBold';
+    font-size: 20px;
+}
+.leasing-car-monthly-payment-title {
+    color: var(--hover-color) !important;
+}
+.leasing-page-cars-area .popular-rental-car-title .leasing-old-payment {
+    text-decoration: line-through;
+    color: var(--red-color);
+}
+.leasing-seat-number-tag {
+    background-color: var(--black-color);
+    color: #fff;
+    border-radius: 15px;
+    right: 14px;
+    top: 14px;
+    padding: 5px 8px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    z-index: 9;
+}
+.car-sold-out-box .leasing-seat-number-tag{
+    background-color: #F3AE29;
+}
+/*Leasing Page aside content component Start*/
+.car-leasing-page-aside-component h5 {
+    color: var(--black-color);
+    /*font-family: 'SolaimanLipiBold';*/
+    font-size: 21px;
+}
+.car-leasing-page-aside-component ul li {
+    margin-top: 15px;
+    color: var(--black-color);
+}
+/*Leasing Page aside content component End*/
+/*-------------------------------------------
+    12. Andgarivara Leasing Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
