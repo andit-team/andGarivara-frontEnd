@@ -307,6 +307,13 @@ section{
 .padding-zero{
     padding: 0 0;
 }
+.pagination .page-item.active .page-link{
+    background-color: var(--heading-color);
+    border-color: var(--heading-color);
+}
+.pagination .page-link{
+    color: var(--heading-color);
+}
 .page-banner-area {
     min-height: 500px;
     height: auto;
