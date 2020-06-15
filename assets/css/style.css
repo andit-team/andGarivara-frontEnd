@@ -1658,12 +1658,10 @@ button:focus {
     19. Sticky Menu Header Area Start
 -------------------------------------------*/
 .sticky-menu-header {
-    background-color: gray;
-    /*padding: 15px 0;*/
-    /*position: sticky;*/
+    background-color: #fff;
     height: 70px;
-    /*top: 0;*/
-    /*z-index: 99;*/
+    border: 1px solid var(--bg-color);
+    box-shadow: 0 4px 10px 0 rgba(2,68,155,.08);
 }
 .sticky{
     position: sticky;
@@ -1671,11 +1669,24 @@ button:focus {
     z-index: 99;
 }
 .sticky-menu-header ul li {
-    display: inline;
+    /*display: inline;*/
 }
 .sticky-menu-header ul li a {
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 15px;
+}
+.sticky-menu-header ul li a span {
+    background-color: #777c87;
+    border-radius: 9999px;
+    padding: 5px;
+    color: #fff;
+    margin-left: 8px;
+    width: auto;
+    height: 30px;
+    min-width: 30px;
+    text-align: center;
+    font-size: 14px;
+    /*display: inline-block;*/
 }
 /*-------------------------------------------
     19. sticky-menu-header Area End
