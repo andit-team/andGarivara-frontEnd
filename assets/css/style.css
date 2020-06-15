@@ -329,11 +329,6 @@ section{
     align-items: center;
     flex-direction: column;
 }
-/*{*/
-/*    flex-direction: column;*/
-/*    align-content: center;*/
-/*    justify-content: center;*/
-/*}*/
 .default-text-shortness, .home-popular-rental-cars .popular-rental-car-title,
 .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5, .home-popular-rental-cars .popular-rental-car-title {
     white-space: nowrap;
@@ -352,6 +347,9 @@ section{
 .menu-no-style a {
     padding: 0 15px 0 7px !important;
     font-weight: bold;
+}
+hr {
+    border-top: 1px solid rgba(44, 212, 217, .2);
 }
 /*Flat Icon Default Settings*/
 [class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
@@ -1660,7 +1658,6 @@ button:focus {
 .sticky-menu-header {
     background-color: #fff;
     height: 70px;
-    border: 1px solid var(--bg-color);
     box-shadow: 0 4px 10px 0 rgba(2,68,155,.08);
 }
 .sticky{
@@ -1672,8 +1669,18 @@ button:focus {
     /*display: inline;*/
 }
 .sticky-menu-header ul li a {
-    /*display: inline-block;*/
-    padding: 15px;
+    display: inline-block;
+    padding: 21px 0;
+    margin-right: 30px;
+    border-bottom: 3px solid #fff;
+}
+.sticky-menu-header ul li.active a {
+    color: var(--black-color);
+    /*border-bottom: 3px solid var(--black-color);*/
+    border-color: var(--black-color);
+}
+.sticky-menu-header ul li.active a span {
+    background-color: var(--black-color);
 }
 .sticky-menu-header ul li a span {
     background-color: #777c87;
@@ -1687,6 +1694,13 @@ button:focus {
     text-align: center;
     font-size: 14px;
     /*display: inline-block;*/
+}
+.sticky-menu-header .menu-no-style {
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    /* align-content: center; */
+    height: 100%;
 }
 /*-------------------------------------------
     19. sticky-menu-header Area End
@@ -1718,7 +1732,7 @@ button:focus {
     margin: 15px 0 20px;
 }
 .footer-upper-area hr, .footer-middle-area hr {
-    background-color: rgba(44, 212, 217, .2);
+    /*background-color: rgba(44, 212, 217, .2);*/
     margin: 50px 0;
 }
 
@@ -1972,6 +1986,9 @@ button:focus {
       .andgarivara-hero-area {
           height: auto;
       }
+      .page-banner-area{
+          padding-top: 50px;
+      }
       /*Home Services CSS*/
       .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
           /*white-space: nowrap;*/
@@ -1998,6 +2015,12 @@ button:focus {
       .rental-car-list-card .ride-list.rental-list {
           padding: 0;
       }
+
+      /*Leasing Page CSS*/
+      .leasing-page-questions-answer-area .car-leasing-page-aside-component {
+          margin-bottom: 30px;
+      }
+
       /*Footer CSS*/
       .footer-middle-area .row .col-12:last-child .footer-widget, .rental-map-area {
           display: none;
@@ -2080,6 +2103,11 @@ button:focus {
       }
       /*Ride Page CSS End*/
 
+      /*Leasing Page CSS Start*/
+      .car-leasing-page-aside-component {
+          margin-bottom: 30px;
+      }
+
       /*Footer CSS*/
       .footer-widget {
           border-top: 1px solid rgba(44, 212, 217, .2);
@@ -2089,6 +2117,12 @@ button:focus {
       .footer-upper-left-part img {
           top: -188px;
           height: 160px;
+      }
+      .footer-upper-area hr {
+          display: none;
+      }
+      .footer-middle-area hr {
+          margin: 30px 0;
       }
 
   }
@@ -2200,7 +2234,7 @@ button:focus {
       }
 
       /*Footer CSS*/
-      .footer-bottom-part, .bottom-footer-left ul {
+      .footer-bottom-part {
           flex-direction: column;
       }
       /*.bottom-footer-left ul {*/
@@ -2208,6 +2242,10 @@ button:focus {
       /*}*/
       .bottom-footer-left ul li {
           margin-bottom: 12px;
+      }
+
+      .bottom-footer-left ul li a {
+          padding: 0 0 0 8px;
       }
 
   }
