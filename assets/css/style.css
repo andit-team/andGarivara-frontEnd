@@ -1668,7 +1668,6 @@ button:focus {
 -------------------------------------------*/
 .sticky-menu-header {
     background-color: #fff;
-    height: 70px;
     box-shadow: 0 4px 10px 0 rgba(2,68,155,.08);
 }
 .sticky{
@@ -1676,12 +1675,20 @@ button:focus {
     top: 0;
     z-index: 99;
 }
-.sticky-menu-header ul li {
-    /*display: inline;*/
+.sticky-menu-wrap {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.sticky-menu-header li {
+    display: inline-block;
+}
+.sticky-menu-header li a {
+    display: block;
 }
 .sticky-menu-header ul li a {
     display: inline-block;
-    padding: 21px 0;
+    padding: 23px 0;
     margin-right: 30px;
     border-bottom: 3px solid #fff;
 }
@@ -1969,7 +1976,7 @@ button:focus {
         height: 295px;
     }
     .menu-no-style {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -2164,6 +2171,34 @@ button:focus {
     .rental-car-list-photo-wrap img {
         height: 362px!important;
     }
+    .andgarivara-rental-page-area .datepicker-search-box-wrap form {
+        flex-direction: column;
+    }
+    .andgarivara-rental-page-area .date-time-wrap-box {
+        width: 100%;
+    }
+    .rental-cars-filter-result {
+        flex-direction: column;
+    }
+    .rental-cars-filter-result p {
+        margin-bottom: 15px;
+    }
+    /*Car Leasing Page CSS*/
+    .sticky-menu-wrap {
+        overflow-x: scroll;
+    }
+    .sticky-menu-wrap {
+        display: block;
+    }
+    .new-sticky-nav {
+        width: 800px;
+        overflow-x: scroll;
+        min-width: 100%;
+     }
+    .sticky-menu-header ul li a {
+        padding: 17px 0 10px;
+    }
+
 }
 @media only screen and (max-width: 510px){
 
