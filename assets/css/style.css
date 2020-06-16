@@ -148,6 +148,9 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
   .form-control::placeholder {
       color: #a0a3aa;
   }
+.input-group-text {
+    background-color: transparent;
+}
 
 /*------------------------------------------
             2.  Typography
@@ -462,6 +465,7 @@ button:focus {
     padding: 0.75em 15px;
     position: relative;
     color: var(--heading-color);
+    font-family: SolaimanLipiBold;
 }
 #mainNav .navbar-nav .nav-item:last-child .nav-link{
     padding-right: 0;
@@ -504,10 +508,21 @@ button:focus {
     text-transform: uppercase;
     font-size: 14px;
     /* font-weight: 700; */
-    padding: 0 1.2rem;
+    /*padding: 0 1.2rem;*/
+}
+.dropdown-menu.dropdown-menu-right li:hover a {
+    background-color: #f4f4f4d9;
+    color: var(--hover-color);
+}
+.dropdown-menu.dropdown-menu-right li:hover a {
+}
+.dropdown-menu.dropdown-menu-right li a > span {
+    padding: 0;
 }
 .dropdown-menu.dropdown-menu-right li span {
     color: var(--text-color);
+    padding: 6px 1.2rem;
+    display: block;
 }
 .dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
     background-color: var(--red-color);
@@ -523,10 +538,12 @@ button:focus {
 .dropdown-menu.dropdown-menu-right li a {
     font-size: 14px;
     text-transform: capitalize;
-    padding: 3px 0;
+    /* padding: 3px 0; */
     display: block;
     font-weight: 400;
-    color: var(--black-color);
+    color: var(--heading-color);
+    font-family: SolaimanLipiBold;
+    padding: 4px 1.2rem;
 }
 .dropdown-menu .dropdown-divider {
     border-top: 1px solid #e5e5e5;
@@ -1021,12 +1038,40 @@ button:focus {
 /*-------------------------------------------
     10. Andgarivara Rides Page Area Start
 -------------------------------------------*/
-
+.andgarivara-rides-page-area {
+    padding-top: 0;
+}
 /*Andgarivara Rides Page Top Search Menu CSS Start*/
-.ride-page-top-search-menu {
-    background-color: #f6eddd;
-    padding: 100px 0;
-    width: 100%;
+.andgarivara-rides-page-area .sticky-menu-header {
+    padding: 20px 0;
+}
+.location-datepicker-search form {
+    display: flex;
+    justify-content: space-between;
+}
+.input-group-prepend {
+    display: block;
+}
+.input-group-text {
+    display: block;
+    padding: 12px .75rem;
+}
+.ride-page-filter-wrap {
+    width: 22%;
+    margin-right: 10px;
+}
+.rides-location-reverse-btn {
+    padding: 12px 20px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    background-color: #a8a8a829;
+    margin: 0 10px 0 0;
+}
+.andgarivara-rides-page-area .date-time-wrap-box {
+    width: 30%;
+}
+.andgarivara-rides-page-area .date-time-picker-container {
+    /*width: 80%;*/
 }
 /*Andgarivara Rides Page Top Search Menu CSS End*/
 
@@ -1330,7 +1375,7 @@ button:focus {
     opacity: 0;
 }
 #datepicker, #datepicker2 {
-    height: 40px;
+    /*height: 40px;*/
     width: 135px;
     border: none;
 }
@@ -1358,7 +1403,7 @@ button:focus {
 .time-search-box button span, .gj-dropdown-expander-mi {
     width: 120px !important;
     background: #fff;
-    height: 40px;
+    height: 50px;
     /* height: 100%; */
 }
 .gj-dropdown-md [role="presenter"] [role="display"] {
@@ -1667,13 +1712,13 @@ button:focus {
     19. Sticky Menu Header Area Start
 -------------------------------------------*/
 .sticky-menu-header {
-    background-color: #fff;
+    background-color: #fff !important;
     box-shadow: 0 4px 10px 0 rgba(2,68,155,.08);
 }
 .sticky{
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 999;
 }
 .sticky-menu-wrap {
     display: flex;
@@ -1769,11 +1814,15 @@ button:focus {
     display: flex;
     justify-content: space-between;
 }
+.bottom-footer-left ul li {
+    display: inline;
+}
 .bottom-footer-left ul li a {
-    padding: 0 0 0 15px;
+    padding: 0 15px 0 0;
+    display: inline-block;
 }
 .social-media li a {
-    padding: 8px;
+    padding: 10px 0 10px 10px;
 }
 /*-------------------------------------------
     21. Footer Area/Copyright Area End
@@ -2295,6 +2344,9 @@ button:focus {
 
       .bottom-footer-left ul li a {
           padding: 0 0 0 8px;
+      }
+      .social-media {
+          margin-top: 15px;
       }
 
   }
