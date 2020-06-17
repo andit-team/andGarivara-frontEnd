@@ -151,6 +151,9 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
 .input-group-text {
     background-color: transparent;
 }
+button{
+    cursor: pointer;
+}
 
 /*------------------------------------------
             2.  Typography
@@ -439,7 +442,6 @@ button:focus {
 -------------------------------------------*/
 .menu-section-area {
     padding: 0 20px;
-    z-index: 999;
 }
 .menu-section-area .navbar {
     padding: 0;
@@ -616,6 +618,7 @@ button:focus {
     background-color: var(--white-color);
     height: 60px;
     padding: 0;
+    float: none;
 }
 .mean-container .mean-nav {
     background-color: var(--white-color);
@@ -1044,6 +1047,9 @@ button:focus {
 /*Andgarivara Rides Page Top Search Menu CSS Start*/
 .andgarivara-rides-page-area .sticky-menu-header {
     padding: 20px 0;
+    margin-bottom: 50px;
+    box-shadow: none;
+    border-bottom: 1px solid var(--bg-color);
 }
 .location-datepicker-search form {
     display: flex;
@@ -1319,6 +1325,9 @@ button:focus {
 /* Location and Datepicker Search Area CSS Start*/
 
 /* Location Field CSS Start*/
+.location-search-box form {
+    margin-bottom: 20px;
+}
 .andgarivara-rental-page-area .input-group-text {
     background-color: transparent;
     color: var(--hover-color);
@@ -1349,6 +1358,7 @@ button:focus {
 
 /* Date And Time Picker Component Field CSS Start*/
 .datepicker-search-box-wrap form {
+    display: flex;
     justify-content: space-between;
 }
 .date-time-wrap-box {
@@ -1358,12 +1368,22 @@ button:focus {
     border: 1px solid #B9C1C9;
     border-radius: 5px;
     justify-content: space-between;
+    display: flex;
 }
 .datepicker-search-box {
-    width: 60%;
+    /*width: 60%;*/
+}
+.datepicker-search-box {
+    width: 64%;
 }
 .date-time-picker-container .input-group {
     width: auto;
+}
+.andgarivara-rental-page-area .date-time-picker-container .time-search-box .input-group {
+    width: 100% !important;
+}
+.andgarivara-rental-page-area .date-time-picker-container .input-group {
+    width: 100% !important;
 }
 .date-time-picker-container .input-group-text {
     border: none;
@@ -1376,8 +1396,20 @@ button:focus {
 }
 #datepicker, #datepicker2 {
     /*height: 40px;*/
-    width: 135px;
+    /*width: 135px;*/
+    /*width: 141px;*/
     border: none;
+}
+.date-time-picker-container .input-group {
+    width: 60%;
+    overflow: hidden;
+}
+.andgarivara-rental-page-area .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+    width: 80% !important;
+}
+.gj-dropdown {
+    width: 70%;
+    overflow: hidden;
 }
 /*Timepicker*/
 .time-search-box {
@@ -1396,8 +1428,15 @@ button:focus {
     top: 0;
     opacity: 0;
 }
+.time-search-box .input-group {
+    width: 100%;
+    display: flex;
+}
+.gj-dropdown {
+    /*width: 87%;*/
+}
 .gj-dropdown-md [role="presenter"] {
-    /*height: 50px;*/
+    width: 100%;
     border: none;
 }
 .time-search-box button span, .gj-dropdown-expander-mi {
@@ -1463,18 +1502,33 @@ button:focus {
 }
 
 @media only screen and (max-width:1710px){
-    .datepicker-search-box {
-        width: 50%;
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 68%;
     }
 }
 @media only screen and (max-width:1480px){
     #datepicker, #datepicker2 {
-        width: 120px;
+        /*width: 120px;*/
+        /*width: 141px;*/
     }
 }
+
+@media only screen and (max-width:1400px){
+    .andgarivara-rental-page-area .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+        width: 75% !important;
+    }
+}
+
 @media only screen and (max-width:1382px){
-    #datepicker, #datepicker2 {
-        width: 117px;
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 61%;
+    }
+    .date-time-picker-container .input-group {
+        width: 66%;
+        /*overflow: hidden;*/
+    }
+    .time-search-box .input-group {
+        width: 100% !important;
     }
     .time-search-box button span, .gj-dropdown-expander-mi {
         width: 75px !important;
@@ -1482,12 +1536,15 @@ button:focus {
     .datepicker-search-box {
         width: 60%;
     }
+    .gj-dropdown {
+        width: 65%;
+    }
 
 }
 
 @media only screen and (max-width:1250px){
-    .time-search-box button span, .gj-dropdown-expander-mi {
-        width: 55px !important;
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 57%;
     }
 }
 
@@ -1998,16 +2055,11 @@ button:focus {
       .andgarivara-left-content {
           padding-right: 0;
       }
-      /*!*Car Rental Page CSS*!*/
-      /*.rental-car-list-right, .rental-car-list-left {*/
-      /*    width: 50% !important;*/
-      /*}*/
-      /*.rental-car-list-photo-wrap {*/
-      /*    overflow: hidden;*/
-      /*}*/
-      /*.rental-car-list-photo-wrap img {*/
-      /*    height: 210px;*/
-      /*}*/
+
+      /*Rides Page CSS*/
+      #datepicker, #datepicker2 {
+          /*width: 203px;*/
+      }
 
   }
 
@@ -2034,6 +2086,20 @@ button:focus {
     p{
         font-size: 14px;
     }
+    /*Rides Page CSS*/
+    #datepicker, #datepicker2 {
+        /*width: 115px;*/
+    }
+    .date-time-picker-container .input-group {
+        width: 60%;
+    }
+    .time-search-box button span, .gj-dropdown-expander-mi {
+        width: 80px !important;
+    }
+    .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+        width: 75%;
+    }
+
 
 }
 
@@ -2077,13 +2143,44 @@ button:focus {
       .blog-author-box img {
           height: 35px;
       }
+      /*Rides Page CSS*/
+      .location-datepicker-search form {
+          flex-direction: column;
+      }
+      .ride-page-filter-wrap {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+      }
+      .andgarivara-rides-page-area .date-time-wrap-box {
+          width: 100%;
+      }
+      .andgarivara-rides-page-area .date-time-picker-container > div {
+          width: 50%;
+      }
+      .date-time-picker-container .input-group {
+          width: 89%;
+      }
+      .rides-location-reverse-btn {
+          display: none;
+      }
+      .andgarivara-rides-page-area .location-datepicker-search .theme-button {
+          width: 100%;
+      }
+
       /*Rental Page CSS*/
       .andgarivara-rental-page-area {
           height: auto;
-          padding-top: 90px;
+          padding-top: 15px;
       }
       .rental-car-list-card .ride-list.rental-list {
           padding: 0;
+      }
+      .datepicker-search-box-wrap form {
+          flex-direction: row;
+      }
+      .andgarivara-rental-page-area .search-car-model-brand-area form {
+          flex-direction: row;
       }
 
       /*Leasing Page CSS*/
@@ -2171,7 +2268,23 @@ button:focus {
       .ride-list-card .ride-list .ride-list-middle-content {
           width: 52%;
       }
+      .date-time-picker-container .input-group {
+          width: 85%;
+      }
+      .time-search-box .input-group {
+          width: 100% !important;
+      }
+      .gj-dropdown {
+          width: 84%;
+      }
+
       /*Ride Page CSS End*/
+
+      /*Car Rental Page CSS Start*/
+      .andgarivara-rental-page-area .gj-dropdown {
+          width: 60%;
+      }
+
 
       /*Leasing Page CSS Start*/
       .car-leasing-page-aside-component {
@@ -2225,6 +2338,7 @@ button:focus {
     }
     .andgarivara-rental-page-area .date-time-wrap-box {
         width: 100%;
+        margin-bottom: 20px;
     }
     .rental-cars-filter-result {
         flex-direction: column;
@@ -2248,6 +2362,16 @@ button:focus {
         padding: 17px 0 10px;
     }
 
+}
+@media only screen and (max-width: 535px){
+
+    /*Rides Page CSS*/
+    .date-time-picker-container .input-group, .gj-dropdown {
+        width: 80%;
+    }
+    .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
+        width: 72%;
+    }
 }
 @media only screen and (max-width: 510px){
 
@@ -2323,6 +2447,13 @@ button:focus {
       .andgarivara-hero-img img {
           height: 164px;
       }
+
+      /*Rides Page CSS*/
+      .date-time-picker-container .input-group, .gj-dropdown {
+          width: 71%;
+          overflow: hidden;
+      }
+
       /*Rental Page CSS*/
       .rental-car-list-photo-wrap img {
           height: 298px !important;
