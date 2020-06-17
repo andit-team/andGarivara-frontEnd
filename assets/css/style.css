@@ -136,9 +136,10 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
     border-radius: 5px;
     border: none;
     background-color: #fff;
-    height: 50px;
+    height: 47px;
     color: #777c87;
     border: 1px solid #B9C1C9;
+    border-left: 0;
 }
   .form-control:focus {
       background-color: #fff;
@@ -167,7 +168,7 @@ h6 {
     font-family: 'SolaimanLipiBold', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin: 0;
-    color: #02449b;
+    color: var(--heading-color);
 }
 figure {
     margin: 0 0 0;
@@ -185,13 +186,16 @@ figure {
 :root{
     --white-color: #fff;
     --black-color: #1B2530;
-    --heading-color: #02449b;
+    /*--heading-color: #02449b;*/
+    --heading-color: #253a4c;
     --text-color: #646464;
     --hover-color: #018ec9;
     --bg-color: #f1f1f1;
     --border-color: #EDF1F4;
-    --red-color: #ff4b54;
+    /*--red-color: #ff4b54;*/
+    --red-color: #ff2d54;
     --bg-secondary: #F7F8FA;
+    --deep-blue: #02449b;
     --secondary-btn-border: #d6d6d6;
 }
 
@@ -421,16 +425,19 @@ button:focus {
 .theme-button {
     position: relative;
     color: #fff;
-    display: inline-block;
+    display: inline-flex;
     cursor: pointer;
     transition: all 0.7s ease 0s;
     outline: none;
     text-transform: capitalize;
     z-index: 99;
     padding: 14px 16px 14px;
+    height: 47px;
     font-weight: bold;
     border-radius: 5px;
     background-color: var(--heading-color);
+    align-items: center;
+    justify-content: center;
 }
 .theme-button:hover{
     background-color: var(--hover-color);
@@ -464,7 +471,7 @@ button:focus {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 16px;
-    padding: 0.75em 15px;
+    padding: 0.75em 10px;
     position: relative;
     color: var(--heading-color);
     font-family: SolaimanLipiBold;
@@ -891,7 +898,8 @@ button:focus {
     8. Andgarivara Call To Action Area Start
 -------------------------------------------*/
 .andgarivara-call-to-action-area {
-    background-color: var(--red-color);
+    /*background-color: var(--red-color);*/
+    background-color: var(--deep-blue);
     padding: 44px 0;
 }
 .call-to-action-content h4, .call-to-action-content p {
@@ -1057,21 +1065,26 @@ button:focus {
 }
 .input-group-prepend {
     display: block;
+    border-right: 1px solid #B9C1C9;
 }
 .input-group-text {
     display: block;
     padding: 12px .75rem;
+    height: 47px;
+    color: var(--hover-color);
+    border-right: 1px solid #ced4da;
 }
 .ride-page-filter-wrap {
     width: 22%;
     margin-right: 10px;
 }
 .rides-location-reverse-btn {
-    padding: 12px 20px;
+    padding: 12px 14px;
     border: 1px solid #cbcbcb;
     border-radius: 5px;
-    background-color: #a8a8a829;
+    background-color: #EDF0F2;
     margin: 0 10px 0 0;
+    height: 47px;
 }
 .andgarivara-rides-page-area .date-time-wrap-box {
     width: 30%;
@@ -1298,7 +1311,7 @@ button:focus {
 
 /*Don't' Find A Ride CSS*/
 .dont-find-a-ride img {
-    height: 200px;
+    height: 175px;
 }
 .dont-find-a-ride .card {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
@@ -1351,8 +1364,8 @@ button:focus {
     border-radius: 6px;
     cursor: pointer;
 }
-.use-my-location.position-absolute i {
-    margin-right: 5px;
+.use-my-location span {
+    margin-left: 5px;
 }
 /* Location Field CSS End*/
 
@@ -1395,13 +1408,15 @@ button:focus {
     opacity: 0;
 }
 #datepicker, #datepicker2 {
-    /*height: 40px;*/
-    /*width: 135px;*/
-    /*width: 141px;*/
+    height: 45px;
+    /* width: 135px; */
+    /* width: 141px; */
     border: none;
+    margin-left: 1px;
 }
 .date-time-picker-container .input-group {
     width: 60%;
+    height: 45px;
     overflow: hidden;
 }
 .andgarivara-rental-page-area .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
@@ -1410,6 +1425,8 @@ button:focus {
 .gj-dropdown {
     width: 70%;
     overflow: hidden;
+    border-left: 1px solid #B9C1C9;
+    padding-left: 5px;
 }
 /*Timepicker*/
 .time-search-box {
@@ -1442,7 +1459,7 @@ button:focus {
 .time-search-box button span, .gj-dropdown-expander-mi {
     width: 120px !important;
     background: #fff;
-    height: 50px;
+    height: 47px!important;
     /* height: 100%; */
 }
 .gj-dropdown-md [role="presenter"] [role="display"] {
@@ -1465,6 +1482,9 @@ button:focus {
 /* Date And Time Picker Component Field CSS End*/
 
 /* Rental Car Name Brand Search Start*/
+.search-car-model-brand-area {
+    margin: 20px 0;
+}
 .search-car-model-brand-inner {
     border: 1px solid #EAECEF;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
@@ -1499,6 +1519,10 @@ button:focus {
     -webkit-appearance: none;
     font-size: 14px;
     width: 155px;
+    color: var(--hover-color);
+}
+.rental-cars-filter-result form label {
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width:1710px){
@@ -2283,6 +2307,9 @@ button:focus {
       /*Car Rental Page CSS Start*/
       .andgarivara-rental-page-area .gj-dropdown {
           width: 60%;
+      }
+      .use-my-location span {
+          display: none;
       }
 
 
