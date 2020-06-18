@@ -1262,6 +1262,7 @@ button:focus {
 }
 .ride-owner-img-box span img {
     height: 24px;
+    width: auto;
 }
 .ride-list-card .ride-list .rental-car-ratings img {
 /*.ride-list .card .rental-car-ratings img {*/
