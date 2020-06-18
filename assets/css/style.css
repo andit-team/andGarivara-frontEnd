@@ -155,6 +155,9 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
 button{
     cursor: pointer;
 }
+label {
+    margin-bottom: 0;
+}
 
 /*------------------------------------------
             2.  Typography
@@ -207,11 +210,12 @@ figure {
     color: #fff;
 }
 .text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
-.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i{
+.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn{
     color: var(--hover-color);
 }
 .text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
-    color: var(--black-color);
+    /*color: var(--black-color);*/
+    color: var(--heading-color);
 }
 .bg-white, .location-datepicker-search{
     background-color: #fff;
@@ -366,6 +370,23 @@ section{
 hr {
     border-top: 1px solid rgba(44, 212, 217, .2);
 }
+
+/*Modal Default CSS*/
+.modal.show .modal-dialog {
+    /*-webkit-transform: none;*/
+    /*transform: none;*/
+}
+/*.modal.fade .modal-dialog {*/
+/*    transform: scale(.8);*/
+/*}*/
+.modal.fade .modal-dialog {
+    /*transition: -webkit-transform .3s ease-out;*/
+    /*transition: transform .3s ease-out;*/
+    /*transition: transform .3s ease-out,-webkit-transform .3s ease-out;*/
+    /*-webkit-transform: scale(.8);*/
+    /*transform: scale(.8);*/
+}
+
 /*Flat Icon Default Settings*/
 [class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
     margin-left: 0;
@@ -1622,8 +1643,46 @@ button:focus {
 
 /*Rental Page Filter Search Modal Start*/
 
-
-
+.rental-page-filter-modal .modal-body {
+    height: 500px;
+    overflow-y: scroll;
+}
+.rental-page-filter-modal .modal-dialog {
+    min-width: auto;
+}
+.rental-page-filter-modal .modal-content {
+    height: 800px;
+}
+.rental-page-filter-modal .rides-left-search-filters {
+    border: none;
+}
+.rental-page-modal-custom-wrap .custom-control {
+    margin-right: 30px;
+}
+.rental-page-modal-custom-wrap.rental-page-car-type-wrap {
+    flex-wrap: wrap;
+}
+.rental-page-modal-custom-wrap.rental-page-car-type-wrap .custom-control {
+    margin-right: 10px;
+    width: 115px;
+}
+.rental-modal-seat-select-wrap select {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.76297 11.8899C9.54611 11.547 10.1726 10.3225 10.7991 9.68571C11.2299 9.19589 11.5823 8.70607 11.9347 8.11829C12.248 7.62847 13.2269 6.69782 13.3052 6.69782C14.5191 6.35495 14.01 4.00382 12.7962 4.34669C11.8172 4.5916 11.0732 5.71818 10.4076 6.59985C9.82021 7.38356 8.99791 8.16727 8.48887 9.04894C8.41056 9.09792 8.33224 9.19589 8.29309 9.24487C8.21477 9.19589 8.17561 9.1469 8.05814 9.04894C7.70573 8.26523 6.88343 7.53051 6.37438 6.94273C5.51293 6.01207 4.57316 4.88549 3.51592 4.19975C3.39845 4.10178 3.24182 4.00382 3.04603 4.00382C3.00687 4.00382 3.00687 4.00382 2.96772 4.00382C1.98879 3.90586 1.63638 5.71818 2.45867 6.30596C3.79002 7.18763 5.00389 8.65709 6.06113 9.97959C6.7268 10.8613 7.62741 12.4287 8.76297 11.8899Z' fill='%23909BA3' /%3E%3C/svg%3E%0A") !important;
+    background-position: calc(100% - 12px);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 15px;
+    width: 250px;
+    color: #777c87;
+    padding: 0 7px;
+    border: 1px solid #C7C8C8;
+    border-radius: 5px;
+    height: 39px;
+}
 /*Rental Page Filter Search Modal End*/
 
 /*Rental Google Map Area CSS*/
@@ -2052,6 +2111,11 @@ button:focus {
     /*Home Services Showcase CSS*/
     .home-services-subtitle a {
         font-size: 16px;
+    }
+
+    /*Rental Page CSS*/
+    .rental-page-filter-modal .modal-content {
+        height: 600px;
     }
 
 
