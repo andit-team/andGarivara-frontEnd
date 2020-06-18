@@ -119,16 +119,17 @@
     // Select Time Picker JS Start
     $('#time-dropdown').dropdown();
     $('#time-dropdown2').dropdown();
+    $('#time-dropdown3').dropdown();
     // Select Time Picker JS End
 
     // Range Slider JS Start
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("range-value");
-    output.innerHTML = slider.value;
 
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    };
+    $('#slider').slider({
+        slide: function (e, value) {
+            document.getElementById('value').innerText = value;
+        }
+    });
+
     // Range Slider JS End
 
   //----- Initialize WOW JS ------

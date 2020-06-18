@@ -32,7 +32,7 @@
 
 
 /* Use font link */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Use style sheet */
@@ -165,7 +165,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'SolaimanLipiBold', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'SolaimanLipiBold', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin: 0;
     color: var(--heading-color);
@@ -257,10 +257,9 @@ figure {
     font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 .english-font-arimo, .home-popular-rental-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h5,
-.bottom-footer-left ul li a, .bottom-footer-left ul li a{
-    font-family: 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+.bottom-footer-left ul li a, .bottom-footer-left ul li a, .rental-cars-filter-result select, .ride-list-card .ride-list h5, .location-datepicker-search .theme-button{
+    font-family: 'Roboto', sans-serif;
 }
-
 /*--------------------------------
     2.5 Theme Margin and Padding
 -----------------------------------*/
@@ -433,7 +432,7 @@ button:focus {
     z-index: 99;
     padding: 14px 16px 14px;
     height: 47px;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 5px;
     background-color: var(--heading-color);
     align-items: center;
@@ -1148,22 +1147,27 @@ button:focus {
 /*Range Slider CSS*/
 .range-slider-container {
     width: 100%;
+    max-width: 100%;
 }
-
-.range-slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    border-radius: 25px;
+.gj-slider {
+    position: relative;
+    padding: 8px 6px;
+    width: 100% !important;
 }
-
-.range-slider:hover {
-    opacity: 1;
+.gj-slider-md [role="progress"], .gj-slider-md [role="handle"] {
+    background-color: var(--hover-color);
+}
+.gj-slider-md [role="track"] {
+    height: 5px;
+    background-color: #DAE0E3;
+    border-radius: 5px;
+}
+.gj-slider-md [role="progress"] {
+    height: 5px;
+    border-radius: 5px;
+}
+.gj-slider-md [role="handle"] {
+    top: 4px;
 }
 
 .range-slider::-webkit-slider-thumb {
@@ -1518,12 +1522,14 @@ button:focus {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    font-size: 14px;
+    font-size: 15px;
     width: 155px;
     color: var(--hover-color);
+    padding: 0 0 2px;
 }
 .rental-cars-filter-result form label {
     margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width:1710px){
@@ -1613,6 +1619,12 @@ button:focus {
 .rental-car-location p i{
    margin-right: 5px;
 }
+
+/*Rental Page Filter Search Modal Start*/
+
+
+
+/*Rental Page Filter Search Modal End*/
 
 /*Rental Google Map Area CSS*/
 .rental-map-area {

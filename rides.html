@@ -217,7 +217,7 @@
     <section class="andgarivara-rides-page-area">
 
         <!-- Sticky Menu Header Area Start -->
-        <section id="new-sticky-menu" class="sticky-menu-header sticky padding-zero">
+        <div id="new-sticky-menu" class="sticky-menu-header sticky padding-zero">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -264,14 +264,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div><button class="theme-button text-m">Search rides</button></div>
+                                <div><button class="theme-button">Search rides</button></div>
                             </form>
                         </div>
                         <!-- Location And Datepicker Search Area End -->
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- Sticky Menu Header Area End -->
 
         <div class="container">
@@ -286,12 +286,12 @@
                                 <div class="d-flex justify-content-between">
                                     <p>Radius</p>
                                     <div>
-                                        <span id="range-value"></span>
+                                        <span id="value"></span>
                                         <span>km</span>
                                     </div>
                                 </div>
                                 <div class="range-slider-container">
-                                    <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
+                                    <input id="slider" width="300" />
                                 </div>
                             </div>
                             <!-- Range slider End -->
@@ -630,6 +630,7 @@
                 <!-- Rides Page Right Side End -->
             </div>
         </div>
+
     </section>
     <!-- Rides Page Area End -->
 
