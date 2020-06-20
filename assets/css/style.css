@@ -1686,29 +1686,11 @@ button:focus {
     border-radius: 5px;
     height: 39px;
 }
-
-
-
-
-
 .rental-modal-range-slider-wrap {
-    /*flex-direction: column;*/
     flex-direction: row;
-    position: relative;
-    /*display: flex;*/
 }
 .rental-modal-range-slider-wrap .gj-slider {
     padding: 8px 0px 8px 0px;
-}
-.range-slider-container {
-    /*position: absolute;*/
-}
-
-.range-slider-container.range-slider-1 {
-    /*z-index: 9!important;*/
-}
-.range-slider-container.range-slider-2 {
-    /*z-index: 999!important;*/
 }
 .range-slider-container.range-slider-1 .gj-slider {
     padding: 8px 0 8px 6px;
@@ -1730,23 +1712,13 @@ button:focus {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 .range-slider-container.range-slider-2 .gj-slider-md [role="progress"] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
- .range-slider-container.range-slider-2 .gj-slider-md [role="handle"]{
-    /*background-color: #DAE0E3;*/
-    /*background-color: red;*/
-}
 .range-slider-2 .gj-slider-md [role="track"]{
 background-color: #DAE0E3;
 }
-.range-slider-container.range-slider-2 .gj-slider-md [role="progress"] {
-    /*background-color: #DAE0E3;*/
-}
-
-
 /*Rental Page Filter Search Modal End*/
 
 /*Rental Google Map Area CSS*/
@@ -1846,7 +1818,6 @@ background-color: #DAE0E3;
     box-shadow: 0 5px 21.25px 3.75px rgba(217, 217, 217, 0.1);
 }
 .accordion-box .block:last-child {
-    /*margin-bottom: 0;*/
     border-bottom: 0;
 }
 .accordion-box .block .acc-btn {
@@ -1956,7 +1927,6 @@ background-color: #DAE0E3;
 }
 .sticky-menu-header ul li.active a {
     color: var(--black-color);
-    /*border-bottom: 3px solid var(--black-color);*/
     border-color: var(--black-color);
 }
 .sticky-menu-header ul li.active a span {
@@ -1973,17 +1943,41 @@ background-color: #DAE0E3;
     min-width: 30px;
     text-align: center;
     font-size: 14px;
-    /*display: inline-block;*/
 }
 .sticky-menu-header .menu-no-style {
-    /* display: flex; */
-    /* flex-direction: row; */
     align-items: center;
-    /* align-content: center; */
     height: 100%;
 }
 /*-------------------------------------------
     19. sticky-menu-header Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    20. Ride Details Page Area Start
+-------------------------------------------*/
+
+/*Ride Details Left Side CSS*/
+.route-info-box div {
+    margin-right: 30px;
+}
+.route-info-land-mark {
+    position: relative;
+}
+.route-info-land-mark:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 3px;
+    background-color: red;
+    bottom: -19px;
+    left: 5px;
+}
+.route-info-box {
+    margin-bottom: 50px;
+}
+
+/*-------------------------------------------
+    20. Ride Details Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
@@ -1994,9 +1988,6 @@ background-color: #DAE0E3;
     padding: 100px 0;
 }
 /*Footer Upper CSS*/
-/*.footer-upper-wrap {*/
-/*    padding: 0 0 50px;*/
-/*}*/
 .footer-upper-left-part img {
     position: absolute;
     left: 0;
@@ -2012,7 +2003,6 @@ background-color: #DAE0E3;
     margin: 15px 0 20px;
 }
 .footer-upper-area hr, .footer-middle-area hr {
-    /*background-color: rgba(44, 212, 217, .2);*/
     margin: 50px 0;
 }
 
