@@ -1957,23 +1957,48 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 
 /*Ride Details Left Side CSS*/
+.route-part .route-part-title h2 i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.route-part .route-part-title p {
+    margin-top: 15px;
+}
+.route-info-box-wrap {
+    margin-top: 30px;
+}
 .route-info-box div {
-    margin-right: 30px;
+    margin-right: 20px;
+    min-width: 60px;
 }
 .route-info-land-mark {
     position: relative;
+    text-align: center;
 }
-.route-info-land-mark:after {
+.route-info-land-mark > .fas.fa-circle {
+    font-size: 10px;
+}
+.route-info-box-wrap .route-info-box:first-child .route-info-land-mark > i, .route-info-box-wrap .route-info-box:last-child .route-info-land-mark > i{
+    color: var(--hover-color);
+}
+.route-info-box-wrap .route-info-box:first-child .route-info-land-mark::after{
+    display: none;
+}
+.route-info-land-mark::after {
     position: absolute;
     content: "";
     height: 20px;
     width: 3px;
-    background-color: red;
-    bottom: -19px;
-    left: 5px;
+    background-color: #DAE0E3;
+    top: -21px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 .route-info-box {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    height: 50px;
 }
 
 /*-------------------------------------------
