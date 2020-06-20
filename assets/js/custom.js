@@ -129,6 +129,11 @@
             document.getElementById('value').innerText = value;
         }
     });
+    $('#slider2').slider({
+        slide: function (e, value) {
+            document.getElementById('value2').innerText = value;
+        }
+    });
 
     // Range Slider JS End
 
