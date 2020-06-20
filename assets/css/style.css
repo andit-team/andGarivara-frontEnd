@@ -213,7 +213,8 @@ figure {
 .home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn{
     color: var(--hover-color);
 }
-.text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4{
+.text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
+.driver-comment-area p{
     /*color: var(--black-color);*/
     color: var(--heading-color);
 }
@@ -284,6 +285,9 @@ figure {
 }
 .mb-30, .hero-area-heading, .rides-right-title-area{
     margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 .mt-10 {
     margin-top: 10px;
@@ -464,6 +468,16 @@ button:focus {
 .theme-button:hover{
     background-color: var(--hover-color);
     color: #fff;
+}
+.secondary-button{
+    border: 1px solid #d6d6d6;
+    padding: 11px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.secondary-button:hover{
+    background-color: #e6e6e6;
+    border-color: #9ca8b3;
 }
 
 /*-------------------------------------------
@@ -2000,7 +2014,30 @@ background-color: #DAE0E3;
     min-height: 50px;
     height: 50px;
 }
+.route-info-box-btn a {
+    /*border: 1px solid #d6d6d6;*/
+    /*padding: 11px 20px;*/
+    /*border-radius: 5px;*/
+    /*display: inline-block;*/
+    margin-top: 10px;
+}
 
+/*Driver Comment CSS*/
+.driver-comment-area {
+    background-color: #B6F0FC;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.blockquote-quote-icon {
+    font-size: 35px;
+    margin-right: 20px;
+    color: var(--hover-color);
+}
+.driver-comment-area h6 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
 /*-------------------------------------------
     20. Ride Details Page Area End
 -------------------------------------------*/
