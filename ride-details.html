@@ -236,7 +236,11 @@
                                     <div class="route-info-land-mark"><i class="fas fa-map-marker-alt"></i></div>
                                     <div class="route-info-place-name">
                                         <h6>যাত্রাবাড়ী</h6>
-                                        <p>যাত্রাবাড়ী মল্লিক রোড <a href="#">(view on map)</a></p>
+                                        <p>যাত্রাবাড়ী মল্লিক রোড
+                                            <!-- Rides Modal Button For Location Map View -->
+                                            <a href="#" class="btn" data-toggle="modal" data-target=".rides-location-map-modal">(view on map)</a>
+                                            <!-- Rides Modal Button For Location Map View -->
+                                        </p>
                                     </div>
                                 </div>
                                 <!-- Route Info Box End -->
@@ -523,14 +527,21 @@
     </section>
 
     <!-- Rides Modal For Location Map View -->
-    <!-- Rides Modal Button For Location Map View -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-    <!-- Rides Modal Button For Location Map View -->
-
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade rides-location-map-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                ...
+                <div class="modal-header">
+                    <h6 class="modal-title font-weight-normal">নামিয়ে দেওয়ার অবস্থান</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body padding-zero">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.692894099336!2d89.56553290859522!3d22.81369757864095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c2c74d47ef49bb!2sAND%20IMPEX%20BANGLADESH!5e0!3m2!1sen!2sbd!4v1583742696221!5m2!1sen!2sbd" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p>মতিঝিল সেন বাড়ি</p>
+                </div>
             </div>
         </div>
     </div>
