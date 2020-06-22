@@ -139,7 +139,6 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box 
     height: 47px;
     color: #777c87;
     border: 1px solid #B9C1C9;
-    border-left: 0;
 }
   .form-control:focus {
       background-color: #fff;
@@ -390,6 +389,12 @@ hr {
     /*transition: transform .3s ease-out,-webkit-transform .3s ease-out;*/
     /*-webkit-transform: scale(.8);*/
     /*transform: scale(.8);*/
+}
+.modal-footer > :not(:first-child) {
+    margin-left: 0;
+}
+.modal-footer > :not(:last-child) {
+    margin-right: 0;
 }
 .close {
     font-size: 26px;
@@ -1102,6 +1107,9 @@ button:focus {
     display: flex;
     justify-content: space-between;
 }
+.andgarivara-rides-page-area .form-control {
+    border-left: 0;
+}
 .input-group-prepend {
     display: block;
     border-right: 1px solid #B9C1C9;
@@ -1385,6 +1393,9 @@ button:focus {
 /* Location Field CSS Start*/
 .location-search-box form {
     margin-bottom: 20px;
+}
+.andgarivara-rental-page-area .form-control {
+    border-left: 0;
 }
 .andgarivara-rental-page-area .input-group-text {
     background-color: transparent;
@@ -2045,14 +2056,14 @@ background-color: #DAE0E3;
 }
 .driver-photo a {
     display: block;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background-color: #ededed;
     overflow: hidden;
 }
 .driver-photo a img {
-    height: 200px;
+    height: 150px;
     width: 100%;
     min-height: 100%;
 }
@@ -2194,6 +2205,7 @@ background-color: #DAE0E3;
 .ride-details-right-side.ride-booked-or-ride-departed .booking-btn a{
     background-color: #B73E54 !important;
 }
+/*Add ride-booked-or-ride-departed Class If ride is fully booked or departed */
 .point-earning-info h6 {
     font-weight: normal;
     margin-bottom: 10px;
@@ -2246,6 +2258,19 @@ background-color: #DAE0E3;
     margin-right: 10px;
 }
 
+/*Ride Details Page All Modal CSS*/
+.send-message-content p {
+    color: var(--hover-color);
+}
+.send-message-content ul li {
+    list-style: disc;
+    margin-left: 15px;
+    color: var(--hover-color);
+}
+#send-message-to-driver-modal form label, #report-an-issue-modal form label {
+    color: var(--heading-color);
+}
+/*Ride Details Page All Modal CSS*/
 
 /*-------------------------------------------
     20. Ride Details Page Area End
@@ -2592,6 +2617,11 @@ background-color: #DAE0E3;
           width: 100%;
       }
 
+      /*Ride Details Page CSS*/
+      .andgarivara-ride-details-page-area .ride-details-right-side {
+          margin-top: 30px;
+      }
+
       /*Rental Page CSS*/
       .andgarivara-rental-page-area {
           height: auto;
@@ -2824,7 +2854,17 @@ background-color: #DAE0E3;
     .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
         width: 72%;
     }
+
+    /*Ride Details Page*/
+    .driver-photo a {
+        height: 100px;
+        width: 100px;
+    }
+    .driver-photo a img {
+        height: 100px;
+    }
 }
+
 @media only screen and (max-width: 510px){
 
     /*Ride Page  Start*/
@@ -2904,6 +2944,19 @@ background-color: #DAE0E3;
       .date-time-picker-container .input-group, .gj-dropdown {
           width: 71%;
           overflow: hidden;
+      }
+
+      /*Rides Details Page CSS*/
+      .driver-info-content > div {
+          flex-direction: column;
+      }
+      .driver-information-wrap {
+          flex-direction: column;
+      }
+      .driver-photo {
+          margin-right: 0;
+          width: 105px;
+          margin-bottom: 20px;
       }
 
       /*Rental Page CSS*/

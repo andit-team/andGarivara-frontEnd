@@ -219,7 +219,7 @@
         <div class="container">
             <div class="row">
                 <!-- Ride Details Page Right Side Start -->
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                     <div class="ride-details-left-side">
 
                         <!-- Route Part Start -->
@@ -238,7 +238,7 @@
                                         <h6>যাত্রাবাড়ী</h6>
                                         <p>যাত্রাবাড়ী মল্লিক রোড
                                             <!-- Rides Modal Button For Location Map View -->
-                                            <a href="#" class="btn" data-toggle="modal" data-target=".rides-location-map-modal">(view on map)</a>
+                                            <a href="#" class="btn" data-toggle="modal" data-target=".rides-location-map-modal-1">(মানচিত্রে দেখুন)</a>
                                             <!-- Rides Modal Button For Location Map View -->
                                         </p>
                                     </div>
@@ -271,13 +271,19 @@
                                     <div class="route-info-land-mark"><i class="fas fa-street-view"></i></div>
                                     <div class="route-info-place-name">
                                         <h6>মতিঝিল</h6>
-                                        <p>মতিঝিল সেন বাড়ি <a href="#">(view on map)</a></p>
+                                        <p>মতিঝিল সেন বাড়ি
+                                            <!-- Rides Modal Button For Location Map View -->
+                                            <a href="#" class="btn" data-toggle="modal" data-target=".rides-location-map-modal-2">(মানচিত্রে দেখুন)</a>
+                                            <!-- Rides Modal Button For Location Map View -->
+                                        </p>
                                     </div>
                                 </div>
                                 <!-- Route Info Box End -->
                             </div>
                             <div class="route-info-box-btn">
-                                <a href="#" class="secondary-button">মানচিত্রে রুট দেখুন</a>
+                                <!-- Rides Modal Button For Location Map View -->
+                                <a href="#" class="btn secondary-button" data-toggle="modal" data-target=".rides-location-map-modal-3">মানচিত্রে রুট দেখুন</a>
+                                <!-- Rides Modal Button For Location Map View -->
                             </div>
                         </div>
                         <!-- Route Part End -->
@@ -323,7 +329,9 @@
                                         <p>৫০ বছর বয়স</p>
                                         <p>২০০৮ সালের অক্টোবর থেকে সদস্য</p>
                                     </div>
-                                    <div class="driver-info-btn"><a href="#" class="secondary-button">বার্তা পাঠান</a></div>
+                                    <div class="driver-info-btn">
+                                        <button class="btn secondary-button" data-toggle="modal" data-target="#send-message-to-driver-modal">বার্তা পাঠান</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Driver Information Wrapper End -->
@@ -414,7 +422,7 @@
                 <!-- Ride Details Page Right Side End -->
 
                 <!-- Ride Details Page Left Side Start -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
 
                     <!-- If All Ride is Booked or Departed Please Add ride-booked-or-ride-departed class name on below div-->
                     <!-- <div class="ride-details-right-side sticky ride-booked-or-ride-departed">-->
@@ -515,9 +523,12 @@
                             </div>
                         </div>
 
-                        <div class="report-btn btn w-100">
+                        <!-- Rides Modal For Report an Issue about Driver btn -->
+                        <div class="report-btn btn w-100" data-toggle="modal" data-target="#report-an-issue-modal">
                             <i class="fas fa-flag"></i>Report
                         </div>
+                        <!-- Rides Modal For Report an Issue about Driver btn -->
+
                     </div>
                 </div>
                 <!-- Ride Details Page Left Side End -->
@@ -527,7 +538,28 @@
     </section>
 
     <!-- Rides Modal For Location Map View -->
-    <div class="modal fade rides-location-map-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade rides-location-map-modal rides-location-map-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title font-weight-normal">উঠিয়ে নেওয়ার অবস্থান</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body padding-zero">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.692894099336!2d89.56553290859522!3d22.81369757864095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c2c74d47ef49bb!2sAND%20IMPEX%20BANGLADESH!5e0!3m2!1sen!2sbd!4v1583742696221!5m2!1sen!2sbd" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p>যাত্রাবাড়ী মল্লিক রোড</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rides Modal For Location Map View -->
+
+    <!-- Rides Modal For Location Map View -->
+    <div class="modal fade rides-location-map-modal rides-location-map-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -546,6 +578,91 @@
         </div>
     </div>
     <!-- Rides Modal For Location Map View -->
+
+    <!-- Rides Modal For Location Map View -->
+    <div class="modal fade rides-location-map-modal rides-location-map-modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title font-weight-normal">গমনপথ</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body padding-zero">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.692894099336!2d89.56553290859522!3d22.81369757864095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c2c74d47ef49bb!2sAND%20IMPEX%20BANGLADESH!5e0!3m2!1sen!2sbd!4v1583742696221!5m2!1sen!2sbd" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="modal-footer flex-column align-items-start">
+                    <p>আনুমানিক ভ্রমণের সময়: ৩ ঘণ্টা ০ মিনিট</p>
+                    <p>উপরের রুটটি গুগল ম্যাপ থেকে প্রস্তাবিত রুট। আসল রুট পৃথক হতে পারে।</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rides Modal For Location Map View -->
+
+    <!-- Rides Modal For Send Message To Driver -->
+    <div class="modal fade" id="send-message-to-driver-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">সুরাইয়াকে বার্তা দিন</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="send-message-content">
+                        <p>মনে রাখবেন:</p>
+                        <ul>
+                            <li>রাইড বুক করতে <strong>স্টার্ট বুকিং</strong> বোতামটি ব্যবহার করুন।</li>
+                            <li>ড্রাইভার তাদের রুট থেকে <strong>5 মিনিট</strong> বিচরণ করবে।</li>
+                            <li> লাগেজের আকার অবশ্যই <strong>ছোট</strong> হতে হবে - উদাঃ কাঁধের ব্যাগ বা ব্যাকপ্যাক</li>
+                        </ul>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">আপনার বার্তা:</label>
+                            <textarea class="form-control" id="message-text" placeholder="আপনার বার্তা এখানে লিখুন"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn theme-button w-100">বার্তা পাঠান</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rides Modal For Send Message To Driver -->
+
+    <!-- Rides Modal For Report an Issue about Driver -->
+    <div class="modal fade" id="report-an-issue-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLabel">একটি সমস্যা রিপোর্ট করুন</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="send-message-content">
+                        <p>আপনার প্রতিক্রিয়া কেবল গোমোরের সাথে ভাগ করা হয়েছে</p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">কেন আপনি এই রিপোর্ট করছেন?</label>
+                            <textarea class="form-control" id="message-text1" placeholder="সমস্যাটি ব্যাখ্যা করুন"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn theme-button w-100">রিপোর্ট পাঠান</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rides Modal For Report an Issue about Driver -->
 
     <!-- Ride Details Page Area End -->
 
