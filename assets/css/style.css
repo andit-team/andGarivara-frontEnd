@@ -469,11 +469,12 @@ button:focus {
     background-color: var(--hover-color);
     color: #fff;
 }
-.secondary-button{
+.secondary-button {
     border: 1px solid #d6d6d6;
     padding: 11px 20px;
     border-radius: 5px;
     display: inline-block;
+    height: 45px;
 }
 .secondary-button:hover{
     background-color: #e6e6e6;
@@ -510,7 +511,7 @@ button:focus {
     padding: 0.75em 10px;
     position: relative;
     color: var(--heading-color);
-    font-family: SolaimanLipiBold;
+    font-family: 'SolaimanLipiBold';
 }
 #mainNav .navbar-nav .nav-item:last-child .nav-link{
     padding-right: 0;
@@ -2015,10 +2016,6 @@ background-color: #DAE0E3;
     height: 50px;
 }
 .route-info-box-btn a {
-    /*border: 1px solid #d6d6d6;*/
-    /*padding: 11px 20px;*/
-    /*border-radius: 5px;*/
-    /*display: inline-block;*/
     margin-top: 10px;
 }
 
@@ -2038,6 +2035,112 @@ background-color: #DAE0E3;
     margin-bottom: 10px;
     font-size: 21px;
 }
+
+/*Driver Information Wrapper CSS*/
+.driver-photo {
+    margin-right: 30px;
+}
+.driver-photo a {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #ededed;
+    overflow: hidden;
+}
+.driver-photo a img {
+    height: 200px;
+    width: 100%;
+    min-height: 100%;
+}
+.driver-photo a span {
+    right: 20px;
+    bottom: 20px;
+}
+.driver-photo a span img {
+    height: auto;
+    width: 25px;
+}
+.driver-info-content {
+    flex-direction: column;
+}
+.rental-car-ratings img {
+    height: 12px;
+}
+.driver-info-name-ratings div {
+    margin-right: 15px;
+}
+.driver-info-content > div {
+    margin-bottom: 15px;
+}
+.verified-box p{
+    margin-right: 15px;
+}
+.driver-age-membership p {
+    position: relative;
+}
+.driver-age-membership p::after {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #a8a7a7;
+    content: "";
+    border-radius: 50%;
+    top: 12px;
+    right: -11px;
+}
+.driver-age-membership p:last-child::after {
+    display: none;
+}
+.driver-age-membership p {
+    position: relative;
+    margin-right: 20px;
+}
+.verified-box p > img {
+    margin-right: 6px;
+}
+.driver-car-info-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 0 20px;
+    padding-right: 20px;
+}
+.driver-car-info-content {
+    flex-direction: column;
+    margin-left: 20px;
+}
+.driver-car-info-box i {
+    color: var(--deep-blue);
+}
+.driver-car-info-content p {
+    color: var(--heading-color);
+}
+.driver-car-info-content p.driver-car-info-title {
+    color: var(--text-color);
+}
+
+/*Driver Car Information Details CSS*/
+.driver-car-info-details {
+    margin-top: 35px;
+}
+.driver-car-info-details h6 {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: normal;
+}
+.driver-car-info-details-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.driver-car-info-details-preferences .driver-car-info-box i {
+    color: #B73E54;
+}
+
+/*Ride Details Right Side CSS*/
+
+
+
 /*-------------------------------------------
     20. Ride Details Page Area End
 -------------------------------------------*/
