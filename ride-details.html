@@ -411,6 +411,9 @@
 
                 <!-- Ride Details Page Left Side Start -->
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+
+                    <!-- If All Ride is Booked or Departed Please Add ride-booked-or-ride-departed class name on below div-->
+                    <!-- <div class="ride-details-right-side sticky ride-booked-or-ride-departed">-->
                     <div class="ride-details-right-side sticky">
                         <div class="ride-details-up-wrap">
 
@@ -431,7 +434,7 @@
                                 <li class="single-seat-box">
                                     <a href="#">
                                         <div class="rider-photo">
-                                            <img src="assets/img/rides-img/owner2.png" alt="Rider">
+                                            <img src="assets/img/rides-img/owner3.png" alt="Rider">
                                         </div>
                                         <div class="rider-info">
                                             <p class="rider-name">সুরাইয়া আয়শা</p>
@@ -442,7 +445,7 @@
                                 <li class="single-seat-box">
                                     <a href="#">
                                         <div class="rider-photo">
-                                            <img src="assets/img/rides-img/owner2.png" alt="Rider">
+                                            <img src="assets/img/rides-img/owner4.png" alt="Rider">
                                         </div>
                                         <div class="rider-info">
                                             <p class="rider-name">সুরাইয়া আয়শা</p>
@@ -450,6 +453,20 @@
                                         </div>
                                     </a>
                                 </li>
+
+                                <!-- If No Seat is booked or 1/2 Seat Booked already then Add below li content only-->
+                                <!-- Without Rider Photo and content-->
+                                <li class="single-seat-box">
+                                    <div class="rider-photo">
+<!--                                            <img src="assets/img/rides-img/owner4.png" alt="Rider">-->
+                                    </div>
+                                    <div class="rider-info">
+                                        <p class="rider-name">আপনি?</p>
+<!--                                        <p class="rider-routes">যাত্রাবাড়ী - মতিঝিল</p>-->
+                                    </div>
+                                </li>
+                                <!-- Without Rider Photo and content-->
+                                <!-- If No Seat is booked or 1/2 Seat Booked already then Add Above li content only-->
                             </ul>
 
                             <div class="price-info d-flex justify-content-between align-items-center">
@@ -457,12 +474,12 @@
                                 <div class="seat-price">টাকা <span>৬৫</span></div>
                             </div>
                             <div class="booking-btn">
-                                <a href="#" class="theme-button w-100">তাত্ক্ষণিক বুকিং</a>
+                                <a href="#" class="theme-button w-100 btn-danger">তাত্ক্ষণিক বুকিং</a>
                             </div>
 
                             <div class="point-earning-info">
-                                <h6>Book this ride and earn taka 6 in Andgarivara points</h6>
-                                <p>Use your AndGarivara points to get a discount on your next rental.</p>
+                                <h6>এই রাইড টি বুক করেন এবং <span>১১ টাকা</span> অ্যান্ডগাড়িভাড়া পয়েন্ট জমা করুন </h6>
+                                <p>আপনার পরবর্তী ভাড়াতে ছাড় পেতে আপনার আন্দগারিভারা পয়েন্টগুলি ব্যবহার করুন।</p>
                             </div>
                         </div>
 
@@ -504,6 +521,21 @@
         </div>
 
     </section>
+
+    <!-- Rides Modal For Location Map View -->
+    <!-- Rides Modal Button For Location Map View -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+    <!-- Rides Modal Button For Location Map View -->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                ...
+            </div>
+        </div>
+    </div>
+    <!-- Rides Modal For Location Map View -->
+
     <!-- Ride Details Page Area End -->
 
     <!-- Footer Start -->

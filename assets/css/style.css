@@ -2141,6 +2141,9 @@ background-color: #DAE0E3;
 }
 
 /*Ride Details Right Side CSS*/
+.ride-details-right-side.ride-booked-or-ride-departed .ride-details-up-wrap {
+    border-top: 5px solid #B73E54!important;
+}
 .ride-details-up-wrap {
     border: 1px solid #DAE0E3;
     padding: 15px;
@@ -2169,11 +2172,13 @@ background-color: #DAE0E3;
     width: 40px;
     overflow: hidden;
     border-radius: 50%;
+    background-color: #aeaeae61;
 }
 .rider-photo img {
     height: 40px;
     width: auto;
     border-radius: 50%;
+    background-color: #aeaeae61;
 }
 .rider-info .rider-name {
     color: var(--heading-color);
@@ -2185,7 +2190,17 @@ background-color: #DAE0E3;
 .ride-details-right-side .booking-btn {
     margin: 20px 0;
 }
-
+/*Add ride-booked-or-ride-departed Class If ride is fully booked or departed */
+.ride-details-right-side.ride-booked-or-ride-departed .booking-btn a{
+    background-color: #B73E54 !important;
+}
+.point-earning-info h6 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.point-earning-info h6 > span {
+    color: #B73E54;
+}
 .booking-payment-content #accordion {
     border: 1px solid #DAE0E3;
     padding: 0 20px;
