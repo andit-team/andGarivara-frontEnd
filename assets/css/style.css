@@ -200,6 +200,7 @@ figure {
     --bg-secondary: #F7F8FA;
     --deep-blue: #02449b;
     --secondary-btn-border: #d6d6d6;
+    --green-color: #0DCEB2;
 }
 
 /*--------------------------------
@@ -1992,8 +1993,10 @@ background-color: #DAE0E3;
 }
 .route-info-land-mark > .fas.fa-circle {
     font-size: 10px;
+    color: #DAE0E3;
 }
-.route-info-box-wrap .route-info-box:first-child .route-info-land-mark > i, .route-info-box-wrap .route-info-box:last-child .route-info-land-mark > i{
+.route-info-box-wrap .route-info-box:first-child .route-info-land-mark > i,
+.route-info-box-wrap .route-info-box:last-child .route-info-land-mark > i{
     color: var(--hover-color);
 }
 .route-info-box-wrap .route-info-box:first-child .route-info-land-mark::after{
@@ -2138,7 +2141,95 @@ background-color: #DAE0E3;
 }
 
 /*Ride Details Right Side CSS*/
+.ride-details-up-wrap {
+    border: 1px solid #DAE0E3;
+    padding: 15px;
+    border-top: 5px solid #0DCEB2;
+    border-radius: 5px;
+}
+.seat-availability {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+.ride-details-right-side ul li {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.ride-details-right-side ul li, .ride-details-right-side ul li a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.rider-photo {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.rider-photo img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+.rider-info .rider-name {
+    color: var(--heading-color);
+}
+.price-info .seat-price span {
+    font-weight: bold;
+    font-size: 21px;
+}
+.ride-details-right-side .booking-btn {
+    margin: 20px 0;
+}
 
+.booking-payment-content #accordion {
+    border: 1px solid #DAE0E3;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.booking-payment-content #headingOne .title-bar {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-payment-content #headingOne .title-bar p > i {
+    margin-right: 10px;
+    color: var(--deep-blue);
+}
+.booking-payment-content .collapse {
+    border-top: 1px solid #DAE0E3;
+}
+.booking-payment-inner {
+    margin: 15px 0;
+}
+.booking-payment-inner .payment-title {
+    color: var(--heading-color);
+    font-weight: bold;
+}
+[data-toggle="collapse"] .fa:before {
+    content: "\f106";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+    content: "\f107";
+}
+.ride-details-right-side .report-btn {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.ride-details-right-side .report-btn i {
+    margin-right: 10px;
+}
 
 
 /*-------------------------------------------
