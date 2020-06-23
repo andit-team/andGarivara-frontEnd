@@ -222,9 +222,9 @@
                 <!-- Rides Page Left Side Start -->
                 <div class="col-12 col-sm-12 col-md-7 col-lg-8">
                     <div class="book-ride-left-area">
-                        <div class="card">
-                            <div class="card-header">একটি যাত্রা বুক করুন</div>
-                            <div class="card-body">
+                        <div class="book-ride-card">
+                            <div class="book-ride-header p-30"><h3>যাত্রা বুক করুন</h3></div>
+                            <div class="book-ride-card-body p-30">
                                 <form>
                                     <div class="form-group">
                                         <label for="seat">সিট</label>
@@ -242,16 +242,18 @@
                                         <label for="message">ড্রাইভারের কাছে বার্তা পাঠান</label>
                                         <textarea id="message" placeholder="উদাহরণস্বরূপ পিক-আপ বা ড্রপ-অফ অবস্থান বা লাগেজ মাপ সম্পর্কে ..." class="form-control"></textarea>
                                     </div>
-                                    <div class="input-group">
+                                    <div class="form-group">
                                         <label for="coupon">কুপন</label>
-                                        <input type="text" id="coupon" placeholder="আপনার কি কুপন আছে?" class="form-control">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-success">প্রয়োগ করুন</button>
+                                        <div class="input-group">
+                                            <input type="text" id="coupon" placeholder="আপনার কি কুপন আছে?" class="form-control">
+                                            <div class="input-group-append">
+                                                <button class="btn secondary-button">প্রয়োগ করুন</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="card-footer">
+                            <div class="book-ride-footer p-30 d-flex justify-content-between">
                                 <a href="ride-details.html" class="btn secondary-button">Back</a>
                                 <a href="#" class="btn theme-button">Next</a>
                             </div>
@@ -264,6 +266,31 @@
                 <div class="col-12 col-sm-12 col-md-5 col-lg-4">
 
                     <div class="book-ride-right-area">
+
+                        <!-- Ride Booking Right Card Start -->
+                        <div class="card common-box-shadow bg-white">
+                            <div class="card-header bg-transparent border-success">
+                                <h5>যাত্রাবাড়ী<i class="fas fa-arrow-right"></i>মতিঝিল</h5>
+                            </div>
+                            <div class="card-body p-30">
+                                <p class="card-text"><i class="far fa-calendar-alt"></i>মঙ্গলবার, 23 জুন 2020, 15:20</p>
+                                <p class="card-text"><i class="far fa-user"></i>1 seat </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="price-info d-flex justify-content-between align-items-center">
+                                <div>আসন প্রতি মূল্য</div>
+                                <div class="seat-price">টাকা ৬৫</div>
+                            </div></div>
+                        </div>
+                        <!-- Ride Booking Right Card Start -->
+                        <div class="card common-box-shadow bg-white">
+                            <div class="card-body p-30">
+                                <div class="point-earning-info">
+                                    <h6>এই রাইড টি বুক করেন এবং <span>১১ টাকা</span> অ্যান্ডগাড়িভাড়া পয়েন্ট জমা করুন </h6>
+                                    <p>আপনার পরবর্তী ভাড়াতে ছাড় পেতে আপনার আন্দগারিভারা পয়েন্টগুলি ব্যবহার করুন।</p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
