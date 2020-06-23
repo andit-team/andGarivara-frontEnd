@@ -2032,6 +2032,9 @@ background-color: #DAE0E3;
 .route-info-box-btn a {
     margin-top: 10px;
 }
+.route-info-place-name p a {
+    color: var(--hover-color);
+}
 
 /*Driver Comment CSS*/
 .driver-comment-area {
@@ -2269,6 +2272,9 @@ background-color: #DAE0E3;
 }
 #send-message-to-driver-modal form label, #report-an-issue-modal form label {
     color: var(--heading-color);
+}
+.rides-location-map-modal iframe {
+    min-height: 350px;
 }
 /*Ride Details Page All Modal CSS*/
 
@@ -2856,12 +2862,16 @@ background-color: #DAE0E3;
     }
 
     /*Ride Details Page*/
-    .driver-photo a {
+    .driver-photo a, .driver-photo {
         height: 100px;
         width: 100px;
     }
     .driver-photo a img {
         height: 100px;
+    }
+    .driver-photo a span {
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -2948,7 +2958,7 @@ background-color: #DAE0E3;
 
       /*Rides Details Page CSS*/
       .driver-info-content > div {
-          flex-direction: column;
+          flex-direction: row;
       }
       .driver-information-wrap {
           flex-direction: column;
@@ -2957,6 +2967,10 @@ background-color: #DAE0E3;
           margin-right: 0;
           width: 105px;
           margin-bottom: 20px;
+      }
+      .driver-photo a span {
+          right: 0;
+          bottom: 0;
       }
 
       /*Rental Page CSS*/
