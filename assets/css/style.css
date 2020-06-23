@@ -90,7 +90,7 @@ a {
 
 /* Theme All Transitions
 ------------------------------- */
-a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .mobile-filter-title-button button{
     transition: all .5s ease-in-out;
 }
 
@@ -1176,10 +1176,6 @@ button:focus {
     padding: 15px 0 40px;
     border-radius: 5px;
 }
-.mobile-filter-title-button button i {
-    font-size: 12px;
-    margin-right: 5px;
-}
 /*Mobile Filter Update Area*/
 .mobile-filter-title-button{
     display: none;
@@ -1191,6 +1187,14 @@ button:focus {
     color: #fff;
     margin-bottom: 30px;
     font-weight: bold;
+}
+.mobile-filter-title-button button:hover {
+    background-color: var(--heading-color);
+    color: #fff;
+}
+.mobile-filter-title-button button i {
+    font-size: 12px;
+    margin-left: 5px;
 }
 /*Mobile Filter Update Area*/
 .rides-left-search-filters .ride-left-single-filter {
@@ -2300,6 +2304,14 @@ background-color: #DAE0E3;
 
 /*-------------------------------------------
     20. Ride Details Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    21. Rides - Book Ride Page Area Start
+-------------------------------------------*/
+
+/*-------------------------------------------
+    21. Rides - Book Ride Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
