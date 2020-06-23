@@ -227,15 +227,8 @@
                             <div class="card-body">
                                 <form>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="email">Email:</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="rental-filters">সিট:</label>
-                                        <select name="rental-filters" id="rental-filters">
+                                        <label for="seat">সিট</label>
+                                        <select name="seat" id="seat" class="form-control">
                                             <option value="১">১</option>
                                             <option value="২">২</option>
                                             <option value="৩">৩</option>
@@ -246,13 +239,14 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="message-text" class="col-form-label">আপনার বার্তা:</label>
-                                        <textarea class="form-control" id="message-text" placeholder="আপনার বার্তা এখানে লিখুন"></textarea>
+                                        <label for="message">ড্রাইভারের কাছে বার্তা পাঠান</label>
+                                        <textarea id="message" placeholder="উদাহরণস্বরূপ পিক-আপ বা ড্রপ-অফ অবস্থান বা লাগেজ মাপ সম্পর্কে ..." class="form-control"></textarea>
                                     </div>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group">
+                                        <label for="coupon">কুপন</label>
+                                        <input type="text" id="coupon" placeholder="আপনার কি কুপন আছে?" class="form-control">
                                         <div class="input-group-append">
-                                            <button class="btn btn-success" type="submit">Apply</button>
+                                            <button class="btn btn-success">প্রয়োগ করুন</button>
                                         </div>
                                     </div>
                                 </form>
