@@ -948,6 +948,8 @@ button:focus {
 }
 .call-to-action-content h4, .call-to-action-content p {
     color: var(--white-color);
+    font-size: 21px;
+    font-weight: normal;
 }
 /*-------------------------------------------
     8. Andgarivara Call To Action Area End
@@ -957,7 +959,7 @@ button:focus {
     9. Andgarivara Services Showcase Area Start
 -------------------------------------------*/
 .andgarivara-services-showcase-area {
-    padding: 100px 0 0;
+    padding: 80px 0 0;
 }
 .service-showcase-wrap {
     margin-bottom: 70px;
@@ -1171,8 +1173,26 @@ button:focus {
 .rides-left-search-filters {
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
-    padding: 15px 0;
+    padding: 15px 0 40px;
+    border-radius: 5px;
 }
+.mobile-filter-title-button button i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+/*Mobile Filter Update Area*/
+.mobile-filter-title-button{
+    display: none;
+}
+.mobile-filter-title-button button {
+    width: 100%;
+    background-color: var(--hover-color);
+    height: 47px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+/*Mobile Filter Update Area*/
 .rides-left-search-filters .ride-left-single-filter {
     border-bottom: 1px solid var(--border-color);
     padding: 15px;
@@ -2287,7 +2307,7 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 .andgarivara-footer-area {
     background-color: var(--heading-color);
-    padding: 100px 0;
+    padding: 80px 0;
 }
 /*Footer Upper CSS*/
 .footer-upper-left-part img {
@@ -2742,7 +2762,9 @@ background-color: #DAE0E3;
       .gj-dropdown {
           width: 84%;
       }
-
+      .mobile-filter-title-button{
+          display: block;
+      }
       /*Ride Page CSS End*/
 
       /*Car Rental Page CSS Start*/
