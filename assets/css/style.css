@@ -278,6 +278,9 @@ figure {
 .mb-15 {
     margin-bottom: 15px;
 }
+.mt-15{
+    margin-top: 15px;
+}
 .mt-20, .car-leasing-page-aside-component p {
     margin-top: 20px;
 }
@@ -295,6 +298,9 @@ figure {
 }
 .mb-10, .service-showcase-title p {
     margin-bottom: 10px;
+}
+.mr-10{
+    margin-right: 10px;
 }
 .p-30{
     padding: 30px;
@@ -2326,10 +2332,11 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 
 /*-------------------------------------------
-    21. Rides - Book Ride Page Area Start
+    21. Rides - Book Ride Page / Ride Payment Page Area Start
 -------------------------------------------*/
-.andgarivara-book-ride-area {
+.andgarivara-book-ride-area, .andgarivara-ride-payment-area {
     background-color: var(--bg-secondary);
+    min-height: 100vh;
 }
 /*Book Ride Left Side*/
 .book-ride-card {
@@ -2346,15 +2353,30 @@ background-color: #DAE0E3;
 }
 .book-ride-card-body form label {
     margin-bottom: 10px;
+    color: var(--heading-color);
 }
 .book-ride-card-body form .form-group {
     margin-bottom: 20px;
 }
 .book-ride-card-body form textarea {
-    min-height: 200px;
+    min-height: 150px;
+}
+
+/*Book Ride Right Side*/
+.book-ride-right-area .card h6 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.book-ride-right-area .card h6 i {
+    font-size: 13px;
+    margin: 0 8px;
+}
+.book-ride-right-area .card-body p i {
+    margin-right: 10px;
 }
 /*-------------------------------------------
-    21. Rides - Book Ride Page Area End
+    21. Rides - Book Ride Page / Ride Payment Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------

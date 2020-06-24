@@ -32,7 +32,7 @@
     <meta name="keywords" content="service, Car Sharing, Car Rental, Car Leasing, Share, Rental, Leasing">
     <meta name="author" content="andgarivara">
 
-    <title>Rides - Book Ride - অ্যান্ডগাড়িভাড়া</title>
+    <title>Rides - Payment - অ্যান্ডগাড়িভাড়া</title>
 
     <!--=======================================
       All CSS Style link
@@ -62,7 +62,7 @@
 <body>
 
 <!-- Page Main Area Start -->
-<div class="main book-ride-page-main">
+<div class="main ride-payment-page-main">
 
     <!-- Pre Loader Area start -->
     <!--<div id="preloader">-->
@@ -214,7 +214,7 @@
     <!-- Menu Area End -->
 
     <!-- Rides Page Area Start -->
-    <section class="andgarivara-book-ride-area">
+    <section class="andgarivara-ride-payment-area">
 
         <div class="container">
             <div class="row">
@@ -223,39 +223,29 @@
                 <div class="col-12 col-sm-12 col-md-7 col-lg-8">
                     <div class="book-ride-left-area">
                         <div class="book-ride-card">
-                            <div class="book-ride-header p-30"><h3>যাত্রা বুক করুন</h3></div>
+                            <div class="book-ride-header p-30"><h3>টাকা প্রদান করুন</h3></div>
                             <div class="book-ride-card-body p-30">
                                 <form>
                                     <div class="form-group">
-                                        <label for="seat">সিট</label>
-                                        <select name="seat" id="seat" class="form-control">
-                                            <option value="১">১</option>
-                                            <option value="২">২</option>
-                                            <option value="৩">৩</option>
-                                            <option value="৪">৪</option>
-                                            <option value="৫">৫</option>
-                                            <option value="৬">৬</option>
-                                        </select>
+                                        <label for="cardnumber">কার্ড নম্বর</label>
+                                        <input class="form-control" type="tel" name="cardnumber" id="cardnumber" placeholder="1234 1234 1234 1234">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exp_date">মেয়াদ শেষ হওয়ার তারিখ</label>
+                                        <input class="form-control" type="tel" name="exp-date" id="exp_date" placeholder="MM / YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvc">সিভিসি কোড</label>
+                                        <input class="form-control" type="tel" name="cvc" id="cvc" placeholder="CVC">
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="message">ড্রাইভারের কাছে বার্তা পাঠান</label>
-                                        <textarea id="message" placeholder="উদাহরণস্বরূপ পিক-আপ বা ড্রপ-অফ অবস্থান বা লাগেজ মাপ সম্পর্কে ..." class="form-control"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="coupon">কুপন</label>
-                                        <div class="input-group">
-                                            <input type="text" id="coupon" placeholder="আপনার কি কুপন আছে?" class="form-control">
-                                            <div class="input-group-append">
-                                                <button class="btn secondary-button">প্রয়োগ করুন</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button class="btn theme-button w-100">কার্ড সংরক্ষণ করুন</button>
+                                    <p class="mt-15 text-center">এই যাত্রায় বুকিং দিয়ে আপনি আমাদের <a href="terms.html">শর্তাদি</a> এবং <a
+                                            href="privacy-policy.html">গোপনীয়তা নীতি</a> গ্রহণ করছেন</p>
                                 </form>
                             </div>
                             <div class="book-ride-footer p-30 d-flex justify-content-between">
-                                <a href="ride-details.html" class="btn secondary-button">Back</a>
-                                <a href="ride-payment.html" class="btn theme-button">Next</a>
+                                <a href="book-ride.html" class="btn secondary-button">Back</a>
                             </div>
                         </div>
                     </div>
