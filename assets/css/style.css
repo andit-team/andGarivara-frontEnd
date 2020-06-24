@@ -580,7 +580,7 @@ button:focus {
     margin: 0 0;
 }
 .dropdown-menu.dropdown-menu-right li {
-    position: relative;
+    /*position: relative;*/
     color: var(--text-color);
     text-transform: uppercase;
     font-size: 14px;
@@ -601,16 +601,27 @@ button:focus {
     padding: 6px 1.2rem;
     display: block;
 }
-.dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
+#mainNav ul li, .mean-nav ul li {
+     position: relative;
+ }
+#mainNav ul li.nav-item a.nav-link > span.points-overview-number {
+    right: 0!important;
+}
+.mean-nav ul li span.points-overview-number, .dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number, #mainNav ul li a span.points-overview-number {
     background-color: var(--red-color);
     position: absolute;
     border-radius: 5px;
     color: #fff;
-    padding: 2px 4px;
-    height: 21px;
+    padding: 1px 4px;
+    height: 18px;
     width: auto;
-    right: 9px;
-    font-size: 12px;
+    font-size: 11px;
+    top: 6px;
+    min-width: 21px;
+    text-align: center;
+}
+.dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number{
+    right: 9px!important;
 }
 .dropdown-menu.dropdown-menu-right li a {
     font-size: 14px;
@@ -2545,7 +2556,7 @@ background-color: #DAE0E3;
 
     /*Default for Max 1366px Width Devices*/
     body , .form-control{
-        font-size: 14px;
+        /*font-size: 14px;*/
     }
     h2.section-heading {
         font-size: 42px;
@@ -2666,6 +2677,12 @@ background-color: #DAE0E3;
       p {
           font-size: 14px;
       }
+      /*Menu CSS*/
+      .mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
+          right: 35px !important;
+          top: 19px;
+      }
+
       /*Hero Area CSS*/
       .hero-area-heading h1 {
           font-size: 32px;
