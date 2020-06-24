@@ -124,14 +124,22 @@
 
     // Range Slider JS Start
 
+    // Rides Page Km Range Slider JS Start
     $('#slider').slider({
         slide: function (e, value) {
             document.getElementById('value').innerText = value;
         }
     });
+
+    // Car Rental Page Taka Range Slider JS Start
     $('#slider2').slider({
         slide: function (e, value) {
             document.getElementById('value2').innerText = value;
+        }
+    });
+    $('#slider3').slider({
+        slide: function (e, value) {
+            document.getElementById('value3').innerText = value;
         }
     });
 
