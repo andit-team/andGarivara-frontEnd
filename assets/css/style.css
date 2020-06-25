@@ -215,7 +215,7 @@ figure {
     color: var(--hover-color);
 }
 .text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
-.driver-comment-area p{
+.driver-comment-area p, .create-ride-alert-modal form label{
     /*color: var(--black-color);*/
     color: var(--heading-color);
 }
@@ -272,7 +272,7 @@ figure {
 .mt-10, .ride-owner-box p{
     margin-top: 10px;
 }
-.mb-10, .ride-left-single-filter p, .dont-find-a-ride img{
+.mb-10, .ride-left-single-filter p, .create-ride-alert-modal form label, .dont-find-a-ride img{
     margin-bottom: 10px;
 }
 .mb-15 {
@@ -1199,6 +1199,45 @@ button:focus {
 .rides-right-title-area button {
     background-color: var(--white-color);
 }
+/*Ride Alert Button Modal CSS Start*/
+.create-ride-alert-modal .rides-left-search-filters .ride-left-single-filter{
+    border-bottom: none;
+}
+.create-ride-alert-modal .modal-content {
+    max-height: 700px!important;
+}
+.gj-datepicker-md {
+    width: 95%;
+    left: 38px;
+    top: 34px;
+    position: absolute;
+}
+.form-group{
+    position: relative;
+}
+.create-ride-alert-modal #datepicker3.form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 15px;
+}
+.create-ride-alert-modal .gj-datepicker-md [role="right-icon"] {
+    left: -44px;
+    height: 47px;
+    opacity: 0;
+}
+/*.create-ride-alert-modal .input-group-text {*/
+/*    display: flex;*/
+/*    padding: 12px .75rem;*/
+/*    height: 47px;*/
+/*    color: var(--hover-color);*/
+/*    border-right: 1px solid #ced4da;*/
+/*}*/
+
+.create-ride-alert-modal .input-group-text {
+    display: flex;
+}
+/*Ride Alert Button Modal CSS End*/
+
 /*Andgarivara Rides Page Earn Points CSS End*/
 
 /*Andgarivara Rides Page Left Side CSS Start*/
