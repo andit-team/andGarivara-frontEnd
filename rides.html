@@ -165,7 +165,7 @@
                 <li class="dropdown">
                     <a>গাড়ি লিজ</a>
                     <ul class="sub_menu">
-                        <li><a class="nav-link" href="leasing.html">প্রাইভেট লিজিং</a></li>
+                        <li><a class="nav-link" href="leasing.html">বেক্তিগত লিজিং</a></li>
                         <li><a class="nav-link" href="business-leasing.html">ব্যবসার জন্য লিজিং</a></li>
                         <li><a class="nav-link" href="leasing-how.html">কিভাবে কাজ করে</a></li>
                     </ul>
@@ -228,14 +228,14 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-street-view"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Where from?">
+                                    <input type="text" class="form-control" placeholder="কোথা থেকে?">
                                 </div>
                                 <div><button class="rides-location-reverse-btn"><i class="fas fa-exchange-alt"></i></button></div>
                                 <div class="input-group position-relative ride-page-filter-wrap">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Where to?">
+                                    <input type="text" class="form-control" placeholder="কোথায় যাব?">
                                 </div>
                                 <div class="date-time-wrap-box ride-page-filter-wrap">
                                     <div class="date-time-picker-container">
@@ -243,7 +243,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                                 </div>
-                                                <input id="datepicker" placeholder="06/14/2020" />
+                                                <input id="datepicker" placeholder="06-25-2020" />
                                             </div>
                                         <div class="time-search-box">
                                             <div class="input-group">
@@ -264,7 +264,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div><button class="theme-button">Search rides</button></div>
+                                <div><button class="theme-button">যাত্রা খুঁজুন</button></div>
                             </form>
                         </div>
                         <!-- Location And Datepicker Search Area End -->
@@ -291,7 +291,7 @@
                             <!-- Range slider Start -->
                             <div class="ride-left-single-filter">
                                 <div class="d-flex justify-content-between">
-                                    <p>Radius</p>
+                                    <p>দূরত্ব</p>
                                     <div>
                                         <span id="value"></span>
                                         <span>km</span>
@@ -403,7 +403,11 @@
 
                         <div class="rides-right-title-area d-flex justify-content-between align-items-center">
                             <h4>আসন্ন যাত্রা</h4>
-                            <a href="#" class="secondary-button btn">যাত্রা এলার্ট তৈরি করুন</a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn secondary-button" data-toggle="modal" data-target="#rentalFilterSearchModal">যাত্রা এলার্ট তৈরি করুন</button>
+                            <!-- Button trigger modal -->
+
                         </div>
 
                         <div class="rides-right-earn-points d-flex justify-content-start align-items-center">
@@ -638,6 +642,113 @@
 
     </section>
     <!-- Rides Page Area End -->
+
+    <!-- Rental Filter Search Modal-->
+    <div class="modal rental-page-filter-modal fade" id="rentalFilterSearchModal" tabindex="-1" role="dialog" aria-labelledby="rentalFilterModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rentalFilterModalTitle">Filters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="rides-left-search-filters">
+                        <form>
+
+
+                            <!-- Rental Modal Preferences Checkbox Start -->
+                            <div class="ride-left-single-filter">
+<!--                                <p>অগ্রাধিকার</p>-->
+<!--                                <div class="rental-page-modal-custom-wrap d-flex">-->
+<!--                                    <div class="custom-control custom-checkbox mb-3">-->
+<!--                                        <input type="checkbox" class="custom-control-input" id="preferenceCheck1" name="partial_routes">-->
+<!--                                        <label class="custom-control-label" for="preferenceCheck1">তাত্ক্ষণিক বুকিং</label>-->
+<!--                                    </div>-->
+<!--                                    <div class="custom-control custom-checkbox mb-3">-->
+<!--                                        <input type="checkbox" class="custom-control-input" id="preferenceCheck2" name="partial_routes">-->
+<!--                                        <label class="custom-control-label" for="preferenceCheck2">দীর্ঘমেয়াদী ভাড়া</label>-->
+<!--                                    </div>-->
+<!--                                    <div class="custom-control custom-checkbox mb-3">-->
+<!--                                        <input type="checkbox" class="custom-control-input" id="preferenceCheck3" name="partial_routes">-->
+<!--                                        <label class="custom-control-label" for="preferenceCheck3">বিদেশে ড্রাইভিং</label>-->
+<!--                                    </div>-->
+
+
+                                    <div class="form-group">
+                                        <label for="place_from">From</label>
+                                        <input type="text" class="form-control" id="place_from" placeholder="Enter address or city">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="place_to">To</label>
+                                        <input type="text" class="form-control" id="place_to" placeholder="Enter address or city">
+                                    </div>
+
+
+<!--                                    <div class="date-time-picker-container">-->
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                            </div>
+                                            <input id="datepicker3" class="form-control" placeholder="06/14/2020" />
+                                        </div>
+<!--                                    </div>-->
+
+
+                                <div class="form-group">
+                                    <label for="agent-new-seats">আসন সংখ্যা</label>
+                                    <select name="seats" id="agent-new-seats" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="agent-new-seats">Radius</label>
+                                    <select name="radius" id="agent-new-radius" class="form-control">
+                                        <option value="1">1 km</option>
+                                        <option value="2">2 km</option>
+                                        <option value="3">3 km</option>
+                                        <option value="4">4 km</option>
+                                        <option value="5">5 km</option>
+                                        <option value="6">6 km</option>
+                                        <option value="7">7 km</option>
+                                        <option value="8">8 km</option>
+                                    </select>
+                                </div>
+
+<!--                                </div>-->
+                            </div>
+                            <!-- Rental Modal Preferences Checkbox End -->
+
+                            <!-- Rental Modal Seats Checkbox Start -->
+                            <div class="ride-left-single-filter">
+<!--                                <p>আসন সংখ্যা</p>-->
+
+                                <div class="rental-page-modal-custom-wrap rental-modal-seat-select-wrap d-flex">
+
+                                </div>
+                            </div>
+                            <!-- Rental Modal Seats Checkbox End -->
+                        </form>
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="rental-modal-clear-btn">Clear filters</button>
+                    <button type="button" class="theme-button">আপডেট সার্চ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rental Filter Search Modal-->
 
     <!-- Footer Start -->
     <footer class="andgarivara-footer-area">
