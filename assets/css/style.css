@@ -2898,6 +2898,12 @@ background-color: #DAE0E3;
           width: 600px;
           max-width: 600px;
       }
+      .andgarivara-rental-page-area .datepicker-search-box {
+          width: 73%;
+      }
+      .andgarivara-rental-page-area .gj-dropdown {
+          width: 63%;
+      }
 
   }
 
@@ -2990,7 +2996,9 @@ background-color: #DAE0E3;
       .ride-left-preference-wrap, .rental-page-modal-custom-wrap {
           flex-direction: column;
       }
-
+      .andgarivara-rental-page-area .datepicker-search-box {
+          width: 65%;
+      }
       /*Leasing Page CSS Start*/
       .car-leasing-page-aside-component {
           margin-bottom: 30px;
@@ -3042,6 +3050,8 @@ background-color: #DAE0E3;
     .rental-car-list-photo-wrap img {
         height: 362px!important;
     }
+
+    /*Rental Page*/
     .andgarivara-rental-page-area .datepicker-search-box-wrap form {
         flex-direction: column;
     }
@@ -3054,6 +3064,9 @@ background-color: #DAE0E3;
     }
     .rental-cars-filter-result p {
         margin-bottom: 15px;
+    }
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 77%;
     }
     /*Car Leasing Page CSS*/
     .sticky-menu-wrap {
@@ -3175,6 +3188,9 @@ background-color: #DAE0E3;
       .date-time-picker-container .input-group, .gj-dropdown {
           width: 70%;
           overflow: hidden;
+      }
+      .gj-picker.gj-picker-md.datepicker.gj-unselectable[type="month"] {
+          left: -2px!important;
       }
 
       /*Rides Details Page CSS*/
