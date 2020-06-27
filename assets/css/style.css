@@ -33,7 +33,6 @@
 
 /* Use font link */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Use style sheet */
 
@@ -69,14 +68,14 @@ body {
     background: #fff none repeat scroll;
     font-size: 16px;
     font-weight: normal;
-    font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #777c87;
     letter-spacing: 0.05em;
     overflow-x: hidden;
 }
 
 p{
-  font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.75;
   color: #777c87;
   margin-bottom: 0;
@@ -260,7 +259,7 @@ figure {
     2.4 Theme Font Family
 -----------------------------------*/
 .bangla-font-regular, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
-    font-family: 'SolaimanLipiRegular', 'Arimo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 .english-font-arimo, .home-popular-rental-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h5,
 .bottom-footer-left ul li a, .bottom-footer-left ul li a, .rental-cars-filter-result select, .ride-list-card .ride-list h5, .location-datepicker-search .theme-button{
@@ -287,7 +286,10 @@ figure {
 .mb-20 {
     margin-bottom: 20px;
 }
-.mb-30, .hero-area-heading, .rides-right-title-area{
+.mt-20, .car-rental-not-found-list {
+    margin-top: 20px;
+}
+.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list{
     margin-bottom: 30px;
 }
 .mb-40{
@@ -630,7 +632,7 @@ button:focus {
     display: block;
     font-weight: 400;
     color: var(--heading-color);
-    font-family: SolaimanLipiBold;
+    font-family: 'SolaimanLipiBold';
     padding: 4px 1.2rem;
 }
 .dropdown-menu .dropdown-divider {
@@ -1859,6 +1861,11 @@ button:focus {
 background-color: #DAE0E3;
 }
 /*Rental Page Filter Search Modal End*/
+
+/*Rental Car Not Found CSS*/
+.car-rental-not-found-list img {
+    height: 250px;
+}
 
 /*Rental Google Map Area CSS*/
 .rental-map-area {
