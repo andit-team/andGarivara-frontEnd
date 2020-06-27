@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5867e730-ffab-4d58-8d7a-ee8c55b77467" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents-new.html" beforeDir="false" afterPath="$PROJECT_DIR$/agents-new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-ride.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-ride.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car-rental.html" beforeDir="false" afterPath="$PROJECT_DIR$/car-rental.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/how.html" beforeDir="false" afterPath="$PROJECT_DIR$/how.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leasing.html" beforeDir="false" afterPath="$PROJECT_DIR$/leasing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/message-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ride-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ride-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ride-payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/ride-payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rides.html" beforeDir="false" afterPath="$PROJECT_DIR$/rides.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.html" beforeDir="false" afterPath="$PROJECT_DIR$/route.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +75,7 @@
       <workItem from="1592888415514" duration="22394000" />
       <workItem from="1592973017961" duration="17428000" />
       <workItem from="1593058768106" duration="20716000" />
-      <workItem from="1593231700367" duration="2621000" />
+      <workItem from="1593231700367" duration="7456000" />
     </task>
     <servers />
   </component>

@@ -243,7 +243,7 @@ figure {
 .font-12, .rental-car-location p{
     font-size: 12px;
 }
-.font-14, .blog-author-box p, .rental-cars-filter-result p, .rental-cars-filter-result form label{
+.font-14, .theme-button, .blog-author-box p, .rental-cars-filter-result p, .rental-cars-filter-result form label{
     font-size: 14px;
 }
 .font-15{
@@ -1207,21 +1207,24 @@ button:focus {
     max-height: 700px!important;
 }
 .gj-datepicker-md {
-    width: 95%;
-    left: 38px;
-    top: 34px;
-    position: absolute;
+    /*width: 95%;*/
+    /*left: 38px;*/
+    /*top: 34px;*/
+    /*position: absolute;*/
+}
+.gj-picker-md div[role="navigator"] div:first-child, .gj-picker-md div[role="navigator"] div:last-child {
+    text-align: center;
 }
 .form-group{
     position: relative;
 }
 .create-ride-alert-modal #datepicker3.form-control {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
     padding-left: 15px;
 }
 .create-ride-alert-modal .gj-datepicker-md [role="right-icon"] {
-    left: -44px;
+    left: 0;
     height: 47px;
     opacity: 0;
 }
@@ -1560,10 +1563,24 @@ button:focus {
 }
 #datepicker, #datepicker2 {
     height: 45px;
-    /* width: 135px; */
+    width: 100%;
     /* width: 141px; */
     border: none;
-    margin-left: 1px;
+    margin-left: 40px;
+    padding-left: 15px;
+}
+.location-datepicker-search .gj-datepicker-md {
+     width: 100%;
+    /* left: 38px; */
+    /* top: 34px; */
+    position: absolute;
+}
+.location-datepicker-search .gj-datepicker-md [role="right-icon"] {
+    /*position: absolute;*/
+    left: 42px !important;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
 }
 .date-time-picker-container .input-group {
     width: 60%;
@@ -2871,6 +2888,9 @@ background-color: #DAE0E3;
       .ride-list-card .ride-list .ride-list-middle-content {
           width: 54%;
       }
+      .gj-dropdown {
+          width: 87%;
+      }
       /*Ride Page CSS End*/
 
       /*Rental Page CSS Start*/
@@ -2940,7 +2960,7 @@ background-color: #DAE0E3;
           width: 100% !important;
       }
       .gj-dropdown {
-          width: 84%;
+          width: 82%;
       }
       .mobile-filter-title-button{
           display: block;
@@ -3153,7 +3173,7 @@ background-color: #DAE0E3;
 
       /*Rides Page CSS*/
       .date-time-picker-container .input-group, .gj-dropdown {
-          width: 71%;
+          width: 70%;
           overflow: hidden;
       }
 

@@ -109,10 +109,11 @@
 
     // Datepicker JS Start
     $('#datepicker').datepicker({
-        uiLibrary: 'bootstrap4'
+        // uiLibrary: 'bootstrap4'
+        calendarWeeks: true, modal: false, footer: true
     });
     $('#datepicker2').datepicker({
-        uiLibrary: 'bootstrap4'
+        calendarWeeks: true, modal: false, footer: true
     });
 
     // Ride Alert Agent New Calendar JS
