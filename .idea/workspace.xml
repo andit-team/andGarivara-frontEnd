@@ -4,8 +4,8 @@
     <list default="true" id="5867e730-ffab-4d58-8d7a-ee8c55b77467" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/footer-upper-left-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/footer-upper-left-img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car-rental.html" beforeDir="false" afterPath="$PROJECT_DIR$/car-rental.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/leasing-cars-img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,11 +31,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -77,11 +75,17 @@
       <workItem from="1593058768106" duration="20716000" />
       <workItem from="1593231700367" duration="11393000" />
       <workItem from="1593258458335" duration="1138000" />
+      <workItem from="1593315607122" duration="151000" />
+      <workItem from="1593318453585" duration="106000" />
+      <workItem from="1593318594086" duration="112000" />
+      <workItem from="1593319039870" duration="50000" />
+      <workItem from="1593319778465" duration="4435000" />
+      <workItem from="1593331918064" duration="1858000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1593249864539">
@@ -100,6 +104,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592108795105" />
+    <state x="828" y="427" key="save.project.as.template.dialog" timestamp="1593319795006">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="427" key="save.project.as.template.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593319795006" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593248076931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

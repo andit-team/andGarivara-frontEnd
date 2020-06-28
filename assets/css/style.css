@@ -350,13 +350,13 @@ section{
     min-height: 500px;
     height: auto;
     background-color: #018ec9;
-    background-image: url("../img/leasing-cars-img/banner.jpg");
+    background-image: url("../img/leasing-cars-img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .page-banner-overlay {
-    background: rgba(7, 17, 100, 0.5);
+    background: rgba(7, 17, 100, 0.6);
     height: 100%;
     position: absolute;
     z-index: 9;
@@ -967,7 +967,7 @@ button:focus {
 
 /*Andgarivara Hero Right Img*/
 .andgarivara-hero-img {
-    text-align: center;
+    /*text-align: center;*/
 }
 .andgarivara-hero-img img {
     height: 390px;
@@ -1101,15 +1101,16 @@ button:focus {
     border-radius: 50%;
     left: 23px;
     top: 27px;
-    height: 75px;
-    width: 75px;
+    height: 70px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
     z-index: 9;
 }
-
+.home-popular-leasing-cars .rental-car-img-tag p{
+    font-size: 12px;
+}
 /*Andgarivara Blog CSS*/
 .home-blog-area .home-service-box h4 {
     min-height: 54px;
@@ -1481,6 +1482,9 @@ button:focus {
 /*-------------------------------------------
     11. Andgarivara Rental Page Area Start
 -------------------------------------------*/
+.main.rental-page-main {
+    height: 100vh;
+}
 .andgarivara-rental-page-area {
     height: calc(100% - 70px);
     background-color: var(--bg-secondary);
@@ -2759,6 +2763,9 @@ background-color: #DAE0E3;
     p{
         font-size: 14px;
     }
+    .hero-area-heading h1 {
+        font-size: 38px;
+    }
     /*Rides Page CSS*/
     #datepicker, #datepicker2 {
         /*width: 115px;*/
@@ -2799,6 +2806,9 @@ background-color: #DAE0E3;
       }
       .andgarivara-hero-area {
           height: auto;
+      }
+      .andgarivara-hero-img {
+          margin-top: 30px;
       }
       /*Home Services CSS*/
       .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
