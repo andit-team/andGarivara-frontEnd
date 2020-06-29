@@ -307,6 +307,9 @@ figure {
 .p-30{
     padding: 30px;
 }
+.p-20{
+    padding: 20px;
+}
 .common-box-shadow{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
 }
@@ -2502,6 +2505,40 @@ background-color: #DAE0E3;
 
 /*-------------------------------------------
     22. Agents New Page Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    23. Profiles Own Profile Page Area Start
+-------------------------------------------*/
+.profile-name-ratings-bar {
+    border-bottom: 1px solid var(--border-color);
+}
+/*Profiles Left Side*/
+
+/*Progress Bar*/
+.profile-progress-bar {
+    background-color: #4AD1BE4D;
+}
+
+/*Profile Status Component Start*/
+.profile-left-list-group .list-group-item{
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-group-item.disabled{
+    color: var(--text-color);
+}
+.list-group-item i {
+    font-size: 12px;
+    color: var(--green-color);
+}
+/*Profile Status Component End*/
+
+
+/*-------------------------------------------
+    23. Profiles Own Profile Page Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
