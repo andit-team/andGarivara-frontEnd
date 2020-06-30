@@ -366,9 +366,12 @@ section{
     width: 100%;
 }
 .page-banner-wrap, .page-banner-content  {
+    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+.page-banner-content  {
+    height: 100%;
 }
 .default-text-shortness, .home-popular-rental-cars .popular-rental-car-title,
 .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5, .home-popular-rental-cars .popular-rental-car-title {
@@ -2510,6 +2513,53 @@ background-color: #DAE0E3;
 /*-------------------------------------------
     23. Profiles Own Profile Page Area Start
 -------------------------------------------*/
+
+/*Profile Page Banner CSS*/
+.profile-page-banner{
+    /*position: relative;*/
+}
+.profile-page-banner .page-banner-content {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+.profile-photo-wrap {
+    position: relative;
+    top: 80px;
+}
+.profile-photo-wrap .profile-photo-owner {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    height: 200px;
+    width: 200px;
+    background-color: #ebebeb;
+}
+.profile-photo-wrap .profile-photo-owner img {
+    height: 200px;
+    width: auto;
+}
+.profile-photo-wrap span {
+    right: 10px;
+    bottom: 16px;
+}
+/*Under Profile Edit Button*/
+.dropdown.profile-edit-button form .dropdown-item {
+    position: relative;
+    overflow: hidden;
+}
+.profile-edit-button form input[type="file"] {
+    cursor: pointer;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+/*Profile Ratings Bar CSS*/
 .profile-name-ratings-bar {
     border-bottom: 1px solid var(--border-color);
 }
@@ -2536,6 +2586,9 @@ background-color: #DAE0E3;
 }
 
 /*Profile Status Component Start*/
+.profile-left-list-group {
+    margin-bottom: 20px;
+}
 .profile-left-list-group .list-group-item{
     color: var(--black-color);
     display: flex;
@@ -2544,6 +2597,11 @@ background-color: #DAE0E3;
 }
 .list-group-item.disabled{
     color: var(--text-color);
+}
+.profile-left-list-group .list-group-item span > i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: var(--black-color);
 }
 .list-group-item i {
     font-size: 12px;
