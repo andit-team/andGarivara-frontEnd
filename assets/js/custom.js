@@ -169,10 +169,7 @@
             Counter: $(this).text()
         }, {
             duration: delay,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now)+'%');
-            }
+            easing: 'swing'
         });
     });
     // Profile Page Progress Bar JS End

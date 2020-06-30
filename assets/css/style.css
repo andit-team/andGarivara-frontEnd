@@ -2515,9 +2515,24 @@ background-color: #DAE0E3;
 }
 /*Profiles Left Side*/
 
+.profile-status h6 {
+    background-color: #fff;
+    padding: .89rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 /*Progress Bar*/
-.profile-progress-bar {
+.profile-progress {
     background-color: #4AD1BE4D;
+}
+.profile-progress.progress {
+    height: .25rem;
+    border-radius: 0;
+}
+.profile-progress .progress-bar{
+    background-color: var(--green-color);
 }
 
 /*Profile Status Component Start*/
