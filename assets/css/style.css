@@ -280,7 +280,7 @@ figure {
 .mb-15 {
     margin-bottom: 15px;
 }
-.mt-15, .card.profile-right-box .card-body .secondary-button{
+.mt-15, .card.profile-right-box .card-body .secondary-button, .card.profile-right-box .card-body .card-text{
     margin-top: 15px;
 }
 .mt-20, .car-leasing-page-aside-component p {
@@ -3070,6 +3070,19 @@ background-color: #DAE0E3;
       /*Footer CSS*/
       .footer-middle-area .row .col-12:last-child .footer-widget, .rental-map-area {
           display: none;
+      }
+
+      /*Profiles Own Profile CSS*/
+      .profile-page-banner .page-banner-content {
+          flex-direction: column!important;
+          justify-content: center!important;
+          align-content: center;
+          align-items: center;
+      }
+      .page-banner-content .dropdown.cover-photo-button {
+          position: absolute;
+          top: 30px;
+          right: 0;
       }
 
   }
