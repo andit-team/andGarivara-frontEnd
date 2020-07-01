@@ -89,7 +89,8 @@ a {
 
 /* Theme All Transitions
 ------------------------------- */
-a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .secondary-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .mobile-filter-title-button button{
+a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .secondary-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .mobile-filter-title-button button,
+.profile-edit-button{
     transition: all .5s ease-in-out;
 }
 
@@ -206,25 +207,26 @@ figure {
     2.2 Theme Inner Color Style
 -----------------------------------*/
 .text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a, .footer-upper-download-app-area h2, .footer-upper-download-app-area p, .footer-widget a, .copyright-text,
-.page-banner-content h1, .page-banner-content h5, .page-banner-area .car-leasing-page-aside-component ul li{
+.page-banner-content h1, .page-banner-content h5, .page-banner-area .car-leasing-page-aside-component ul li,
+.rental-car-category-name p{
     color: #fff;
 }
 .text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
-.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn{
+.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn, .profile-edit-button:hover button, .dropdown.profile-edit-button form .dropdown-item:hover{
     color: var(--hover-color);
 }
 .text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
-.driver-comment-area p, .create-ride-alert-modal form label{
+.driver-comment-area p, .create-ride-alert-modal form label, .card.profile-right-box .card-header{
     /*color: var(--black-color);*/
     color: var(--heading-color);
 }
-.bg-white, .location-datepicker-search{
+.bg-white, .location-datepicker-searc, .card.profile-right-box, .card.profile-right-box .card-header{
     background-color: #fff;
 }
 .different-bg, .rides-page-main section, .rental-cars-filter-result{
     background-color: var(--bg-secondary);
 }
-.default-p-color{
+.default-p-color, .andgarivara-profiles-own-page-area .report-btn{
     color: #777c87;
 }
 .svg-green-40{
@@ -271,13 +273,14 @@ figure {
 .mt-10, .ride-owner-box p{
     margin-top: 10px;
 }
-.mb-10, .ride-left-single-filter p, .create-ride-alert-modal form label, .dont-find-a-ride img{
+.mb-10, .ride-left-single-filter p, .create-ride-alert-modal form label, .dont-find-a-ride img,
+.inside-profile-rental-car-list .card-body .home-service-box .popular-rental-car-title{
     margin-bottom: 10px;
 }
 .mb-15 {
     margin-bottom: 15px;
 }
-.mt-15{
+.mt-15, .card.profile-right-box .card-body .secondary-button{
     margin-top: 15px;
 }
 .mt-20, .car-leasing-page-aside-component p {
@@ -289,7 +292,7 @@ figure {
 .mt-20, .car-rental-not-found-list {
     margin-top: 20px;
 }
-.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list{
+.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list, .card.profile-right-box{
     margin-bottom: 30px;
 }
 .mb-40{
@@ -298,13 +301,19 @@ figure {
 .mt-10 {
     margin-top: 10px;
 }
+.mr-10{
+    margin-right: 10px;
+}
+.mr-5, .ride-details-right-side .report-btn i, .andgarivara-profiles-own-page-area .report-btn i{
+    margin-right: 5px;
+}
 .mb-10, .service-showcase-title p {
     margin-bottom: 10px;
 }
 .mr-10{
     margin-right: 10px;
 }
-.p-30{
+.p-30, .card.profile-right-box .card-body{
     padding: 30px;
 }
 .p-20{
@@ -2386,10 +2395,6 @@ background-color: #DAE0E3;
     color: var(--text-color);
 }
 
-.ride-details-right-side .report-btn i {
-    margin-right: 10px;
-}
-
 /*Ride Details Page All Modal CSS*/
 .send-message-content p {
     color: var(--hover-color);
@@ -2515,9 +2520,6 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 
 /*Profile Page Banner CSS*/
-.profile-page-banner{
-    /*position: relative;*/
-}
 .profile-page-banner .page-banner-content {
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -2528,17 +2530,18 @@ background-color: #DAE0E3;
 .profile-photo-wrap {
     position: relative;
     top: 80px;
+    border-radius: 50%;
 }
 .profile-photo-wrap .profile-photo-owner {
     overflow: hidden;
     border-radius: 50%;
     border: 5px solid #fff;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-color: #ebebeb;
 }
 .profile-photo-wrap .profile-photo-owner img {
-    height: 200px;
+    height: 250px;
     width: auto;
 }
 .profile-photo-wrap span {
@@ -2546,6 +2549,16 @@ background-color: #DAE0E3;
     bottom: 16px;
 }
 /*Under Profile Edit Button*/
+.dropdown.profile-edit-button button , .dropdown.profile-edit-button form a {
+    font-size: 14px;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    font-family: "SolaimanLipiBold";
+}
+.dropdown.profile-edit-button form a {
+    font-size: 13px;
+    padding: .25rem 1.5rem;
+}
 .dropdown.profile-edit-button form .dropdown-item {
     position: relative;
     overflow: hidden;
@@ -2559,12 +2572,36 @@ background-color: #DAE0E3;
     opacity: 0;
 }
 
+/*Cover Photo Button CSS*/
+.page-banner-content .dropdown.cover-photo-button {
+    visibility: hidden;
+    opacity: 0;
+}
+.page-banner-content:hover .dropdown.cover-photo-button {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Profile Photo Button CSS*/
+.profile-photo-wrap > .dropdown.profile-photo-button {
+    position: absolute;
+    bottom: 54px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.profile-photo-wrap:hover > .dropdown.profile-photo-button {
+    visibility: visible;
+    opacity: 1;
+}
+
 /*Profile Ratings Bar CSS*/
 .profile-name-ratings-bar {
     border-bottom: 1px solid var(--border-color);
 }
-/*Profiles Left Side*/
-
+/*Profiles Left Side CSS Start*/
 .profile-status h6 {
     background-color: #fff;
     padding: .89rem 1.25rem;
@@ -2609,6 +2646,45 @@ background-color: #DAE0E3;
 }
 /*Profile Status Component End*/
 
+/*Profiles Left Side CSS Start*/
+
+/*Profiles Right Side CSS Start*/
+.card.profile-right-box {
+    border: none;
+}
+.card.profile-right-box .card-header {
+    padding: 15px 30px;
+}
+.card.profile-right-box .card-body {
+    text-align: center;
+}
+.card.profile-right-box .card-body .secondary-button {
+    text-align: center;
+}
+
+/*Inside Profile Rental Car List CSS*/
+.profile-right-box.inside-profile-rental-car-list .card-body {
+    padding-bottom: 15px;
+}
+.inside-profile-rental-car-list .card-body .home-service-box {
+    display: block;
+    padding: 0;
+}
+.inside-profile-rental-car-list .card-body .home-service-box .h-s-img img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.rental-car-category-name {
+    width: 100%;
+    background-color: var(--hover-color);
+    bottom: 0;
+}
+.inside-profile-rental-car-list .card-body .home-service-box .h-s-left {
+    text-align: left;
+    padding: 10px;
+}
+/*Profiles Right Side CSS End*/
 
 /*-------------------------------------------
     23. Profiles Own Profile Page Area End
