@@ -292,7 +292,8 @@ figure {
 .mt-20, .car-rental-not-found-list {
     margin-top: 20px;
 }
-.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list, .card.profile-right-box{
+.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list, .card.profile-right-box,
+.andgarivara-profiles-own-page-area .report-btn{
     margin-bottom: 30px;
 }
 .mb-40{
@@ -3236,6 +3237,10 @@ background-color: #DAE0E3;
       .footer-middle-area hr {
           margin: 30px 0;
       }
+      /*Profile Page CSS*/
+      .page-banner-area.profile-page-banner {
+          min-height: 420px;
+      }
 
   }
 
@@ -3450,6 +3455,14 @@ background-color: #DAE0E3;
       }
       .social-media {
           margin-top: 15px;
+      }
+      /*Profile Page CSS*/
+      .profile-name-ratings-bar .row > div {
+          display: flex !important;
+          flex-direction: column;
+      }
+      .edit-profile-box {
+          margin-top: 20px;
       }
 
   }
