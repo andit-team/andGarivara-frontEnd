@@ -2521,6 +2521,9 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 
 /*Profile Page Banner CSS*/
+.page-banner-area.profile-page-banner {
+    background-image: url("../img/profile-img/profile-own-banner.png");
+}
 .profile-page-banner .page-banner-content {
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -2686,6 +2689,11 @@ background-color: #DAE0E3;
     padding: 10px;
 }
 /*Profiles Right Side CSS End*/
+
+/*Profile Other Page CSS*/
+.page-banner-area.profile-other-page-banner {
+    background-image: url("../img/profile-img/profile-other-banner.png");
+}
 
 /*-------------------------------------------
     23. Profiles Own Profile Page Area End
