@@ -215,12 +215,14 @@ figure {
 .home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn, .profile-edit-button:hover button, .dropdown.profile-edit-button form .dropdown-item:hover{
     color: var(--hover-color);
 }
-.text-black-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
+.text-heading-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
 .driver-comment-area p, .create-ride-alert-modal form label, .card.profile-right-box .card-header{
-    /*color: var(--black-color);*/
     color: var(--heading-color);
 }
-.bg-white, .location-datepicker-searc, .card.profile-right-box, .card.profile-right-box .card-header{
+.text-black-color, .ratings-profile-box ul li > div p{
+    color: var(--black-color);
+}
+.bg-white, .location-datepicker-searc, .card.profile-right-box, .card.profile-right-box .card-header, .card.profile-right-box .card-footer{
     background-color: #fff;
 }
 .different-bg, .rides-page-main section, .rental-cars-filter-result{
@@ -241,7 +243,7 @@ figure {
 .font-bold, .footer-widget p{
     font-weight: 700;
 }
-.font-12, .rental-car-location p{
+.font-12, .rental-car-location p, .about-profile-box ul li p{
     font-size: 12px;
 }
 .font-14, .theme-button, .blog-author-box p, .rental-cars-filter-result p, .rental-cars-filter-result form label{
@@ -311,7 +313,7 @@ figure {
 .mb-10, .service-showcase-title p {
     margin-bottom: 10px;
 }
-.mr-10{
+.mr-10, .ratings-profile-box ul li > div{
     margin-right: 10px;
 }
 .p-30, .card.profile-right-box .card-body{
@@ -2694,6 +2696,55 @@ background-color: #DAE0E3;
 .page-banner-area.profile-other-page-banner {
     background-image: url("../img/profile-img/profile-other-banner.png");
 }
+.ratings-profile-box .card-body {
+    padding: 0 30px !important;
+}
+/*Profile other about profile component Start*/
+.about-profile-box ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-profile-box ul li img {
+    height: 32px;
+    margin-bottom: 5px;
+ }
+
+/*Profile other about profile component End*/
+
+/*Profile other Ratings component Start*/
+.ratings-profile-box ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    text-align: left;
+}
+.ratings-profile-box ul li:last-child {
+    border-bottom: none;
+}
+.profile-ratings-modal .ratings-profile-box ul li:last-child {
+    border-bottom: 1px solid var(--border-color);
+}
+.ratings-profile-box ul li .rating-profile-other-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+.ratings-profile-box ul li .rating-profile-other-img img {
+    height: 50px;
+}
+.ratings-profile-box .card-footer > a {
+    padding: 15px 30px;
+}
+.profile-ratings-modal .ratings-profile-box .card-body {
+    padding: 0;
+}
+/*Profile other Ratings component End*/
 
 /*-------------------------------------------
     23. Profiles Own Profile Page Area End
@@ -2975,6 +3026,19 @@ background-color: #DAE0E3;
         width: 75%;
     }
 
+    /*Profile Page CSS*/
+    .ratings-profile-box ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ratings-profile-box ul li > div {
+        margin-bottom: 3px;
+    }
+    .profile-ratings-modal .ratings-profile-box ul li {
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -3129,6 +3193,14 @@ background-color: #DAE0E3;
       .andgarivara-rental-page-area .gj-dropdown {
           width: 63%;
       }
+      /*Profile Ratings Modal CSS*/
+      .profile-ratings-modal .ratings-profile-box ul li {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+      .profile-ratings-modal .ratings-profile-box ul li > div {
+          margin-bottom: 3px;
+      }
 
   }
 
@@ -3245,9 +3317,17 @@ background-color: #DAE0E3;
       .footer-middle-area hr {
           margin: 30px 0;
       }
+
       /*Profile Page CSS*/
       .page-banner-area.profile-page-banner {
           min-height: 420px;
+      }
+      .ratings-profile-box ul li {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+      .ratings-profile-box ul li > div {
+          margin-bottom: 3px;
       }
 
   }
