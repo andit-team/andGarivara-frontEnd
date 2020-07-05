@@ -304,7 +304,7 @@ figure {
 .mt-10 {
     margin-top: 10px;
 }
-.mr-10{
+.mr-10, .ratings-profile-box ul li > div, .list-group-item span.list-left-tex > img{
     margin-right: 10px;
 }
 .mr-5, .ride-details-right-side .report-btn i, .andgarivara-profiles-own-page-area .report-btn i{
@@ -313,8 +313,8 @@ figure {
 .mb-10, .service-showcase-title p {
     margin-bottom: 10px;
 }
-.mr-10, .ratings-profile-box ul li > div{
-    margin-right: 10px;
+.mr-20, .list-group-item span.list-left-tex{
+    margin-right: 20px;
 }
 .p-30, .card.profile-right-box .card-body{
     padding: 30px;
@@ -2635,20 +2635,20 @@ background-color: #DAE0E3;
 .profile-left-list-group .list-group-item{
     color: var(--black-color);
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .list-group-item.disabled{
     color: var(--text-color);
 }
-.profile-left-list-group .list-group-item span > i {
-    margin-right: 10px;
-    font-size: 16px;
-    color: var(--black-color);
-}
+/*.profile-left-list-group .list-group-item span > i {*/
+/*    margin-right: 10px;*/
+/*    font-size: 16px;*/
+/*    color: var(--black-color);*/
+/*}*/
 .list-group-item i {
     font-size: 12px;
     color: var(--green-color);
+    padding-top: 5px;
 }
 /*Profile Status Component End*/
 
@@ -3328,6 +3328,26 @@ background-color: #DAE0E3;
       }
       .ratings-profile-box ul li > div {
           margin-bottom: 3px;
+      }
+      .about-profile-box ul {
+          flex-direction: column;
+      }
+      .about-profile-box ul li {
+          display: flex;
+          border-bottom: 1px solid var(--border-color);
+          padding: 10px 0;
+          margin-bottom: 10px;
+      }
+      .about-profile-box ul li img, .about-profile-box ul li h5 {
+          margin-right: 15px;
+      }
+      .about-profile-box ul li h5 {
+           min-width: 50px;
+           text-align: left;
+           width: auto;
+       }
+      .about-profile-box ul li p{
+          text-align: left;
       }
 
   }
