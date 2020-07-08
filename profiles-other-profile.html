@@ -370,7 +370,14 @@
                         <div class="card profile-right-box common-box-shadow ratings-profile-box">
                             <h6 class="card-header">১৬ রেটিং</h6>
                             <div class="card-body">
-                                <ul>
+                                <!-- If No Rating Start -->
+                                <div class="profile-box-no-rating d-none">
+                                    <img src="assets/img/profile-img/no-ratings.png" alt="Andgarivara">
+                                    <p class="card-text">আপনার প্রথম ভাড়া বা যাত্রা শুরু করার পরে আপনি এখানে আপনার রেটিংগুলি খুঁজে পাবেন। রেটিংগুলি সম্প্রদায়ে আপনার প্রোফাইলের জন্য বিশ্বাস তৈরি করে।</p>
+                                </div>
+                                <!-- If No Rating End -->
+                                <!-- If With Rating Start -->
+                                <ul class="d-block">
                                     <li>
                                         <div class="rating-profile-other-img"><a href="profiles-other-profile.html"><img src="assets/img/profile-img/owner2.png" alt="সুরাইয়া আয়শা" class="rounded-circle"></a></div>
                                         <div>আব্রাহাম লিংকন ২ বছর পূর্বে <a href="profiles-other-profile.html">সুরাইয়া আয়শা</a> কে একটি যাত্রা প্রস্তাব করেছিল।
@@ -466,6 +473,7 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <!-- If With Rating End -->
                             </div>
                             <div class="card-footer padding-zero">
                                 <!-- Button trigger modal -->

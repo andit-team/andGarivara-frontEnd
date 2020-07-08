@@ -2696,9 +2696,6 @@ background-color: #DAE0E3;
 .page-banner-area.profile-other-page-banner {
     background-image: url("../img/profile-img/profile-other-banner.png");
 }
-.ratings-profile-box .card-body {
-    padding: 0 30px !important;
-}
 /*Profile other about profile component Start*/
 .about-profile-box ul {
     display: flex;
