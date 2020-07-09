@@ -90,7 +90,7 @@ a {
 /* Theme All Transitions
 ------------------------------- */
 a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .secondary-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .mobile-filter-title-button button,
-.profile-edit-button{
+.profile-edit-button, .offered-ride-list .offered-ride-location{
     transition: all .5s ease-in-out;
 }
 
@@ -212,11 +212,12 @@ figure {
     color: #fff;
 }
 .text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
-.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn, .profile-edit-button:hover button, .dropdown.profile-edit-button form .dropdown-item:hover{
+.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn, .profile-edit-button:hover button, .dropdown.profile-edit-button form .dropdown-item:hover,
+.offered-ride-list:hover .offered-ride-location{
     color: var(--hover-color);
 }
 .text-heading-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
-.driver-comment-area p, .create-ride-alert-modal form label, .card.profile-right-box .card-header{
+.driver-comment-area p, .create-ride-alert-modal form label, .card.profile-right-box .card-header, .offered-ride-location{
     color: var(--heading-color);
 }
 .text-black-color, .ratings-profile-box ul li > div p{
@@ -2742,6 +2743,19 @@ background-color: #DAE0E3;
     padding: 0;
 }
 /*Profile other Ratings component End*/
+
+/*Profile With Ride component Start*/
+.profile-box-rides .offered-ride-list:first-child {
+    border-top: none;
+}
+.offered-ride-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+/*Profile With Ride component End*/
 
 /*-------------------------------------------
     23. Profiles Own Profile Page Area End
