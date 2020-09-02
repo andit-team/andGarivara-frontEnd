@@ -51,18 +51,18 @@
             1. General Style
 -------------------------------------------------*/
 
-  * {
-      margin: 0;
-      padding: 0;
-      border: none;
-      outline: none;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
 
-  body,
-  html {
-      height: 100%;
-      margin: 0;
-  }
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
 
 body {
     background: #fff none repeat scroll;
@@ -74,64 +74,74 @@ body {
     overflow-x: hidden;
 }
 
-p{
-  font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.75;
-  color: #777c87;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 400;
+p {
+    font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.75;
+    color: #777c87;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 a {
-  color: #02449b;
+    color: #02449b;
 }
 
 /* Theme All Transitions
 ------------------------------- */
-a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .secondary-button, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .mobile-filter-title-button button,
-.profile-edit-button, .offered-ride-list .offered-ride-location{
+a,
+#mainNav,
+.andgarivara-hero-service-box h4,
+.theme-button,
+.secondary-button,
+.home-service-box .h-s-left h4,
+.home-service-box .h-s-left h5,
+.mobile-filter-title-button button,
+.profile-edit-button,
+.offered-ride-list .offered-ride-location {
     transition: all .5s ease-in-out;
 }
 
-.slow-transition{
+.slow-transition {
     transition: all .7s ease-in-out;
 }
 
-  ul li {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-  }
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-  ul {
-      margin: 0;
-      padding: 0;
-  }
+ul {
+    margin: 0;
+    padding: 0;
+}
 
-  a,
-  a > * {
-      outline: none;
-      cursor: pointer;
-      text-decoration: none;
-  }
+a,
+a>* {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
 
-  a:hover {
-      text-decoration: none;
-      color: #0a8aff;
-  }
+a:hover {
+    text-decoration: none;
+    color: #0a8aff;
+}
 
-  ::selection {
-      background-color: #93ebfb;
-  }
-  img::selection {
+::selection {
+    background-color: #93ebfb;
+}
+
+img::selection {
     background: transparent;
-  }
-  .page-link:focus {
-    box-shadow: none;
-  }
+}
 
-  /*----Form Control Reset CSS----*/
+.page-link:focus {
+    box-shadow: none;
+}
+
+/*----Form Control Reset CSS----*/
 .form-control {
     border-radius: 5px;
     border: none;
@@ -140,20 +150,25 @@ a, #mainNav, .andgarivara-hero-service-box h4, .theme-button, .secondary-button,
     color: #777c87;
     border: 1px solid #B9C1C9;
 }
-  .form-control:focus {
-      background-color: #fff;
-      border-color: #dddddd;
-      box-shadow: none;
-  }
-  .form-control::placeholder {
-      color: #a0a3aa;
-  }
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #dddddd;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #a0a3aa;
+}
+
 .input-group-text {
     background-color: transparent;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 label {
     margin-bottom: 0;
 }
@@ -172,20 +187,24 @@ h6 {
     margin: 0;
     color: var(--heading-color);
 }
+
 figure {
     margin: 0 0 0;
 }
-.card-body{
+
+.card-body {
     padding: 0;
 }
+
 .card-title {
     margin-bottom: 0;
 }
+
 /*--------------------------------
             2.1 Theme Color
 -----------------------------------*/
 
-:root{
+:root {
     --white-color: #fff;
     --black-color: #1B2530;
     /*--heading-color: #02449b;*/
@@ -206,125 +225,229 @@ figure {
 /*--------------------------------
     2.2 Theme Inner Color Style
 -----------------------------------*/
-.text-color-white, .bottom-footer-left ul li a, .bottom-footer-right ul li a, .footer-upper-download-app-area h2, .footer-upper-download-app-area p, .footer-widget a, .copyright-text,
-.page-banner-content h1, .page-banner-content h5, .page-banner-area .car-leasing-page-aside-component ul li,
-.rental-car-category-name p{
+.text-color-white,
+.bottom-footer-left ul li a,
+.bottom-footer-right ul li a,
+.footer-upper-download-app-area h2,
+.footer-upper-download-app-area p,
+.footer-widget a,
+.copyright-text,
+.page-banner-content h1,
+.page-banner-content h5,
+.page-banner-area .car-leasing-page-aside-component ul li,
+.rental-car-category-name p {
     color: #fff;
 }
-.text-hover-color, .andgarivara-hero-service-box:hover h4, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title, .home-popular-rides .home-service-box:hover .h-s-left h4, .home-popular-rides .home-service-box:hover .h-s-left h5, .home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
-.home-blog-area .home-service-box:hover .h-s-left h4, .ride-list-middle-content div span i, .rental-modal-clear-btn, .profile-edit-button:hover button, .dropdown.profile-edit-button form .dropdown-item:hover,
-.offered-ride-list:hover .offered-ride-location{
+
+.text-hover-color,
+.andgarivara-hero-service-box:hover h4,
+.home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
+.home-popular-rides .home-service-box:hover .h-s-left h4,
+.home-popular-rides .home-service-box:hover .h-s-left h5,
+.home-popular-rental-cars .home-service-box:hover .popular-rental-car-title,
+.home-blog-area .home-service-box:hover .h-s-left h4,
+.ride-list-middle-content div span i,
+.rental-modal-clear-btn,
+.profile-edit-button:hover button,
+.dropdown.profile-edit-button form .dropdown-item:hover,
+.offered-ride-list:hover .offered-ride-location {
     color: var(--hover-color);
 }
-.text-heading-color, .ride-list-card .ride-list h5, .ride-list-card .ride-list h6, .ride-owner-box p, .ride-left-single-filter p, .rides-right-title-area h4,
-.driver-comment-area p, .create-ride-alert-modal form label, .card.profile-right-box .card-header, .offered-ride-location{
+
+.text-heading-color,
+.ride-list-card .ride-list h5,
+.ride-list-card .ride-list h6,
+.ride-owner-box p,
+.ride-left-single-filter p,
+.rides-right-title-area h4,
+.driver-comment-area p,
+.create-ride-alert-modal form label,
+.card.profile-right-box .card-header,
+.offered-ride-location {
     color: var(--heading-color);
 }
-.text-black-color, .ratings-profile-box ul li > div p{
+
+.text-black-color,
+.ratings-profile-box ul li>div p {
     color: var(--black-color);
 }
-.bg-white, .location-datepicker-searc, .card.profile-right-box, .card.profile-right-box .card-header, .card.profile-right-box .card-footer{
+
+.bg-white,
+.location-datepicker-searc,
+.card.profile-right-box,
+.card.profile-right-box .card-header,
+.card.profile-right-box .card-footer {
     background-color: #fff;
 }
-.different-bg, .rides-page-main section, .rental-cars-filter-result{
+
+.different-bg,
+.rides-page-main section,
+.rental-cars-filter-result {
     background-color: var(--bg-secondary);
 }
-.default-p-color, .andgarivara-profiles-own-page-area .report-btn{
+
+.default-p-color,
+.andgarivara-profiles-own-page-area .report-btn {
     color: #777c87;
 }
-.svg-green-40{
-    fill: #018ec9!important;
+
+.svg-green-40 {
+    fill: #018ec9 !important;
 }
+
 .page-banner-area .car-leasing-page-aside-component ul li .svg-green-40 {
-     fill: #fff !important;
- }
+    fill: #fff !important;
+}
+
 /*--------------------------------
     2.3 Theme Font Style
 -----------------------------------*/
-.font-bold, .footer-widget p{
+.font-bold,
+.footer-widget p {
     font-weight: 700;
 }
-.font-12, .rental-car-location p, .about-profile-box ul li p{
+
+.font-12,
+.rental-car-location p,
+.about-profile-box ul li p {
     font-size: 12px;
 }
-.font-14, .theme-button, .blog-author-box p, .rental-cars-filter-result p, .rental-cars-filter-result form label{
+
+.font-14,
+.theme-button,
+.blog-author-box p,
+.rental-cars-filter-result p,
+.rental-cars-filter-result form label {
     font-size: 14px;
 }
-.font-15{
+
+.font-15 {
     font-size: 15px;
 }
-.font-16, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .accordion-box .block .content .text{
+
+.font-16,
+.home-service-box .h-s-left h4,
+.home-service-box .h-s-left h5,
+.accordion-box .block .content .text {
     font-size: 16px;
 }
-.font-18, .home-service-box .h-s-right h4, .call-to-action-content p {
+
+.font-18,
+.home-service-box .h-s-right h4,
+.call-to-action-content p {
     font-size: 18px;
 }
 
 /*--------------------------------
     2.4 Theme Font Family
 -----------------------------------*/
-.bangla-font-regular, .home-service-box .h-s-left h4, .home-service-box .h-s-left h5{
+.bangla-font-regular,
+.home-service-box .h-s-left h4,
+.home-service-box .h-s-left h5 {
     font-family: 'SolaimanLipiRegular', 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-.english-font-arimo, .home-popular-rental-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h4, .home-popular-leasing-cars .home-service-box .h-s-left h5,
-.bottom-footer-left ul li a, .bottom-footer-left ul li a, .rental-cars-filter-result select, .ride-list-card .ride-list h5, .location-datepicker-search .theme-button{
+
+.english-font-arimo,
+.home-popular-rental-cars .home-service-box .h-s-left h4,
+.home-popular-leasing-cars .home-service-box .h-s-left h4,
+.home-popular-leasing-cars .home-service-box .h-s-left h5,
+.bottom-footer-left ul li a,
+.bottom-footer-left ul li a,
+.rental-cars-filter-result select,
+.ride-list-card .ride-list h5,
+.location-datepicker-search .theme-button {
     font-family: 'Roboto', sans-serif;
 }
+
 /*--------------------------------
     2.5 Theme Margin and Padding
 -----------------------------------*/
-.mt-10, .ride-owner-box p{
+.mt-10,
+.ride-owner-box p {
     margin-top: 10px;
 }
-.mb-10, .ride-left-single-filter p, .create-ride-alert-modal form label, .dont-find-a-ride img,
-.inside-profile-rental-car-list .card-body .home-service-box .popular-rental-car-title{
+
+.mb-10,
+.ride-left-single-filter p,
+.create-ride-alert-modal form label,
+.dont-find-a-ride img,
+.inside-profile-rental-car-list .card-body .home-service-box .popular-rental-car-title {
     margin-bottom: 10px;
 }
+
 .mb-15 {
     margin-bottom: 15px;
 }
-.mt-15, .card.profile-right-box .card-body .secondary-button, .card.profile-right-box .card-body .card-text{
+
+.mt-15,
+.card.profile-right-box .card-body .secondary-button,
+.card.profile-right-box .card-body .card-text {
     margin-top: 15px;
 }
-.mt-20, .car-leasing-page-aside-component p {
+
+.mt-20,
+.car-leasing-page-aside-component p {
     margin-top: 20px;
 }
+
 .mb-20 {
     margin-bottom: 20px;
 }
-.mt-20, .car-rental-not-found-list {
+
+.mt-20,
+.car-rental-not-found-list {
     margin-top: 20px;
 }
-.mb-30, .hero-area-heading, .rides-right-title-area, .car-rental-not-found-list, .card.profile-right-box,
-.andgarivara-profiles-own-page-area .report-btn{
+
+.mb-30,
+.rides-right-title-area,
+.car-rental-not-found-list,
+.card.profile-right-box,
+.andgarivara-profiles-own-page-area .report-btn {
     margin-bottom: 30px;
 }
-.mb-40{
+
+.mb-40 {
     margin-bottom: 40px;
 }
+
 .mt-10 {
     margin-top: 10px;
 }
-.mr-10, .ratings-profile-box ul li > div, .list-group-item span.list-left-tex > img{
+
+.mr-10,
+.ratings-profile-box ul li>div,
+.list-group-item span.list-left-tex>img {
     margin-right: 10px;
 }
-.mr-5, .ride-details-right-side .report-btn i, .andgarivara-profiles-own-page-area .report-btn i{
+
+.mr-5,
+.ride-details-right-side .report-btn i,
+.andgarivara-profiles-own-page-area .report-btn i {
     margin-right: 5px;
 }
-.mb-10, .service-showcase-title p {
+
+.mb-10,
+.service-showcase-title p {
     margin-bottom: 10px;
 }
-.mr-20, .list-group-item span.list-left-tex{
+
+.mr-20,
+.list-group-item span.list-left-tex {
     margin-right: 20px;
 }
-.p-30, .card.profile-right-box .card-body{
+
+.p-30,
+.card.profile-right-box .card-body {
     padding: 30px;
 }
-.p-20{
+
+.p-20 {
     padding: 20px;
 }
-.common-box-shadow{
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+
+.common-box-shadow {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
 /*--------------------------------
@@ -338,30 +461,37 @@ figure {
         max-width: 1170px;
     }
 }
+
 .section-title-area {
     margin-bottom: 60px;
     text-align: center;
 }
+
 h2.section-heading {
     font-size: 46px;
     margin-bottom: 15px;
     line-height: 36px;
 }
-section{
+
+section {
     padding: 80px 0;
     position: relative;
     z-index: 9;
 }
-.padding-zero{
+
+.padding-zero {
     padding: 0 0;
 }
-.pagination .page-item.active .page-link{
+
+.pagination .page-item.active .page-link {
     background-color: var(--heading-color);
     border-color: var(--heading-color);
 }
-.pagination .page-link{
+
+.pagination .page-link {
     color: var(--heading-color);
 }
+
 .page-banner-area {
     min-height: 500px;
     height: auto;
@@ -371,6 +501,7 @@ section{
     background-size: cover;
     background-position: center;
 }
+
 .page-banner-overlay {
     background: rgba(7, 17, 100, 0.6);
     height: 100%;
@@ -378,36 +509,51 @@ section{
     z-index: 9;
     width: 100%;
 }
-.page-banner-wrap, .page-banner-content  {
+
+.page-banner-wrap,
+.page-banner-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.page-banner-content  {
+
+.page-banner-content {
     height: 100%;
 }
-.default-text-shortness, .home-popular-rental-cars .popular-rental-car-title,
-.home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5, .home-popular-rental-cars .popular-rental-car-title {
+
+.default-text-shortness,
+.home-popular-rental-cars .popular-rental-car-title,
+.home-popular-rides .home-service-box .h-s-left h4,
+.home-popular-rides .home-service-box .h-s-left h5,
+.home-popular-rental-cars .popular-rental-car-title {
     white-space: nowrap;
     width: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
 }
-.link-text-hover-style, .footer-widget a:hover, .bottom-footer-left ul li a:hover, .bottom-footer-right ul li a:hover {
+
+.link-text-hover-style,
+.footer-widget a:hover,
+.bottom-footer-left ul li a:hover,
+.bottom-footer-right ul li a:hover {
     text-decoration: underline;
 }
+
 .menu-no-style {
     display: flex;
     color: var(--heading-color);
 }
+
 .menu-no-style a {
     padding: 0 15px 0 7px !important;
     font-weight: bold;
 }
+
 hr {
     border-top: 1px solid rgba(44, 212, 217, .2);
 }
+
 select {
     background-color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.76297 11.8899C9.54611 11.547 10.1726 10.3225 10.7991 9.68571C11.2299 9.19589 11.5823 8.70607 11.9347 8.11829C12.248 7.62847 13.2269 6.69782 13.3052 6.69782C14.5191 6.35495 14.01 4.00382 12.7962 4.34669C11.8172 4.5916 11.0732 5.71818 10.4076 6.59985C9.82021 7.38356 8.99791 8.16727 8.48887 9.04894C8.41056 9.09792 8.33224 9.19589 8.29309 9.24487C8.21477 9.19589 8.17561 9.1469 8.05814 9.04894C7.70573 8.26523 6.88343 7.53051 6.37438 6.94273C5.51293 6.01207 4.57316 4.88549 3.51592 4.19975C3.39845 4.10178 3.24182 4.00382 3.04603 4.00382C3.00687 4.00382 3.00687 4.00382 2.96772 4.00382C1.98879 3.90586 1.63638 5.71818 2.45867 6.30596C3.79002 7.18763 5.00389 8.65709 6.06113 9.97959C6.7268 10.8613 7.62741 12.4287 8.76297 11.8899Z' fill='%23909BA3' /%3E%3C/svg%3E%0A") !important;
@@ -425,6 +571,7 @@ select {
     /*-webkit-transform: none;*/
     /*transform: none;*/
 }
+
 /*.modal.fade .modal-dialog {*/
 /*    transform: scale(.8);*/
 /*}*/
@@ -435,17 +582,24 @@ select {
     /*-webkit-transform: scale(.8);*/
     /*transform: scale(.8);*/
 }
-.modal-footer > :not(:first-child) {
+
+.modal-footer> :not(:first-child) {
     margin-left: 0;
 }
-.modal-footer > :not(:last-child) {
+
+.modal-footer> :not(:last-child) {
     margin-right: 0;
 }
+
 .close {
     font-size: 26px;
 }
+
 /*Flat Icon Default Settings*/
-[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+[class^="flaticon-"]::before,
+[class*=" flaticon-"]::before,
+[class^="flaticon-"]::after,
+[class*=" flaticon-"]::after {
     margin-left: 0;
 }
 
@@ -456,35 +610,43 @@ select {
 /*--------------------------------------------
             3. Button Style
 ---------------------------------------------*/
-.btn{
-  padding: 0;
+.btn {
+    padding: 0;
 }
-.btn.focus, .btn:focus {
+
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: none;
 }
-button{
+
+button {
     background-color: transparent;
 }
+
 button:focus {
     outline: 0;
 }
+
 /*Slider Default Button CSS*/
-  .testi_prev, .testi_next {
-      cursor: pointer;
-      line-height: 39px;
-      position: absolute;
-      z-index: 9;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+.testi_prev,
+.testi_next {
+    cursor: pointer;
+    line-height: 39px;
+    position: absolute;
+    z-index: 9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Common Slier Dot CSS*/
 .owl-dots {
     text-align: center;
     display: block !important;
 }
+
 .owl-carousel button.owl-dot {
     background-color: #dee5ec;
     display: inline-block;
@@ -493,9 +655,10 @@ button:focus {
     width: 15px;
     border-radius: 50%;
 }
+
 .owl-dot.active {
     background-color: #4cbcf3 !important;
-    box-shadow: 0 0 0 6px rgba(76,188,243,.2);
+    box-shadow: 0 0 0 6px rgba(76, 188, 243, .2);
 }
 
 /*-----Theme Button Style-----*/
@@ -517,10 +680,12 @@ button:focus {
     align-items: center;
     justify-content: center;
 }
-.theme-button:hover{
+
+.theme-button:hover {
     background-color: var(--hover-color);
     color: #fff;
 }
+
 .secondary-button {
     border: 1px solid #B9C1C9;
     padding: 11px 20px;
@@ -528,7 +693,8 @@ button:focus {
     display: inline-block;
     height: 47px;
 }
-.secondary-button:hover{
+
+.secondary-button:hover {
     background-color: #e6e6e6;
     border-color: #9ca8b3;
 }
@@ -539,9 +705,11 @@ button:focus {
 .menu-section-area {
     padding: 0 20px;
 }
+
 .menu-section-area .navbar {
     padding: 0;
 }
+
 #mainNav {
     background-color: #fff;
     height: 70px;
@@ -549,15 +717,18 @@ button:focus {
     transition: all ease .6s;
     border-bottom: 1px solid var(--border-color);
 }
+
 #mainNav.navbar-shrink {
     background-color: #fff;
-    box-shadow: 0 0 9px 3px rgba(50,29,154,.2);
-    top:0
+    box-shadow: 0 0 9px 3px rgba(50, 29, 154, .2);
+    top: 0
 }
+
 #mainNav .navbar-brand {
     position: relative;
     top: -3px;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 16px;
     padding: 0.75em 10px;
@@ -565,18 +736,25 @@ button:focus {
     color: var(--heading-color);
     font-family: 'SolaimanLipiBold';
 }
-#mainNav .navbar-nav .nav-item:last-child .nav-link{
+
+#mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
 }
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active {
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link.active {
     color: var(--hover-color);
 }
+
 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #0a8aff;
 }
-#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
+
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
     color: var(--hover-color);
 }
+
 /*#mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::after, #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link:hover::after{*/
 /*    width: 60%;*/
 /*    opacity: 1;*/
@@ -587,10 +765,16 @@ button:focus {
     font-size: 30px;
 }
 
+
 /*---- Dropdown Menu CSS ----*/
 .dropdown-toggle::after {
     display: none;
 }
+
+.margin-right-menu {
+    margin-right: 40px;
+}
+
 /*#mainNav ul.navbar-nav li.nav-item.dropdown-box {*/
 /*    position: relative;*/
 /*}*/
@@ -600,6 +784,7 @@ button:focus {
     width: 210px;
     margin: 0 0;
 }
+
 .dropdown-menu.dropdown-menu-right li {
     /*position: relative;*/
     color: var(--text-color);
@@ -608,27 +793,37 @@ button:focus {
     /* font-weight: 700; */
     /*padding: 0 1.2rem;*/
 }
+
 .dropdown-menu.dropdown-menu-right li:hover a {
     background-color: #f4f4f4d9;
     color: var(--hover-color);
 }
-.dropdown-menu.dropdown-menu-right li:hover a {
-}
-.dropdown-menu.dropdown-menu-right li a > span {
+
+.dropdown-menu.dropdown-menu-right li:hover a {}
+
+.dropdown-menu.dropdown-menu-right li a>span {
     padding: 0;
 }
+
 .dropdown-menu.dropdown-menu-right li span {
     color: var(--text-color);
     padding: 6px 1.2rem;
     display: block;
 }
-#mainNav ul li, .mean-nav ul li {
-     position: relative;
- }
-#mainNav ul li.nav-item a.nav-link > span.points-overview-number {
-    right: 0!important;
+
+#mainNav ul li,
+.mean-nav ul li {
+    position: relative;
 }
-.mean-nav ul li span.points-overview-number, .dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number, #mainNav ul li a span.points-overview-number {
+
+#mainNav ul li.nav-item a.nav-link>span.points-overview-number {
+    right: 0 !important;
+}
+
+.mean-nav ul li span.points-overview-number,
+.dropdown-menu.dropdown-menu-right li span.points-overview-number,
+.mean-container .mean-nav ul.sub_menu li a span.points-overview-number,
+#mainNav ul li a span.points-overview-number {
     background-color: var(--red-color);
     position: absolute;
     border-radius: 5px;
@@ -641,9 +836,12 @@ button:focus {
     min-width: 21px;
     text-align: center;
 }
-.dropdown-menu.dropdown-menu-right li span.points-overview-number, .mean-container .mean-nav ul.sub_menu li a span.points-overview-number{
-    right: 9px!important;
+
+.dropdown-menu.dropdown-menu-right li span.points-overview-number,
+.mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
+    right: 9px !important;
 }
+
 .dropdown-menu.dropdown-menu-right li a {
     font-size: 14px;
     text-transform: capitalize;
@@ -654,6 +852,7 @@ button:focus {
     font-family: 'SolaimanLipiBold';
     padding: 4px 1.2rem;
 }
+
 .dropdown-menu .dropdown-divider {
     border-top: 1px solid #e5e5e5;
 }
@@ -685,7 +884,7 @@ button:focus {
     width: 199px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 12px 15px rgba(0,0,0,.10);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, .10);
     border: 1px solid var(--heading-color);
     z-index: 99;
     left: -140px;
@@ -696,31 +895,36 @@ button:focus {
     visibility: visible;
     opacity: 1;
 }
+
 .dropdown-list li a {
     padding: 6px 10px;
     display: block;
 }
-#mainNav .navbar-nav .nav-item .nav-link > i.fas.fa-globe {
+
+#mainNav .navbar-nav .nav-item .nav-link>i.fas.fa-globe {
     padding-right: 5px;
 }
-#mainNav .navbar-nav .nav-item .nav-link > i.fa-angle-down {
+
+#mainNav .navbar-nav .nav-item .nav-link>i.fa-angle-down {
     padding-left: 5px;
     position: relative;
     top: 2px;
     color: #c1c1c1;
 }
-@media (min-width: 992px) {
 
-}
- /* Mean Menu / Mobile Menu Style */
+@media (min-width: 992px) {}
+
+/* Mean Menu / Mobile Menu Style */
 .mean-container .mean-nav ul {
     margin: 0 0 0 0;
     background-color: transparent;
 }
+
 .mean-container .mean-nav ul li a:hover {
     /*background-color: rgba(255, 255, 255, .1);*/
     /*color: #fff !important;*/
 }
+
 .mean-container .mean-bar {
     background-color: var(--white-color);
     height: 60px;
@@ -728,12 +932,14 @@ button:focus {
     float: none;
     z-index: 99;
 }
+
 .mean-container .mean-nav {
     background-color: var(--white-color);
     margin-top: 0;
     height: 100%;
     border-bottom: 1px solid #EDF0F2;
 }
+
 .mean-container .mean-nav ul li a.mean-expand {
     /*padding: 0 !important;*/
     /*margin-top: 3px;*/
@@ -746,6 +952,7 @@ button:focus {
     /*justify-content: center;*/
     /*align-items: center;*/
 }
+
 .mean-container .mean-nav ul li a.mean-expand {
     padding: 0 !important;
     margin-top: 3px;
@@ -759,8 +966,9 @@ button:focus {
     align-items: center;
     left: -20px;
     font-weight: bold;
-    font-size: 26px!important;
+    font-size: 26px !important;
 }
+
 .mean-container .mean-nav ul li li a {
     width: 90%;
     padding: 1em 13% 1em 7%;
@@ -774,16 +982,19 @@ button:focus {
     opacity: 1;
     border-top: none;
 }
+
 .mobile-logo {
     position: relative;
     top: 9px;
     left: 16px;
     height: 38px;
 }
+
 .mean-container a.meanmenu-reveal {
     top: 9px;
     color: var(--heading-color);
 }
+
 .mean-container .mean-nav ul.menu {
     margin: 0 0 0 0;
     background-color: #fff;
@@ -793,35 +1004,43 @@ button:focus {
     top: 23px;
     padding: 20px 0;
 }
+
 .mean-container .mean-nav ul.sub_menu {
     background-color: #f4f4f4d9;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
 .mean-container .mean-nav ul.sub_menu li span.menu-inner-title {
     padding: 13px 30px;
     display: flex;
     color: #7a7979;
     font-size: 16px;
 }
+
 .mean-container a.meanmenu-reveal span {
     background-color: var(--heading-color);
 }
+
 .mean-container .mean-nav ul li a {
     color: var(--heading-color);
     /*border-top: 1px solid rgba(44, 212, 217, .2);*/
     border-top: none;
     font-size: 16px;
 }
-  .mean-container .mean-nav ul li a:hover {
-  }
-.mean-container .mean-nav ul li.mean-last a.section-button:hover, .mean-container .mean-nav ul li.dropdown a:hover {
+
+.mean-container .mean-nav ul li a:hover {}
+
+.mean-container .mean-nav ul li.mean-last a.section-button:hover,
+.mean-container .mean-nav ul li.dropdown a:hover {
     background: transparent;
     color: var(--heading-color) !important;
 }
+
 .mean-container .mean-nav ul li.mean-last {
     border-top: 0;
 }
+
 .mean-container .mean-nav ul li.mean-last a {
     /*border-top: 1px solid rgba(0, 0, 0, .25);*/
 }
@@ -835,9 +1054,11 @@ button:focus {
     padding: 10px 8px 8px;
     margin: 0 15px;
 }
+
 .dropdown-box img {
     height: 30px;
 }
+
 /*After Login Menu CSS End*/
 
 /*-------------------------------------------
@@ -855,9 +1076,11 @@ button:focus {
     font-size: 19px;
     z-index: 9;
 }
-.chat-bot-box:hover{
+
+.chat-bot-box:hover {
     box-shadow: 0 0 39px 4px rgba(205, 205, 205, 0.40);
 }
+
 /*-------------------------------------------
             4. Chat Bot Area
 -------------------------------------------*/
@@ -893,19 +1116,31 @@ button:focus {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-@media only screen and (min-width:300px) and (max-width:479px){
+
+@media only screen and (min-width:300px) and (max-width:479px) {
     .loader {
         margin: -100px 0 0 -60px;
     }
 }
+
 /*-------------------------------------------
             6. Preloader Area End
 -------------------------------------------*/
@@ -913,6 +1148,15 @@ button:focus {
 /*-------------------------------------------
             7. Andgarivara Hero Area
 -------------------------------------------*/
+.disabled {
+    background: linear-gradient(45deg, #d2d2d2, #b9b9b973);
+    cursor: auto;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
 .andgarivara-hero-area {
     background-color: #F5F5F5;
     /*min-height: 500px;*/
@@ -922,15 +1166,17 @@ button:focus {
 }
 
 /*Andgarivara Hero Left Content*/
-.andgarivara-left-content {
+/* .andgarivara-left-content {
     padding-right: 40px;
-}
+} */
 .andgarivara-left-content .hero-area-heading h6 {
     font-size: 22px;
 }
+
 .andgarivara-left-content h6 {
     margin-top: 20px;
 }
+
 .andgarivara-hero-service-box {
     background-color: #fff;
     margin-bottom: 20px;
@@ -939,58 +1185,79 @@ button:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 8px 6px rgba(2,68,155,.03);
+    box-shadow: 0 0 8px 6px rgba(2, 68, 155, .03);
+    height: 135px;
 }
+
 .andgarivara-left-content .andgarivara-hero-service-box:last-child {
     margin-bottom: 0;
 }
+
 .andgarivara-hero-service-box h6 {
     font-weight: 400;
     margin-top: 10px;
 }
-.andgarivara-hero-service-box i:before{
+
+.andgarivara-hero-service-box i:before {
     color: var(--heading-color);
 }
 
 /*Hero Area Arrow Effect*/
-.andgarivara-hero-service-box:hover i{
+.andgarivara-hero-service-box:hover i {
     position: relative;
-    animation-name:arrow;
-    animation-duration:2s;
-    animation-timing-function:linear;
-    animation-delay:.5s;
-    animation-iteration-count:infinite;
-    animation-direction:normal;
-    animation-play-state:running;
-    -webkit-animation-name:arrow;
-    -webkit-animation-duration:2s;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-delay:.5s;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction:normal;
-    -webkit-animation-play-state:running;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    -webkit-animation-name: arrow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
 }
 
-@keyframes arrow
-{
-    0%   {left:-5px;}
-    75% {left:5px;}
-    100% {left:-5px;}
+@keyframes arrow {
+    0% {
+        left: -5px;
+    }
+
+    75% {
+        left: 5px;
+    }
+
+    100% {
+        left: -5px;
+    }
 }
-@-webkit-keyframes arrow
-{
-    0%   {left:-5px;}
-    75% {left:5px;}
-    100% {left:-5px;}
+
+@-webkit-keyframes arrow {
+    0% {
+        left: -5px;
+    }
+
+    75% {
+        left: 5px;
+    }
+
+    100% {
+        left: -5px;
+    }
 }
 
 /*Andgarivara Hero Right Img*/
 .andgarivara-hero-img {
     /*text-align: center;*/
 }
+
 .andgarivara-hero-img img {
     height: 390px;
 }
+
 /*-------------------------------------------
             7. Andgarivara Hero End
 -------------------------------------------*/
@@ -1003,11 +1270,14 @@ button:focus {
     background-color: var(--deep-blue);
     padding: 44px 0;
 }
-.call-to-action-content h4, .call-to-action-content p {
+
+.call-to-action-content h4,
+.call-to-action-content p {
     color: var(--white-color);
     font-size: 21px;
     font-weight: normal;
 }
+
 /*-------------------------------------------
     8. Andgarivara Call To Action Area End
 -------------------------------------------*/
@@ -1018,48 +1288,64 @@ button:focus {
 .andgarivara-services-showcase-area {
     padding: 80px 0 0;
 }
+
 .service-showcase-wrap {
     margin-bottom: 70px;
 }
+
 .home-services-subtitle a i {
     margin-left: 7px;
 }
+
 .home-services-subtitle a i::before {
     font-size: 16px;
 }
+
 .home-service-box {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 0 8px 6px rgba(2,68,155,.03);
+    box-shadow: 0 0 8px 6px rgba(2, 68, 155, .03);
 }
+
 .home-service-box:hover {
     border-color: #DAE0E3;
 }
-.home-popular-rental-cars .home-service-box .h-s-left, .home-popular-leasing-cars .home-service-box .h-s-left, .home-blog-area .home-service-box .h-s-left {
+
+.home-popular-rental-cars .home-service-box .h-s-left,
+.home-popular-leasing-cars .home-service-box .h-s-left,
+.home-blog-area .home-service-box .h-s-left {
     padding: 15px 20px;
 }
+
 .h-s-left h4 {
     margin-bottom: 15px;
 }
-.home-service-box .h-s-left h4, .home-service-box .h-s-left h5, .home-popular-leasing-cars .home-service-box .h-s-left h5 {
+
+.home-service-box .h-s-left h4,
+.home-service-box .h-s-left h5,
+.home-popular-leasing-cars .home-service-box .h-s-left h5 {
     color: #000;
 }
+
 .home-service-box .h-s-right p {
     margin-bottom: 10px;
 }
 
 /*Popular Rental Cars CSS*/
-.home-popular-rental-cars .home-service-box, .home-blog-area .home-service-box {
+.home-popular-rental-cars .home-service-box,
+.home-blog-area .home-service-box {
     padding: 0;
     display: block;
     overflow: hidden;
 }
+
 .home-popular-rental-cars .h-s-left {
     justify-content: space-between;
     padding: 10px;
 }
+
 .home-popular-rental-cars .popular-rental-car-title {
     /*white-space: nowrap;*/
     width: 140px;
@@ -1067,6 +1353,7 @@ button:focus {
     /*text-overflow: ellipsis;*/
     /*max-width: 100%;*/
 }
+
 .rental-car-img-tag {
     background-color: var(--heading-color);
     padding: 5px;
@@ -1075,20 +1362,28 @@ button:focus {
     right: 0;
     top: 14px;
 }
-.rental-car-img-tag h5, .rental-car-img-tag p{
+
+.rental-car-img-tag h5,
+.rental-car-img-tag p {
     color: #fff;
 }
+
 .home-popular-rental-cars .h-s-img img {
     width: 100%;
 }
+
 .home-popular-rental-cars .rental-car-ratings img {
     height: 13px;
     margin-bottom: 8px;
 }
-.home-popular-rental-cars .popular-rental-car-title , .home-popular-leasing-cars .popular-rental-car-title, .home-blog-area .popular-rental-car-title{
+
+.home-popular-rental-cars .popular-rental-car-title,
+.home-popular-leasing-cars .popular-rental-car-title,
+.home-blog-area .popular-rental-car-title {
     font-size: 21px !important;
     margin-bottom: 6px !important;
 }
+
 .rental-car-owner-photo img {
     height: 44px;
 }
@@ -1099,23 +1394,29 @@ button:focus {
     display: block;
     overflow: hidden;
 }
+
 .home-popular-leasing-cars .h-s-img {
     overflow: hidden;
 }
+
 .home-popular-leasing-cars .h-s-img img {
     height: auto;
     transform: scale(1);
     transition: .5s;
     width: 100%;
 }
+
 .home-popular-leasing-cars .home-service-box:hover .h-s-img img {
     transform: scale(1.1);
     background-color: var(--hover-color);
 }
-.home-popular-leasing-cars .h-s-left, .home-blog-area .h-s-left {
+
+.home-popular-leasing-cars .h-s-left,
+.home-blog-area .h-s-left {
     padding: 10px;
 }
-.home-popular-leasing-cars .rental-car-img-tag{
+
+.home-popular-leasing-cars .rental-car-img-tag {
     background-color: var(--red-color);
     border-radius: 50%;
     left: 23px;
@@ -1127,25 +1428,75 @@ button:focus {
     align-items: center;
     z-index: 9;
 }
-.home-popular-leasing-cars .rental-car-img-tag p{
+
+.home-popular-leasing-cars .rental-car-img-tag p {
     font-size: 12px;
 }
+
 /*Andgarivara Blog CSS*/
 .home-blog-area .home-service-box h4 {
-    min-height: 54px;
+    min-height: 30px;
 }
+
+.online-now {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+
+.online-now i {
+    color: #06a606;
+    font-size: 10px;
+    border-radius: 50%;
+    animation: shadow-pull 3s infinite;
+    margin-right: 20px;
+    -webkit-animation: shadow-pull 3s infinite;
+}
+
+.offline-now {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.offline-now i {
+    color: #000;
+    font-size: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/*Online Button Effect */
+@keyframes shadow-pull {
+    0% {
+        box-shadow: 0 0 0 0 rgba(8, 153, 8, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 5px rgba(8, 153, 8, 0);
+    }
+}
+
+.online-now p i {
+    margin-right: 5px;
+}
+
 .home-blog-area .home-service-box p {
     height: auto;
     max-height: 91px;
 }
+
 .home-blog-area .h-s-img.position-relative img {
     height: auto;
     width: 100%;
 }
+
 .blog-author-box img {
     height: 40px;
     margin-right: 12px;
 }
+
 /*-------------------------------------------
     9. Andgarivara Services Showcase Area End
 -------------------------------------------*/
@@ -1156,6 +1507,7 @@ button:focus {
 .andgarivara-rides-page-area {
     padding-top: 0;
 }
+
 /*Andgarivara Rides Page Top Search Menu CSS Start*/
 .andgarivara-rides-page-area .sticky-menu-header {
     padding: 20px 0;
@@ -1163,17 +1515,21 @@ button:focus {
     box-shadow: none;
     border-bottom: 1px solid var(--bg-color);
 }
+
 .location-datepicker-search form {
     display: flex;
     justify-content: space-between;
 }
+
 .andgarivara-rides-page-area .form-control {
     border-left: 0;
 }
+
 .input-group-prepend {
     display: block;
     border-right: 1px solid #B9C1C9;
 }
+
 .input-group-text {
     display: block;
     padding: 12px .75rem;
@@ -1181,10 +1537,12 @@ button:focus {
     color: var(--hover-color);
     border-right: 1px solid #ced4da;
 }
+
 .ride-page-filter-wrap {
     width: 22%;
     margin-right: 10px;
 }
+
 .rides-location-reverse-btn {
     padding: 12px 14px;
     border: 1px solid #cbcbcb;
@@ -1193,63 +1551,79 @@ button:focus {
     margin: 0 10px 0 0;
     height: 47px;
 }
+
 .andgarivara-rides-page-area .date-time-wrap-box {
     width: 30%;
 }
+
 .andgarivara-rides-page-area .date-time-picker-container {
     /*width: 80%;*/
 }
+
 /*Andgarivara Rides Page Top Search Menu CSS End*/
 
 /*Andgarivara Rides Page Earn Points CSS Start*/
 .rides-right-earn-points {
     background: #fff;
 }
+
 .rides-right-earn-points {
     background: #fff;
     margin-bottom: 30px;
     padding: 30px;
-    border: 1px solid rgba(0,0,0,.125);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
 }
+
 .earn-point-left img {
     height: 50px;
 }
+
 .earn-point-right {
     margin-left: 20px;
 }
+
 .rides-right-title-area button {
     background-color: var(--white-color);
 }
+
 /*Ride Alert Button Modal CSS Start*/
-.create-ride-alert-modal .rides-left-search-filters .ride-left-single-filter{
+.create-ride-alert-modal .rides-left-search-filters .ride-left-single-filter {
     border-bottom: none;
 }
+
 .create-ride-alert-modal .modal-content {
-    max-height: 700px!important;
+    max-height: 700px !important;
 }
+
 .gj-datepicker-md {
     /*width: 95%;*/
     /*left: 38px;*/
     /*top: 34px;*/
     /*position: absolute;*/
 }
-.gj-picker-md div[role="navigator"] div:first-child, .gj-picker-md div[role="navigator"] div:last-child {
+
+.gj-picker-md div[role="navigator"] div:first-child,
+.gj-picker-md div[role="navigator"] div:last-child {
     text-align: center;
 }
-.form-group{
+
+.form-group {
     position: relative;
 }
+
 .create-ride-alert-modal #datepicker3.form-control {
     /*border-top-left-radius: 0;*/
     /*border-bottom-left-radius: 0;*/
     padding-left: 15px;
 }
+
 .create-ride-alert-modal .gj-datepicker-md [role="right-icon"] {
     left: 0;
     height: 47px;
     opacity: 0;
 }
+
 /*.create-ride-alert-modal .input-group-text {*/
 /*    display: flex;*/
 /*    padding: 12px .75rem;*/
@@ -1261,6 +1635,7 @@ button:focus {
 .create-ride-alert-modal .input-group-text {
     display: flex;
 }
+
 /*Ride Alert Button Modal CSS End*/
 
 /*Andgarivara Rides Page Earn Points CSS End*/
@@ -1268,14 +1643,16 @@ button:focus {
 /*Andgarivara Rides Page Left Side CSS Start*/
 .rides-left-search-filters {
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     padding: 15px 0 40px;
     border-radius: 5px;
 }
+
 /*Mobile Filter Update Area*/
-.mobile-filter-title-button{
+.mobile-filter-title-button {
     display: none;
 }
+
 .mobile-filter-title-button button {
     width: 100%;
     background-color: var(--hover-color);
@@ -1284,56 +1661,71 @@ button:focus {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
 .mobile-filter-title-button button:hover {
     background-color: var(--heading-color);
     color: #fff;
 }
+
 .mobile-filter-title-button button i {
     font-size: 12px;
     margin-left: 5px;
 }
+
 /*Mobile Filter Update Area*/
 .rides-left-search-filters .ride-left-single-filter {
     border-bottom: 1px solid var(--border-color);
     padding: 15px;
 }
-.custom-control-label, .custom-control {
+
+.custom-control-label,
+.custom-control {
     cursor: pointer;
 }
-.custom-control-input:checked ~ .custom-control-label::before {
+
+.custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: var(--hover-color);
     background-color: var(--hover-color);
 }
+
 .custom-control-input:focus~.custom-control-label::before {
     box-shadow: none;
 }
+
 .ride-left-filter-button .theme-button {
     width: 140px;
     padding: 10px 16px;
 }
+
 /*Range Slider CSS*/
 .range-slider-container {
     width: 100%;
     max-width: 100%;
 }
+
 .gj-slider {
     position: relative;
     padding: 8px 6px;
     width: 100% !important;
 }
-.gj-slider-md [role="progress"], .gj-slider-md [role="handle"] {
+
+.gj-slider-md [role="progress"],
+.gj-slider-md [role="handle"] {
     background-color: var(--hover-color);
 }
+
 .gj-slider-md [role="track"] {
     height: 5px;
     background-color: #DAE0E3;
     border-radius: 5px;
 }
+
 .gj-slider-md [role="progress"] {
     height: 5px;
     border-radius: 5px;
 }
+
 .gj-slider-md [role="handle"] {
     top: 4px;
 }
@@ -1366,25 +1758,33 @@ button:focus {
     height: 48px;
     justify-content: flex-end;
 }
+
 .ride-left-luggage-box .custom-control i {
     font-size: 28px;
     color: #bab9b9;
 }
+
 .ride-left-luggage-wrap .ride-left-luggage-box:nth-child(1) i {
     font-size: 16px !important;
 }
+
 .ride-left-luggage-wrap .ride-left-luggage-box:nth-child(2) i {
     font-size: 20px !important;
 }
+
 /*.ride-left-luggage-wrap .ride-left-luggage-box:nth-child(1) i {*/
 /*    font-size: 18px !important;*/
 /*}*/
-.ride-left-luggage-box .custom-control-label::after, .ride-left-luggage-box .custom-checkbox .custom-control-label::before {
+.ride-left-luggage-box .custom-control-label::after,
+.ride-left-luggage-box .custom-checkbox .custom-control-label::before {
     opacity: 0;
 }
-.ride-left-luggage-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label, .ride-left-luggage-box .custom-checkbox .custom-control-input:checked ~ .custom-control-label i {
+
+.ride-left-luggage-box .custom-checkbox .custom-control-input:checked~.custom-control-label,
+.ride-left-luggage-box .custom-checkbox .custom-control-input:checked~.custom-control-label i {
     color: var(--hover-color);
 }
+
 .ride-left-luggage-box .custom-control {
     padding-left: 0;
 }
@@ -1393,10 +1793,12 @@ button:focus {
 .ride-left-preference-wrap {
     justify-content: space-between;
 }
+
 .ride-left-preference-box {
     display: flex;
     flex-direction: column;
 }
+
 /*Andgarivara Rides Page Left Side CSS End*/
 
 /*Andgarivara Rides Page Right Side CSS Start*/
@@ -1405,63 +1807,78 @@ button:focus {
 .ride-list-card {
     margin-bottom: 30px;
     display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
     min-height: 200px;
 }
+
 .ride-list-card .ride-list {
-/*.ride-list .card {*/
+    /*.ride-list .card {*/
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
 }
+
 .ride-owner-img-box {
     background-color: #d1d1d1;
     border-radius: 50%;
     height: 80px;
     width: 80px;
 }
+
 .ride-owner-img-box img {
     height: auto;
     width: 100%;
 }
+
 .ride-owner-box {
     text-align: center;
 }
+
 .ride-owner-img-box span {
     right: 12px;
     bottom: 0;
 }
+
 .ride-owner-img-box span img {
     height: 24px;
     width: auto;
 }
+
 .ride-list-card .ride-list .rental-car-ratings img {
-/*.ride-list .card .rental-car-ratings img {*/
+    /*.ride-list .card .rental-car-ratings img {*/
     height: 14px;
 }
+
 .rental-car-ratings p {
     margin-top: 0;
     color: var(--text-color);
 }
+
 /*Ride Card Middle Content*/
 .ride-list-card .ride-list .ride-list-middle-content {
-/*.ride-list .card .ride-list-middle-content {*/
+    /*.ride-list .card .ride-list-middle-content {*/
     width: 60%;
 }
+
 .ride-list-middle-content div {
     margin-bottom: 15px;
 }
+
 .ride-list-middle-content div:last-child {
     margin-bottom: 0;
 }
+
 .ride-list-middle-content div span i {
     margin-right: 5px;
 }
-.ride-list-middle-content div span i.fas.fa-bolt, .rental-car-list-content div span i.fas.fa-bolt {
+
+.ride-list-middle-content div span i.fas.fa-bolt,
+.rental-car-list-content div span i.fas.fa-bolt {
     color: #f2cc04;
     font-size: 18px;
 }
+
 .ride-list-middle-content div span i.fas.fa-ship {
     color: var(--heading-color);
 }
@@ -1472,13 +1889,16 @@ button:focus {
     min-height: 130px;
     justify-content: space-between;
 }
+
 .ride-availability-info i {
     padding: 0 2px;
 }
-.ride-availability-info{
+
+.ride-availability-info {
     color: #0DCEB2;
 }
-.ride-not-available{
+
+.ride-not-available {
     color: #FF766B;
 }
 
@@ -1486,10 +1906,12 @@ button:focus {
 .dont-find-a-ride img {
     height: 175px;
 }
+
 .dont-find-a-ride .card {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
     padding: 30px;
 }
+
 .dont-find-a-ride .card-text {
     margin: 20px 0;
 }
@@ -1504,6 +1926,7 @@ button:focus {
 .main.rental-page-main {
     height: 100vh;
 }
+
 .andgarivara-rental-page-area {
     height: calc(100% - 70px);
     background-color: var(--bg-secondary);
@@ -1517,17 +1940,21 @@ button:focus {
 .location-search-box form {
     margin-bottom: 20px;
 }
+
 .andgarivara-rental-page-area .form-control {
     border-left: 0;
 }
+
 .andgarivara-rental-page-area .input-group-text {
     background-color: transparent;
     color: var(--hover-color);
 }
+
 .andgarivara-rental-page-area .location-search-box form input {
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }
+
 .use-my-location {
     background-color: #EDF0F2;
     right: 9px;
@@ -1543,9 +1970,11 @@ button:focus {
     border-radius: 6px;
     cursor: pointer;
 }
+
 .use-my-location span {
     margin-left: 5px;
 }
+
 /* Location Field CSS End*/
 
 /* Date And Time Picker Component Field CSS Start*/
@@ -1553,40 +1982,51 @@ button:focus {
     display: flex;
     justify-content: space-between;
 }
+
 .date-time-wrap-box {
     width: 49%;
 }
+
 .date-time-picker-container {
     border: 1px solid #B9C1C9;
     border-radius: 5px;
     justify-content: space-between;
     display: flex;
 }
+
 .datepicker-search-box {
     /*width: 60%;*/
 }
+
 .datepicker-search-box {
     width: 64%;
 }
+
 .date-time-picker-container .input-group {
     width: auto;
 }
+
 .andgarivara-rental-page-area .date-time-picker-container .time-search-box .input-group {
     width: 100% !important;
 }
+
 .andgarivara-rental-page-area .date-time-picker-container .input-group {
     width: 100% !important;
 }
+
 .date-time-picker-container .input-group-text {
     border: none;
 }
+
 /*Datepicker*/
 .gj-datepicker .input-group-append {
     position: absolute;
     left: -36px;
     opacity: 0;
 }
-#datepicker, #datepicker2 {
+
+#datepicker,
+#datepicker2 {
     height: 45px;
     width: 100%;
     /* width: 141px; */
@@ -1594,12 +2034,14 @@ button:focus {
     margin-left: 40px;
     padding-left: 15px;
 }
+
 .location-datepicker-search .gj-datepicker-md {
-     width: 100%;
+    width: 100%;
     /* left: 38px; */
     /* top: 34px; */
     position: absolute;
 }
+
 .location-datepicker-search .gj-datepicker-md [role="right-icon"] {
     /*position: absolute;*/
     left: 42px !important;
@@ -1607,59 +2049,75 @@ button:focus {
     width: 100%;
     opacity: 0;
 }
+
 .date-time-picker-container .input-group {
     width: 60%;
     height: 45px;
     overflow: hidden;
 }
+
 .andgarivara-rental-page-area .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
     width: 80% !important;
 }
+
 .gj-dropdown {
     width: 70%;
     overflow: hidden;
     border-left: 1px solid #B9C1C9;
     padding-left: 5px;
 }
+
 /*Timepicker*/
 .time-search-box {
     border-left: 1px solid #B9C1C9;
 }
-.gj-dropdown-list-md li.active, .gj-dropdown-list-md li:hover {
+
+.gj-dropdown-list-md li.active,
+.gj-dropdown-list-md li:hover {
     background-color: var(--hover-color);
     color: #fff;
 }
-.gj-dropdown-md [role=presenter]:active, .gj-dropdown-md [role=presenter]:focus {
+
+.gj-dropdown-md [role=presenter]:active,
+.gj-dropdown-md [role=presenter]:focus {
     border-bottom: none;
 }
+
 .gj-dropdown-expander-mi {
     position: absolute;
     left: -28px;
     top: 0;
     opacity: 0;
 }
+
 .time-search-box .input-group {
     width: 100%;
     display: flex;
 }
+
 .gj-dropdown {
     /*width: 87%;*/
 }
+
 .gj-dropdown-md [role="presenter"] {
     width: 100%;
     border: none;
 }
-.time-search-box button span, .gj-dropdown-expander-mi {
+
+.time-search-box button span,
+.gj-dropdown-expander-mi {
     width: 120px !important;
     background: #fff;
-    height: 47px!important;
+    height: 47px !important;
     /* height: 100%; */
 }
+
 .gj-dropdown-md [role="presenter"] [role="display"] {
     display: flex;
     align-items: center;
     border-radius: 5px;
 }
+
 .gj-dropdown-list-md {
     position: absolute;
     top: 0;
@@ -1672,17 +2130,20 @@ button:focus {
     overflow-y: scroll;
     border: 1px solid #B9C1C9
 }
+
 /* Date And Time Picker Component Field CSS End*/
 
 /* Rental Car Name Brand Search Start*/
 .search-car-model-brand-area {
     margin: 20px 0;
 }
+
 .search-car-model-brand-inner {
     border: 1px solid #EAECEF;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
     padding: 20px 13px;
 }
+
 /*the container must be positioned relative:*/
 .search-car-model-brand-inner input {
     /*border: 1px solid transparent;*/
@@ -1690,17 +2151,20 @@ button:focus {
     padding: 10px;
     /*font-size: 16px;*/
 }
+
 .search-car-model-brand-inner .theme-button {
     margin-left: 20px;
     min-width: 100px;
     padding: 12px 16px 12px;
 }
+
 /* Rental Car Name Brand Search End*/
 
 /* Rental Car Filter Results Start*/
 .rental-cars-filter-result {
     padding-top: 20px;
 }
+
 .rental-cars-filter-result select {
     background-color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.76297 11.8899C9.54611 11.547 10.1726 10.3225 10.7991 9.68571C11.2299 9.19589 11.5823 8.70607 11.9347 8.11829C12.248 7.62847 13.2269 6.69782 13.3052 6.69782C14.5191 6.35495 14.01 4.00382 12.7962 4.34669C11.8172 4.5916 11.0732 5.71818 10.4076 6.59985C9.82021 7.38356 8.99791 8.16727 8.48887 9.04894C8.41056 9.09792 8.33224 9.19589 8.29309 9.24487C8.21477 9.19589 8.17561 9.1469 8.05814 9.04894C7.70573 8.26523 6.88343 7.53051 6.37438 6.94273C5.51293 6.01207 4.57316 4.88549 3.51592 4.19975C3.39845 4.10178 3.24182 4.00382 3.04603 4.00382C3.00687 4.00382 3.00687 4.00382 2.96772 4.00382C1.98879 3.90586 1.63638 5.71818 2.45867 6.30596C3.79002 7.18763 5.00389 8.65709 6.06113 9.97959C6.7268 10.8613 7.62741 12.4287 8.76297 11.8899Z' fill='%23909BA3' /%3E%3C/svg%3E%0A") !important;
@@ -1715,53 +2179,63 @@ button:focus {
     color: var(--hover-color);
     padding: 0 0 2px;
 }
+
 .rental-cars-filter-result form label {
     margin-bottom: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width:1710px){
+@media only screen and (max-width:1710px) {
     .andgarivara-rental-page-area .datepicker-search-box {
         width: 68%;
     }
 }
-@media only screen and (max-width:1480px){
-    #datepicker, #datepicker2 {
+
+@media only screen and (max-width:1480px) {
+
+    #datepicker,
+    #datepicker2 {
         /*width: 120px;*/
         /*width: 141px;*/
     }
 }
 
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1400px) {
     .andgarivara-rental-page-area .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
         width: 75% !important;
     }
 }
 
-@media only screen and (max-width:1382px){
+@media only screen and (max-width:1382px) {
     .andgarivara-rental-page-area .datepicker-search-box {
         width: 61%;
     }
+
     .date-time-picker-container .input-group {
         width: 66%;
         /*overflow: hidden;*/
     }
+
     .time-search-box .input-group {
         width: 100% !important;
     }
-    .time-search-box button span, .gj-dropdown-expander-mi {
+
+    .time-search-box button span,
+    .gj-dropdown-expander-mi {
         width: 75px !important;
     }
+
     .datepicker-search-box {
         width: 60%;
     }
+
     .gj-dropdown {
         width: 65%;
     }
 
 }
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1250px) {
     .andgarivara-rental-page-area .datepicker-search-box {
         width: 57%;
     }
@@ -1776,36 +2250,45 @@ button:focus {
     overflow-y: scroll;
     padding: 15px 15px 0;
 }
+
 .rental-car-list-card {
     min-height: 180px;
 }
+
 .rental-car-list-card .rental-list {
     padding: 0;
     justify-content: flex-start;
 }
+
 .rental-car-list-photo-wrap img {
     height: 187px;
     width: auto;
 }
+
 .rental-car-list-content {
     padding: 15px;
 }
+
 .rental-car-list-footer {
     border-top: 1px solid #EDF0F2;
     padding: 15px;
 }
+
 .andgarivara-rental-page-area .ride-owner-img-box {
     height: 40px;
     width: 40px;
 }
+
 .rental-owner-name-ratings {
     margin-left: 10px;
 }
+
 .rental-owner-name-ratings p {
     margin-top: 0;
 }
-.rental-car-location p i{
-   margin-right: 5px;
+
+.rental-car-location p i {
+    margin-right: 5px;
 }
 
 /*Rental Page Filter Search Modal Start*/
@@ -1814,25 +2297,32 @@ button:focus {
     height: 500px;
     overflow-y: scroll;
 }
+
 .rental-page-filter-modal .modal-dialog {
     min-width: auto;
 }
+
 .rental-page-filter-modal .modal-content {
     height: 800px;
 }
+
 .rental-page-filter-modal .rides-left-search-filters {
     border: none;
 }
+
 .rental-page-modal-custom-wrap .custom-control {
     margin-right: 30px;
 }
+
 .rental-page-modal-custom-wrap.rental-page-car-type-wrap {
     flex-wrap: wrap;
 }
+
 .rental-page-modal-custom-wrap.rental-page-car-type-wrap .custom-control {
     margin-right: 10px;
     width: 115px;
 }
+
 .rental-modal-seat-select-wrap select {
     background-color: transparent;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.76297 11.8899C9.54611 11.547 10.1726 10.3225 10.7991 9.68571C11.2299 9.19589 11.5823 8.70607 11.9347 8.11829C12.248 7.62847 13.2269 6.69782 13.3052 6.69782C14.5191 6.35495 14.01 4.00382 12.7962 4.34669C11.8172 4.5916 11.0732 5.71818 10.4076 6.59985C9.82021 7.38356 8.99791 8.16727 8.48887 9.04894C8.41056 9.09792 8.33224 9.19589 8.29309 9.24487C8.21477 9.19589 8.17561 9.1469 8.05814 9.04894C7.70573 8.26523 6.88343 7.53051 6.37438 6.94273C5.51293 6.01207 4.57316 4.88549 3.51592 4.19975C3.39845 4.10178 3.24182 4.00382 3.04603 4.00382C3.00687 4.00382 3.00687 4.00382 2.96772 4.00382C1.98879 3.90586 1.63638 5.71818 2.45867 6.30596C3.79002 7.18763 5.00389 8.65709 6.06113 9.97959C6.7268 10.8613 7.62741 12.4287 8.76297 11.8899Z' fill='%23909BA3' /%3E%3C/svg%3E%0A") !important;
@@ -1850,39 +2340,53 @@ button:focus {
     border-radius: 5px;
     height: 39px;
 }
+
 .rental-modal-range-slider-wrap {
     flex-direction: row;
 }
+
 .rental-modal-range-slider-wrap .gj-slider {
     padding: 8px 0px 8px 0px;
 }
+
 .range-slider-container.range-slider-1 .gj-slider {
     padding: 8px 0 8px 6px;
 }
+
 .range-slider-container.range-slider-1 .gj-slider-md [role="progress"] {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-.range-slider-container.range-slider-1 .gj-slider-md [role="progress"], .range-slider-container.range-slider-2 .gj-slider-md [role="progress"] {
+
+.range-slider-container.range-slider-1 .gj-slider-md [role="progress"],
+.range-slider-container.range-slider-2 .gj-slider-md [role="progress"] {
     left: 0;
 }
-.range-slider-container.range-slider-1 .gj-slider-md [role="progress"]{
+
+.range-slider-container.range-slider-1 .gj-slider-md [role="progress"] {
     background-color: #DAE0E3;
 }
-.range-slider-container.range-slider-1 .gj-slider-md [role="track"],.range-slider-container.range-slider-1 .gj-slider-md [role="handle"], .range-slider-container.range-slider-2 .gj-slider-md [role="handle"]  {
+
+.range-slider-container.range-slider-1 .gj-slider-md [role="track"],
+.range-slider-container.range-slider-1 .gj-slider-md [role="handle"],
+.range-slider-container.range-slider-2 .gj-slider-md [role="handle"] {
     background-color: var(--hover-color);
 }
-.range-slider-container.range-slider-1 .gj-slider-md [role="track"]{
+
+.range-slider-container.range-slider-1 .gj-slider-md [role="track"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 .range-slider-container.range-slider-2 .gj-slider-md [role="progress"] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.range-slider-2 .gj-slider-md [role="track"]{
-background-color: #DAE0E3;
+
+.range-slider-2 .gj-slider-md [role="track"] {
+    background-color: #DAE0E3;
 }
+
 /*Rental Page Filter Search Modal End*/
 
 /*Rental Car Not Found CSS*/
@@ -1894,10 +2398,12 @@ background-color: #DAE0E3;
 .rental-map-area {
     height: calc(100% - 3px);
 }
+
 .rental-map-area iframe {
     width: 100%;
     height: 100%;
 }
+
 /*-------------------------------------------
     11. Andgarivara Rental Page Area End
 -------------------------------------------*/
@@ -1913,20 +2419,24 @@ background-color: #DAE0E3;
 .leasing-section-title {
     margin-bottom: 70px;
 }
+
 .leasing-section-title p {
     margin-top: 20px;
     font-family: 'SolaimanLipiBold';
     font-size: 20px;
 }
+
 .leasing-car-monthly-payment-title {
     color: var(--hover-color) !important;
 }
+
 /*Leasing Title End*/
 
 .leasing-page-cars-area .popular-rental-car-title .leasing-old-payment {
     text-decoration: line-through;
     color: var(--red-color);
 }
+
 .leasing-seat-number-tag {
     background-color: var(--black-color);
     color: #fff;
@@ -1942,19 +2452,23 @@ background-color: #DAE0E3;
     font-size: 14px;
     z-index: 9;
 }
-.car-sold-out-box .leasing-seat-number-tag{
+
+.car-sold-out-box .leasing-seat-number-tag {
     background-color: #F3AE29;
 }
+
 /*Leasing Page aside content component Start*/
 .car-leasing-page-aside-component h5 {
     color: var(--black-color);
     /*font-family: 'SolaimanLipiBold';*/
     font-size: 21px;
 }
+
 .car-leasing-page-aside-component ul li {
     margin-top: 15px;
     color: var(--black-color);
 }
+
 /*Leasing Page aside content component End*/
 /*-------------------------------------------
     12. Andgarivara Leasing Page Area End
@@ -1967,9 +2481,11 @@ background-color: #DAE0E3;
 .car-leasing-page-aside-component ul li {
     font-size: 16px;
 }
+
 .car-leasing-page-aside-component ul li i {
     margin-right: 7px;
 }
+
 .car-leasing-page-aside-component ul li a {
     color: var(--black-color);
     font-weight: bold;
@@ -1980,15 +2496,18 @@ background-color: #DAE0E3;
     position: relative;
     border: 1px solid #DAE0E3;
 }
+
 .accordion-box .block {
     position: relative;
     border-bottom: 1px solid #DAE0E3;
     padding-top: 0;
     box-shadow: 0 5px 21.25px 3.75px rgba(217, 217, 217, 0.1);
 }
+
 .accordion-box .block:last-child {
     border-bottom: 0;
 }
+
 .accordion-box .block .acc-btn {
     position: relative;
     font-size: 18px;
@@ -2003,11 +2522,13 @@ background-color: #DAE0E3;
     background-color: white;
     border-radius: 6px;
 }
+
 .accordion-box .block .acc-btn.active {
     background: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 .accordion-box .block .icon-outer {
     position: absolute;
     left: 32px;
@@ -2016,6 +2537,7 @@ background-color: #DAE0E3;
     color: var(--heading-color);
     transition: all 500ms ease;
 }
+
 .accordion-box .block .icon-outer .icon {
     position: absolute;
     top: 50%;
@@ -2025,20 +2547,25 @@ background-color: #DAE0E3;
     line-height: 1em;
     transition: all 0.3s ease;
 }
+
 .accordion-box .block .icon-outer .icon_plus {
     opacity: 1;
 }
+
 .accordion-box .block .icon-outer .icon_minus {
     opacity: 0;
     color: var(--hover-color);
     font-weight: 700;
 }
+
 .accordion-box .block .acc-btn.active .icon-outer .icon_minus {
     opacity: 1;
 }
+
 .accordion-box .block .acc-btn.active .icon-outer .icon_plus {
     opacity: 0;
 }
+
 .accordion-box .block .acc-content {
     position: relative;
     display: none;
@@ -2048,19 +2575,24 @@ background-color: #DAE0E3;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+
 .accordion-box .block .acc-content .content-text {
     padding-bottom: 6px;
 }
+
 .accordion-box .block .acc-content.current {
     display: block;
 }
+
 .accordion-box .block .content {
     position: relative;
     margin-bottom: 0;
 }
+
 .accordion-box .block .content .text {
     margin-bottom: 0;
 }
+
 /*-------------------------------------------
     18. FAQ Area End
 -------------------------------------------*/
@@ -2070,37 +2602,45 @@ background-color: #DAE0E3;
 -------------------------------------------*/
 .sticky-menu-header {
     background-color: #fff !important;
-    box-shadow: 0 4px 10px 0 rgba(2,68,155,.08);
+    box-shadow: 0 4px 10px 0 rgba(2, 68, 155, .08);
 }
-.sticky{
+
+.sticky {
     position: sticky;
     top: 0;
     z-index: 999;
 }
+
 .sticky-menu-wrap {
     display: flex;
     align-items: center;
     height: 70px;
 }
+
 .sticky-menu-header li {
     display: inline-block;
 }
+
 .sticky-menu-header li a {
     display: block;
 }
+
 .sticky-menu-header ul li a {
     display: inline-block;
     padding: 23px 0;
     margin-right: 30px;
     border-bottom: 3px solid #fff;
 }
+
 .sticky-menu-header ul li.active a {
     color: var(--black-color);
     border-color: var(--black-color);
 }
+
 .sticky-menu-header ul li.active a span {
     background-color: var(--black-color);
 }
+
 .sticky-menu-header ul li a span {
     background-color: #777c87;
     border-radius: 9999px;
@@ -2113,10 +2653,12 @@ background-color: #DAE0E3;
     text-align: center;
     font-size: 14px;
 }
+
 .sticky-menu-header .menu-no-style {
     align-items: center;
     height: 100%;
 }
+
 /*-------------------------------------------
     19. sticky-menu-header Area End
 -------------------------------------------*/
@@ -2130,31 +2672,39 @@ background-color: #DAE0E3;
     margin: 0 10px;
     font-size: 20px;
 }
+
 .route-part .route-part-title p {
     margin-top: 15px;
 }
+
 .route-info-box-wrap {
     margin-top: 30px;
 }
+
 .route-info-box div {
     margin-right: 20px;
     min-width: 60px;
 }
+
 .route-info-land-mark {
     position: relative;
     text-align: center;
 }
-.route-info-land-mark > .fas.fa-circle {
+
+.route-info-land-mark>.fas.fa-circle {
     font-size: 10px;
     color: #DAE0E3;
 }
-.route-info-box-wrap .route-info-box:first-child .route-info-land-mark > i,
-.route-info-box-wrap .route-info-box:last-child .route-info-land-mark > i{
+
+.route-info-box-wrap .route-info-box:first-child .route-info-land-mark>i,
+.route-info-box-wrap .route-info-box:last-child .route-info-land-mark>i {
     color: var(--hover-color);
 }
-.route-info-box-wrap .route-info-box:first-child .route-info-land-mark::after{
+
+.route-info-box-wrap .route-info-box:first-child .route-info-land-mark::after {
     display: none;
 }
+
 .route-info-land-mark::after {
     position: absolute;
     content: "";
@@ -2166,14 +2716,17 @@ background-color: #DAE0E3;
     left: 0;
     right: 0;
 }
+
 .route-info-box {
     margin-bottom: 20px;
     min-height: 50px;
     height: 50px;
 }
+
 .route-info-box-btn a {
     margin-top: 10px;
 }
+
 .route-info-place-name p a {
     color: var(--hover-color);
 }
@@ -2185,11 +2738,13 @@ background-color: #DAE0E3;
     border-radius: 5px;
     margin-bottom: 50px;
 }
+
 .blockquote-quote-icon {
     font-size: 35px;
     margin-right: 20px;
     color: var(--hover-color);
 }
+
 .driver-comment-area h6 {
     margin-bottom: 10px;
     font-size: 21px;
@@ -2199,6 +2754,7 @@ background-color: #DAE0E3;
 .driver-photo {
     margin-right: 30px;
 }
+
 .driver-photo a {
     display: block;
     height: 150px;
@@ -2207,37 +2763,47 @@ background-color: #DAE0E3;
     background-color: #ededed;
     overflow: hidden;
 }
+
 .driver-photo a img {
     height: 150px;
     width: 100%;
     min-height: 100%;
 }
+
 .driver-photo a span {
     right: 20px;
     bottom: 20px;
 }
+
 .driver-photo a span img {
     height: auto;
     width: 25px;
 }
+
 .driver-info-content {
     flex-direction: column;
 }
+
 .rental-car-ratings img {
     height: 12px;
 }
+
 .driver-info-name-ratings div {
     margin-right: 15px;
 }
-.driver-info-content > div {
+
+.driver-info-content>div {
     margin-bottom: 15px;
 }
-.verified-box p{
+
+.verified-box p {
     margin-right: 15px;
 }
+
 .driver-age-membership p {
     position: relative;
 }
+
 .driver-age-membership p::after {
     position: absolute;
     height: 5px;
@@ -2248,16 +2814,20 @@ background-color: #DAE0E3;
     top: 12px;
     right: -11px;
 }
+
 .driver-age-membership p:last-child::after {
     display: none;
 }
+
 .driver-age-membership p {
     position: relative;
     margin-right: 20px;
 }
-.verified-box p > img {
+
+.verified-box p>img {
     margin-right: 6px;
 }
+
 .driver-car-info-box {
     display: flex;
     align-items: center;
@@ -2265,16 +2835,20 @@ background-color: #DAE0E3;
     margin: 0 0 20px;
     padding-right: 20px;
 }
+
 .driver-car-info-content {
     flex-direction: column;
     margin-left: 20px;
 }
+
 .driver-car-info-box i {
     color: var(--deep-blue);
 }
+
 .driver-car-info-content p {
     color: var(--heading-color);
 }
+
 .driver-car-info-content p.driver-car-info-title {
     color: var(--text-color);
 }
@@ -2283,45 +2857,54 @@ background-color: #DAE0E3;
 .driver-car-info-details {
     margin-top: 35px;
 }
+
 .driver-car-info-details h6 {
     margin-bottom: 20px;
     font-size: 21px;
     font-weight: normal;
 }
+
 .driver-car-info-details-wrap {
     display: flex;
     flex-wrap: wrap;
 }
+
 .driver-car-info-details-preferences .driver-car-info-box i {
     color: #B73E54;
 }
 
 /*Ride Details Right Side CSS*/
 .ride-details-right-side.ride-booked-or-ride-departed .ride-details-up-wrap {
-    border-top: 5px solid #B73E54!important;
+    border-top: 5px solid #B73E54 !important;
 }
+
 .ride-details-up-wrap {
     border: 1px solid #DAE0E3;
     padding: 15px;
     border-top: 5px solid #0DCEB2;
     border-radius: 5px;
 }
+
 .seat-availability {
     text-align: center;
     color: var(--heading-color);
     font-size: 16px;
     font-weight: bold;
 }
+
 .ride-details-right-side ul li {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 10px;
     padding: 10px 0;
 }
-.ride-details-right-side ul li, .ride-details-right-side ul li a {
+
+.ride-details-right-side ul li,
+.ride-details-right-side ul li a {
     display: flex;
     width: 100%;
     align-items: center;
 }
+
 .rider-photo {
     margin-right: 20px;
     height: 40px;
@@ -2330,40 +2913,49 @@ background-color: #DAE0E3;
     border-radius: 50%;
     background-color: #aeaeae61;
 }
+
 .rider-photo img {
     height: 40px;
     width: auto;
     border-radius: 50%;
     background-color: #aeaeae61;
 }
+
 .rider-info .rider-name {
     color: var(--heading-color);
 }
+
 .price-info .seat-price span {
     font-weight: bold;
     font-size: 21px;
 }
+
 .ride-details-right-side .booking-btn {
     margin: 20px 0;
 }
+
 /*Add ride-booked-or-ride-departed Class If ride is fully booked or departed */
-.ride-details-right-side.ride-booked-or-ride-departed .booking-btn a{
+.ride-details-right-side.ride-booked-or-ride-departed .booking-btn a {
     background-color: #B73E54 !important;
 }
+
 /*Add ride-booked-or-ride-departed Class If ride is fully booked or departed */
 .point-earning-info h6 {
     font-weight: normal;
     margin-bottom: 10px;
 }
-.point-earning-info h6 > span {
+
+.point-earning-info h6>span {
     color: #B73E54;
 }
+
 .booking-payment-content #accordion {
     border: 1px solid #DAE0E3;
     padding: 0 20px;
     margin-top: 20px;
     border-radius: 5px;
 }
+
 .booking-payment-content #headingOne .title-bar {
     padding: 15px 0;
     display: flex;
@@ -2371,20 +2963,25 @@ background-color: #DAE0E3;
     justify-content: space-between;
     align-items: center;
 }
-.booking-payment-content #headingOne .title-bar p > i {
+
+.booking-payment-content #headingOne .title-bar p>i {
     margin-right: 10px;
     color: var(--deep-blue);
 }
+
 .booking-payment-content .collapse {
     border-top: 1px solid #DAE0E3;
 }
+
 .booking-payment-inner {
     margin: 15px 0;
 }
+
 .booking-payment-inner .payment-title {
     color: var(--heading-color);
     font-weight: bold;
 }
+
 [data-toggle="collapse"] .fa:before {
     content: "\f106";
 }
@@ -2392,6 +2989,7 @@ background-color: #DAE0E3;
 [data-toggle="collapse"].collapsed .fa:before {
     content: "\f107";
 }
+
 .ride-details-right-side .report-btn {
     text-align: center;
     padding: 10px;
@@ -2403,17 +3001,22 @@ background-color: #DAE0E3;
 .send-message-content p {
     color: var(--hover-color);
 }
+
 .send-message-content ul li {
     list-style: disc;
     margin-left: 15px;
     color: var(--hover-color);
 }
-#send-message-to-driver-modal form label, #report-an-issue-modal form label {
+
+#send-message-to-driver-modal form label,
+#report-an-issue-modal form label {
     color: var(--heading-color);
 }
+
 .rides-location-map-modal iframe {
     min-height: 300px;
 }
+
 /*Ride Details Page All Modal CSS*/
 
 /*-------------------------------------------
@@ -2423,30 +3026,37 @@ background-color: #DAE0E3;
 /*-------------------------------------------
     21. Rides - Book Ride Page / Ride Payment Page Area Start
 -------------------------------------------*/
-.andgarivara-book-ride-area, .andgarivara-ride-payment-area {
+.andgarivara-book-ride-area,
+.andgarivara-ride-payment-area {
     background-color: var(--bg-secondary);
     min-height: 100vh;
 }
+
 /*Book Ride Left Side*/
 .book-ride-card {
     background-color: #fff;
     border: 1px solid #c3c3c38c;
     border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
 }
+
 .book-ride-header {
     border-bottom: 1px solid #EDF0F2;
 }
+
 .book-ride-footer {
     border-top: 1px solid #EDF0F2;
 }
+
 .book-ride-card-body form label {
     margin-bottom: 10px;
     color: var(--heading-color);
 }
+
 .book-ride-card-body form .form-group {
     margin-bottom: 20px;
 }
+
 .book-ride-card-body form textarea {
     min-height: 150px;
 }
@@ -2457,13 +3067,16 @@ background-color: #DAE0E3;
     font-size: 18px;
     font-weight: normal;
 }
+
 .book-ride-right-area .card h6 i {
     font-size: 13px;
     margin: 0 8px;
 }
+
 .book-ride-right-area .card-body p i {
     margin-right: 10px;
 }
+
 /*-------------------------------------------
     21. Rides - Book Ride Page / Ride Payment Page Area End
 -------------------------------------------*/
@@ -2487,24 +3100,29 @@ background-color: #DAE0E3;
     width: 60%;
     margin: 0 auto;
 }
+
 .andgarivara-agents-new-page-area .nav-tabs,
 .andgarivara-agents-new-page-area .tab-content {
     /*max-width: 50%;*/
 }
+
 .andgarivara-agents-new-page-area .nav-tabs {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .andgarivara-agents-new-page-area .nav-tabs li {
     width: 30%;
 }
+
 .andgarivara-agents-new-page-area .nav-tabs .nav-item a {
     border-radius: 0;
     background-color: #fff;
     border: none;
     padding: 20px 20px;
 }
+
 .andgarivara-agents-new-page-area .nav-tabs .nav-item .active {
     border-radius: 0;
     background-color: #eee;
@@ -2527,6 +3145,7 @@ background-color: #DAE0E3;
 .page-banner-area.profile-page-banner {
     background-image: url("../img/profile-img/profile-own-banner.png");
 }
+
 .profile-page-banner .page-banner-content {
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -2534,11 +3153,13 @@ background-color: #DAE0E3;
     align-items: flex-end;
     padding-bottom: 30px;
 }
+
 .profile-photo-wrap {
     position: relative;
     top: 80px;
     border-radius: 50%;
 }
+
 .profile-photo-wrap .profile-photo-owner {
     overflow: hidden;
     border-radius: 50%;
@@ -2547,29 +3168,36 @@ background-color: #DAE0E3;
     width: 250px;
     background-color: #ebebeb;
 }
+
 .profile-photo-wrap .profile-photo-owner img {
     height: 250px;
     width: auto;
 }
+
 .profile-photo-wrap span {
     right: 10px;
     bottom: 16px;
 }
+
 /*Under Profile Edit Button*/
-.dropdown.profile-edit-button button , .dropdown.profile-edit-button form a {
+.dropdown.profile-edit-button button,
+.dropdown.profile-edit-button form a {
     font-size: 14px;
     padding: 10px;
     background-color: var(--bg-secondary);
     font-family: "SolaimanLipiBold";
 }
+
 .dropdown.profile-edit-button form a {
     font-size: 13px;
     padding: .25rem 1.5rem;
 }
+
 .dropdown.profile-edit-button form .dropdown-item {
     position: relative;
     overflow: hidden;
 }
+
 .profile-edit-button form input[type="file"] {
     cursor: pointer;
     font-size: 100px;
@@ -2584,13 +3212,14 @@ background-color: #DAE0E3;
     visibility: hidden;
     opacity: 0;
 }
+
 .page-banner-content:hover .dropdown.cover-photo-button {
     visibility: visible;
     opacity: 1;
 }
 
 /*Profile Photo Button CSS*/
-.profile-photo-wrap > .dropdown.profile-photo-button {
+.profile-photo-wrap>.dropdown.profile-photo-button {
     position: absolute;
     bottom: 54px;
     left: 0;
@@ -2599,7 +3228,8 @@ background-color: #DAE0E3;
     visibility: hidden;
     opacity: 0;
 }
-.profile-photo-wrap:hover > .dropdown.profile-photo-button {
+
+.profile-photo-wrap:hover>.dropdown.profile-photo-button {
     visibility: visible;
     opacity: 1;
 }
@@ -2608,11 +3238,12 @@ background-color: #DAE0E3;
 .profile-name-ratings-bar {
     border-bottom: 1px solid var(--border-color);
 }
+
 /*Profiles Left Side CSS Start*/
 .profile-status h6 {
     background-color: #fff;
     padding: .89rem 1.25rem;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -2621,11 +3252,13 @@ background-color: #DAE0E3;
 .profile-progress {
     background-color: #4AD1BE4D;
 }
+
 .profile-progress.progress {
     height: .25rem;
     border-radius: 0;
 }
-.profile-progress .progress-bar{
+
+.profile-progress .progress-bar {
     background-color: var(--green-color);
 }
 
@@ -2633,14 +3266,17 @@ background-color: #DAE0E3;
 .profile-left-list-group {
     margin-bottom: 20px;
 }
-.profile-left-list-group .list-group-item{
+
+.profile-left-list-group .list-group-item {
     color: var(--black-color);
     display: flex;
     justify-content: space-between;
 }
-.list-group-item.disabled{
+
+.list-group-item.disabled {
     color: var(--text-color);
 }
+
 /*.profile-left-list-group .list-group-item span > i {*/
 /*    margin-right: 10px;*/
 /*    font-size: 16px;*/
@@ -2651,6 +3287,7 @@ background-color: #DAE0E3;
     color: var(--green-color);
     padding-top: 5px;
 }
+
 /*Profile Status Component End*/
 
 /*Profiles Left Side CSS Start*/
@@ -2659,12 +3296,15 @@ background-color: #DAE0E3;
 .card.profile-right-box {
     border: none;
 }
+
 .card.profile-right-box .card-header {
     padding: 15px 30px;
 }
+
 .card.profile-right-box .card-body {
     text-align: center;
 }
+
 .card.profile-right-box .card-body .secondary-button {
     text-align: center;
 }
@@ -2673,40 +3313,47 @@ background-color: #DAE0E3;
 .profile-right-box.inside-profile-rental-car-list .card-body {
     padding-bottom: 15px;
 }
+
 .inside-profile-rental-car-list .card-body .home-service-box {
     display: block;
     padding: 0;
 }
+
 .inside-profile-rental-car-list .card-body .home-service-box .h-s-img img {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 .rental-car-category-name {
     width: 100%;
     background-color: var(--hover-color);
     bottom: 0;
 }
+
 .inside-profile-rental-car-list .card-body .home-service-box .h-s-left {
     text-align: left;
     padding: 10px;
 }
+
 /*Profiles Right Side CSS End*/
 
 /*Profile Other Page CSS*/
 .page-banner-area.profile-other-page-banner {
     background-image: url("../img/profile-img/profile-other-banner.png");
 }
+
 /*Profile other about profile component Start*/
 .about-profile-box ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .about-profile-box ul li img {
     height: 32px;
     margin-bottom: 5px;
- }
+}
 
 /*Profile other about profile component End*/
 
@@ -2720,12 +3367,15 @@ background-color: #DAE0E3;
     padding: 12px 0;
     text-align: left;
 }
+
 .ratings-profile-box ul li:last-child {
     border-bottom: none;
 }
+
 .profile-ratings-modal .ratings-profile-box ul li:last-child {
     border-bottom: 1px solid var(--border-color);
 }
+
 .ratings-profile-box ul li .rating-profile-other-img {
     height: 50px;
     width: 50px;
@@ -2733,28 +3383,34 @@ background-color: #DAE0E3;
     background-color: #ebebeb;
     overflow: hidden;
 }
+
 .ratings-profile-box ul li .rating-profile-other-img img {
     height: 50px;
 }
-.ratings-profile-box .card-footer > a {
+
+.ratings-profile-box .card-footer>a {
     padding: 15px 30px;
 }
+
 .profile-ratings-modal .ratings-profile-box .card-body {
     padding: 0;
 }
+
 /*Profile other Ratings component End*/
 
 /*Profile With Ride component Start*/
 .profile-box-rides .offered-ride-list:first-child {
     border-top: none;
 }
-.offered-ride-list{
+
+.offered-ride-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--border-color);
     padding: 10px 0;
 }
+
 /*Profile With Ride component End*/
 
 /*-------------------------------------------
@@ -2768,6 +3424,7 @@ background-color: #DAE0E3;
     background-color: var(--heading-color);
     padding: 80px 0;
 }
+
 /*Footer Upper CSS*/
 .footer-upper-left-part img {
     position: absolute;
@@ -2776,14 +3433,18 @@ background-color: #DAE0E3;
     height: 242px;
     z-index: 9;
 }
+
 .footer-upper-download-app-area .download-button a img {
     height: 40px;
     margin-right: 15px;
 }
+
 .footer-upper-download-app-area p {
     margin: 15px 0 20px;
 }
-.footer-upper-area hr, .footer-middle-area hr {
+
+.footer-upper-area hr,
+.footer-middle-area hr {
     margin: 50px 0;
 }
 
@@ -2792,26 +3453,32 @@ background-color: #DAE0E3;
     padding: 6px 0;
     display: block;
 }
+
 .footer-widget p {
     color: #29b2ec;
     margin-bottom: 20px;
     font-size: 20px;
 }
+
 /*Footer Bottom CSS*/
 .footer-bottom-part {
     display: flex;
     justify-content: space-between;
 }
+
 .bottom-footer-left ul li {
     display: inline;
 }
+
 .bottom-footer-left ul li a {
     padding: 0 15px 0 0;
     display: inline-block;
 }
+
 .social-media li a {
     padding: 10px 0 10px 10px;
 }
+
 /*-------------------------------------------
     21. Footer Area/Copyright Area End
 -------------------------------------------*/
@@ -2835,31 +3502,33 @@ background-color: #DAE0E3;
     justify-content: center;
     align-items: center;
 
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     animation: shadow-pulse 2s infinite;
 
     z-index: 9;
 }
+
 /*Video Play Button Effect */
-@keyframes shadow-pulse
-{
+@keyframes shadow-pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(44, 212, 217, 0.7);
     }
+
     100% {
         box-shadow: 0 0 0 25px rgba(44, 212, 217, 0);
     }
 }
 
-@keyframes shadow-pulse-big
-{
+@keyframes shadow-pulse-big {
     0% {
         box-shadow: 0 0 0 0 rgba(44, 212, 217, 0.7);
     }
+
     100% {
         box-shadow: 0 0 0 50px rgba(44, 212, 217, 0);
     }
 }
+
 /*Video Play Button Effect */
 /*-------------------------------------------
     22. Video Play CSS End
@@ -2874,13 +3543,16 @@ background-color: #DAE0E3;
     box-shadow: 0 0 33px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
 }
-.login-form-1 h3{
+
+.login-form-1 h3 {
     text-align: center;
 }
+
 .login-wrapper .subm-btn.theme-button {
     margin-bottom: 1em;
 }
-.login-container form{
+
+.login-container form {
     padding: 10%;
 }
 
@@ -2888,6 +3560,7 @@ background-color: #DAE0E3;
     color: #0062cc;
     display: inline-block;
 }
+
 /*-------------------------------------------
     32. Login Page CSS End
 -------------------------------------------*/
@@ -2900,18 +3573,15 @@ background-color: #DAE0E3;
     Extra Large Screen
 ========================================*/
 
-  @media only screen and (min-width: 1920px){
-  }
+@media only screen and (min-width: 1920px) {}
 
 /*=====================================
     For Large Screen
 ========================================*/
 
-  /*------Max 1200px Width Screen------*/
+/*------Max 1200px Width Screen------*/
 
-  @media only screen and (max-width: 1775px) {
-
-  }
+@media only screen and (max-width: 1775px) {}
 
 /*--------Max 1680px Width Screen---------*/
 @media only screen and (max-width: 1680px) {
@@ -2926,18 +3596,23 @@ background-color: #DAE0E3;
 @media only screen and (max-width: 1366px) {
 
     /*Default for Max 1366px Width Devices*/
-    body , .form-control{
+    body,
+    .form-control {
         /*font-size: 14px;*/
     }
+
     h2.section-heading {
         font-size: 42px;
     }
-    p.section-subheading{
+
+    p.section-subheading {
         font-size: 17px;
     }
+
     h4 {
         font-size: 22px;
     }
+
     /*Hero Area CSS*/
     .andgarivara-hero-img img {
         height: 370px;
@@ -2954,14 +3629,18 @@ background-color: #DAE0E3;
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1366px){
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+
     /*Car Rental Page CSS*/
-    .rental-car-list-right, .rental-car-list-left {
+    .rental-car-list-right,
+    .rental-car-list-left {
         width: 50% !important;
     }
+
     .rental-car-list-photo-wrap {
         overflow: hidden;
     }
+
     .rental-car-list-photo-wrap img {
         height: 210px;
     }
@@ -2969,70 +3648,83 @@ background-color: #DAE0E3;
 
 /*--------Max 1200px Width Screen---------*/
 
-  @media only screen and (max-width: 1200px) {
-      body {
-          font-size: 14px;
-      }
-      h2.section-heading {
-          font-size: 40px;
-      }
-      p.section-subheading{
-          font-size: 16px;
-      }
-      h4 {
-          font-size: 21px;
-      }
-      /*Hero Area*/
-      .andgarivara-hero-img img {
-          height: 350px;
-      }
-      .andgarivara-left-content {
-          padding-right: 0;
-      }
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
 
-      /*Rides Page CSS*/
-      #datepicker, #datepicker2 {
-          /*width: 203px;*/
-      }
+    h2.section-heading {
+        font-size: 40px;
+    }
 
-  }
+    p.section-subheading {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
+
+    /*Hero Area*/
+    .andgarivara-hero-img img {
+        height: 350px;
+    }
+
+    .andgarivara-left-content {
+        padding-right: 0;
+    }
+
+    /*Rides Page CSS*/
+    #datepicker,
+    #datepicker2 {
+        /*width: 203px;*/
+    }
+
+}
 
 /*--------Min 1200px Width Screen--------*/
-  @media only screen and (min-width: 1200px) {
-
-  }
+@media only screen and (min-width: 1200px) {}
 
 /*=====================================
     For Medium Screen
 ========================================*/
 
-@media only screen and (max-width: 1199px){
+@media only screen and (max-width: 1199px) {
     .andgarivara-hero-img img {
         height: 295px;
     }
+
     .menu-no-style {
-        display: none!important;
+        display: none !important;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px){
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
     /*Domain Area CSS*/
-    p{
+    p {
         font-size: 14px;
     }
+
     .hero-area-heading h1 {
         font-size: 38px;
     }
+
     /*Rides Page CSS*/
-    #datepicker, #datepicker2 {
+    #datepicker,
+    #datepicker2 {
         /*width: 115px;*/
     }
+
     .date-time-picker-container .input-group {
         width: 60%;
     }
-    .time-search-box button span, .gj-dropdown-expander-mi {
+
+    .time-search-box button span,
+    .gj-dropdown-expander-mi {
         width: 80px !important;
     }
+
     .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
         width: 75%;
     }
@@ -3042,9 +3734,11 @@ background-color: #DAE0E3;
         flex-direction: column;
         align-items: flex-start;
     }
-    .ratings-profile-box ul li > div {
+
+    .ratings-profile-box ul li>div {
         margin-bottom: 3px;
     }
+
     .profile-ratings-modal .ratings-profile-box ul li {
         flex-direction: row;
         align-items: center;
@@ -3052,172 +3746,200 @@ background-color: #DAE0E3;
 
 }
 
-@media only screen and (max-width: 992px) {
-
-}
+@media only screen and (max-width: 992px) {}
 
 /*======================================
         Tablet layout
 =========================================*/
 
-  @media only screen and (max-width: 991px) {
-      p {
-          font-size: 14px;
-      }
-      /*Menu CSS*/
-      .mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
-          right: 35px !important;
-          top: 19px;
-      }
+@media only screen and (max-width: 991px) {
+    p {
+        font-size: 14px;
+    }
 
-      /*Hero Area CSS*/
-      .hero-area-heading h1 {
-          font-size: 32px;
-      }
-      .andgarivara-hero-area {
-          height: auto;
-      }
-      .andgarivara-hero-img {
-          margin-top: 30px;
-      }
-      /*Home Services CSS*/
-      .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
-          /*white-space: nowrap;*/
-          width: 72px;
-          /*overflow: hidden;*/
-          /*text-overflow: ellipsis;*/
-          /*max-width: 100%;*/
-      }
-      .home-popular-rental-cars .popular-rental-car-title {
-          width: 215px;
-      }
-      .home-popular-leasing-cars .h-s-img img {
-          height: auto;
-          width: 100%;
-      }
-      .blog-author-box img {
-          height: 35px;
-      }
-      /*Rides Page CSS*/
-      .location-datepicker-search form {
-          flex-direction: column;
-      }
-      .ride-page-filter-wrap {
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 20px;
-      }
-      .andgarivara-rides-page-area .date-time-wrap-box {
-          width: 100%;
-      }
-      .andgarivara-rides-page-area .date-time-picker-container > div {
-          width: 50%;
-      }
-      .date-time-picker-container .input-group {
-          width: 89%;
-      }
-      .rides-location-reverse-btn {
-          display: none;
-      }
-      .andgarivara-rides-page-area .location-datepicker-search .theme-button {
-          width: 100%;
-      }
-      .andgarivara-rides-page-area .sticky-menu-header {
-          position: relative;
-      }
+    /*Menu CSS*/
+    .mean-container .mean-nav ul.sub_menu li a span.points-overview-number {
+        right: 35px !important;
+        top: 19px;
+    }
 
-      /*Ride Details Page CSS*/
-      .andgarivara-ride-details-page-area .ride-details-right-side {
-          margin-top: 30px;
-      }
+    /*Hero Area CSS*/
+    .hero-area-heading h1 {
+        font-size: 32px;
+    }
 
-      /*Rental Page CSS*/
-      .andgarivara-rental-page-area {
-          height: auto;
-          padding-top: 15px;
-      }
-      .rental-car-list-card .ride-list.rental-list {
-          padding: 0;
-      }
-      .datepicker-search-box-wrap form {
-          flex-direction: row;
-      }
-      .andgarivara-rental-page-area .search-car-model-brand-area form {
-          flex-direction: row;
-      }
+    .andgarivara-hero-area {
+        height: auto;
+    }
 
-      /*Leasing Page CSS*/
-      .leasing-page-questions-answer-area .car-leasing-page-aside-component {
-          margin-bottom: 30px;
-      }
+    .andgarivara-hero-img {
+        margin-top: 30px;
+    }
 
-      /*Footer CSS*/
-      .footer-middle-area .row .col-12:last-child .footer-widget, .rental-map-area {
-          display: none;
-      }
+    /*Home Services CSS*/
+    .home-popular-rides .home-service-box .h-s-left h4,
+    .home-popular-rides .home-service-box .h-s-left h5 {
+        /*white-space: nowrap;*/
+        width: 72px;
+        /*overflow: hidden;*/
+        /*text-overflow: ellipsis;*/
+        /*max-width: 100%;*/
+    }
 
-      /*Profiles Own Profile CSS*/
-      .profile-page-banner .page-banner-content {
-          flex-direction: column!important;
-          justify-content: center!important;
-          align-content: center;
-          align-items: center;
-      }
-      .page-banner-content .dropdown.cover-photo-button {
-          position: absolute;
-          top: 30px;
-          right: 0;
-      }
+    .home-popular-rental-cars .popular-rental-car-title {
+        width: 215px;
+    }
 
-  }
-  @media only screen and (min-width: 991px) {
+    .home-popular-leasing-cars .h-s-img img {
+        height: auto;
+        width: 100%;
+    }
 
-  }
+    .blog-author-box img {
+        height: 35px;
+    }
 
-  @media only screen and (min-width: 768px) and (max-width: 991px){
+    /*Rides Page CSS*/
+    .location-datepicker-search form {
+        flex-direction: column;
+    }
 
-      /*Main Menu Bar*/
-      #mainNav, .top-nav{
-          display: none!important;
-      }
+    .ride-page-filter-wrap {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 
-      /*Ride Page CSS Start*/
-      .ride-list-card .ride-list {
-          padding: 20px;
-      }
-      .ride-list-card .ride-list .ride-list-middle-content {
-          width: 54%;
-      }
-      .gj-dropdown {
-          width: 87%;
-      }
-      /*Ride Page CSS End*/
+    .andgarivara-rides-page-area .date-time-wrap-box {
+        width: 100%;
+    }
 
-      /*Rental Page CSS Start*/
-      .rental-page-filter-modal .modal-dialog {
-          width: 600px;
-          max-width: 600px;
-      }
-      .andgarivara-rental-page-area .datepicker-search-box {
-          width: 73%;
-      }
-      .andgarivara-rental-page-area .gj-dropdown {
-          width: 63%;
-      }
-      /*Profile Ratings Modal CSS*/
-      .profile-ratings-modal .ratings-profile-box ul li {
-          flex-direction: column;
-          align-items: flex-start;
-      }
-      .profile-ratings-modal .ratings-profile-box ul li > div {
-          margin-bottom: 3px;
-      }
+    .andgarivara-rides-page-area .date-time-picker-container>div {
+        width: 50%;
+    }
 
-  }
+    .date-time-picker-container .input-group {
+        width: 89%;
+    }
+
+    .rides-location-reverse-btn {
+        display: none;
+    }
+
+    .andgarivara-rides-page-area .location-datepicker-search .theme-button {
+        width: 100%;
+    }
+
+    .andgarivara-rides-page-area .sticky-menu-header {
+        position: relative;
+    }
+
+    /*Ride Details Page CSS*/
+    .andgarivara-ride-details-page-area .ride-details-right-side {
+        margin-top: 30px;
+    }
+
+    /*Rental Page CSS*/
+    .andgarivara-rental-page-area {
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .rental-car-list-card .ride-list.rental-list {
+        padding: 0;
+    }
+
+    .datepicker-search-box-wrap form {
+        flex-direction: row;
+    }
+
+    .andgarivara-rental-page-area .search-car-model-brand-area form {
+        flex-direction: row;
+    }
+
+    /*Leasing Page CSS*/
+    .leasing-page-questions-answer-area .car-leasing-page-aside-component {
+        margin-bottom: 30px;
+    }
+
+    /*Footer CSS*/
+    .footer-middle-area .row .col-12:last-child .footer-widget,
+    .rental-map-area {
+        display: none;
+    }
+
+    /*Profiles Own Profile CSS*/
+    .profile-page-banner .page-banner-content {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-content: center;
+        align-items: center;
+    }
+
+    .page-banner-content .dropdown.cover-photo-button {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*Main Menu Bar*/
+    #mainNav,
+    .top-nav {
+        display: none !important;
+    }
+
+    /*Ride Page CSS Start*/
+    .ride-list-card .ride-list {
+        padding: 20px;
+    }
+
+    .ride-list-card .ride-list .ride-list-middle-content {
+        width: 54%;
+    }
+
+    .gj-dropdown {
+        width: 87%;
+    }
+
+    /*Ride Page CSS End*/
+
+    /*Rental Page CSS Start*/
+    .rental-page-filter-modal .modal-dialog {
+        width: 600px;
+        max-width: 600px;
+    }
+
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 73%;
+    }
+
+    .andgarivara-rental-page-area .gj-dropdown {
+        width: 63%;
+    }
+
+    /*Profile Ratings Modal CSS*/
+    .profile-ratings-modal .ratings-profile-box ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-ratings-modal .ratings-profile-box ul li>div {
+        margin-bottom: 3px;
+    }
+
+}
 
 @media only screen and (max-width: 768px) {
+
     /*Main Menu Bar*/
-    #mainNav, .top-nav {
+    #mainNav,
+    .top-nav {
         display: none !important;
     }
 
@@ -3226,156 +3948,192 @@ background-color: #DAE0E3;
 /*=======================================
         For Small Devices
 =========================================*/
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-      .mean-container .mean-nav ul li.dropdown a > i::before {
-          padding-right: 5px;
-      }
-      /*Hero Area CSS*/
-      .andgarivara-left-content {
-          padding-right: 0;
-      }
+    .mean-container .mean-nav ul li.dropdown a>i::before {
+        padding-right: 5px;
+    }
 
-      /*Call to action*/
-      .call-to-action-content {
-          margin-bottom: 20px;
-      }
-      /*Home Services CSS*/
-      .andgarivara-services-showcase-area {
-          padding: 100px 0;
-      }
-      .home-popular-rides .home-service-box .h-s-left h4, .home-popular-rides .home-service-box .h-s-left h5 {
-          width: 150px;
-      }
-      .home-service-box {
-          margin-bottom: 20px;
-      }
-      .home-services-wrap-inner .col-12:last-child .home-service-box {
-          margin-bottom: 0;
-      }
-      .home-services-subtitle {
-          flex-direction: column;
-      }
-      .home-services-subtitle a {
-          margin-top: 6px;
-      }
+    /*Hero Area CSS*/
+    .andgarivara-left-content {
+        padding-right: 0;
+    }
 
-      /*Ride Page CSS Start*/
-      .rides-left-search-filters {
-          margin-bottom: 30px;
-      }
-      .ride-list-card .ride-list .ride-list-middle-content {
-          width: 52%;
-      }
-      .date-time-picker-container .input-group {
-          width: 85%;
-      }
-      .time-search-box .input-group {
-          width: 100% !important;
-      }
-      .gj-dropdown {
-          width: 82%;
-      }
-      .mobile-filter-title-button{
-          display: block;
-      }
-      /*Ride Page CSS End*/
+    /*Call to action*/
+    .call-to-action-content {
+        margin-bottom: 20px;
+    }
 
-      /*Car Rental Page CSS Start*/
-      .andgarivara-rental-page-area .gj-dropdown {
-          width: 60%;
-      }
-      .use-my-location span {
-          display: none;
-      }
-      .rental-page-filter-modal .modal-dialog {
-          max-width: 100%;
-          width: 100%;
-          height: 100%;
-          z-index: 999;
-          margin: 0;
-      }
-      .rental-page-modal-custom-wrap.rental-page-car-type-wrap .custom-control {
-          width: 90px;
-      }
-      .rental-page-filter-modal .modal-content {
-          height: 100%;
-      }
-      .ride-left-preference-wrap, .rental-page-modal-custom-wrap {
-          flex-direction: column;
-      }
-      .andgarivara-rental-page-area .datepicker-search-box {
-          width: 65%;
-      }
-      /*Leasing Page CSS Start*/
-      .car-leasing-page-aside-component {
-          margin-bottom: 30px;
-      }
+    /*Home Services CSS*/
+    .andgarivara-services-showcase-area {
+        padding: 100px 0;
+    }
 
-      /*Footer CSS*/
-      .footer-widget {
-          border-top: 1px solid rgba(44, 212, 217, .2);
-          padding: 30px 0 0 0;
-          margin-top: 30px;
-      }
-      .footer-upper-left-part img {
-          top: -188px;
-          height: 160px;
-      }
-      .footer-upper-area hr {
-          display: none;
-      }
-      .footer-middle-area hr {
-          margin: 30px 0;
-      }
+    .home-popular-rides .home-service-box .h-s-left h4,
+    .home-popular-rides .home-service-box .h-s-left h5 {
+        width: 150px;
+    }
 
-      /*Profile Page CSS*/
-      .page-banner-area.profile-page-banner {
-          min-height: 420px;
-      }
-      .ratings-profile-box ul li {
-          flex-direction: column;
-          align-items: flex-start;
-      }
-      .ratings-profile-box ul li > div {
-          margin-bottom: 3px;
-      }
-      .about-profile-box ul {
-          flex-direction: column;
-      }
-      .about-profile-box ul li {
-          display: flex;
-          border-bottom: 1px solid var(--border-color);
-          padding: 10px 0;
-          margin-bottom: 10px;
-      }
-      .about-profile-box ul li img, .about-profile-box ul li h5 {
-          margin-right: 15px;
-      }
-      .about-profile-box ul li h5 {
-           min-width: 50px;
-           text-align: left;
-           width: auto;
-       }
-      .about-profile-box ul li p{
-          text-align: left;
-      }
+    .home-service-box {
+        margin-bottom: 20px;
+    }
 
-  }
+    .home-services-wrap-inner .col-12:last-child .home-service-box {
+        margin-bottom: 0;
+    }
 
-  /*========================================
+    .home-services-subtitle {
+        flex-direction: column;
+    }
+
+    .home-services-subtitle a {
+        margin-top: 6px;
+    }
+
+    /*Ride Page CSS Start*/
+    .rides-left-search-filters {
+        margin-bottom: 30px;
+    }
+
+    .ride-list-card .ride-list .ride-list-middle-content {
+        width: 52%;
+    }
+
+    .date-time-picker-container .input-group {
+        width: 85%;
+    }
+
+    .time-search-box .input-group {
+        width: 100% !important;
+    }
+
+    .gj-dropdown {
+        width: 82%;
+    }
+
+    .mobile-filter-title-button {
+        display: block;
+    }
+
+    /*Ride Page CSS End*/
+
+    /*Car Rental Page CSS Start*/
+    .andgarivara-rental-page-area .gj-dropdown {
+        width: 60%;
+    }
+
+    .use-my-location span {
+        display: none;
+    }
+
+    .rental-page-filter-modal .modal-dialog {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        margin: 0;
+    }
+
+    .rental-page-modal-custom-wrap.rental-page-car-type-wrap .custom-control {
+        width: 90px;
+    }
+
+    .rental-page-filter-modal .modal-content {
+        height: 100%;
+    }
+
+    .ride-left-preference-wrap,
+    .rental-page-modal-custom-wrap {
+        flex-direction: column;
+    }
+
+    .andgarivara-rental-page-area .datepicker-search-box {
+        width: 65%;
+    }
+
+    /*Leasing Page CSS Start*/
+    .car-leasing-page-aside-component {
+        margin-bottom: 30px;
+    }
+
+    /*Footer CSS*/
+    .footer-widget {
+        border-top: 1px solid rgba(44, 212, 217, .2);
+        padding: 30px 0 0 0;
+        margin-top: 30px;
+    }
+
+    .footer-upper-left-part img {
+        top: -188px;
+        height: 160px;
+    }
+
+    .footer-upper-area hr {
+        display: none;
+    }
+
+    .footer-middle-area hr {
+        margin: 30px 0;
+    }
+
+    /*Profile Page CSS*/
+    .page-banner-area.profile-page-banner {
+        min-height: 420px;
+    }
+
+    .ratings-profile-box ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ratings-profile-box ul li>div {
+        margin-bottom: 3px;
+    }
+
+    .about-profile-box ul {
+        flex-direction: column;
+    }
+
+    .about-profile-box ul li {
+        display: flex;
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .about-profile-box ul li img,
+    .about-profile-box ul li h5 {
+        margin-right: 15px;
+    }
+
+    .about-profile-box ul li h5 {
+        min-width: 50px;
+        text-align: left;
+        width: auto;
+    }
+
+    .about-profile-box ul li p {
+        text-align: left;
+    }
+
+}
+
+/*========================================
             For large mobile
   =========================================*/
 
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 766px) {
+
     /*Header CSS*/
     .home-banner-area {
         height: 550px;
     }
+
     .hero-area-content h1 {
         font-size: 36px;
         margin-bottom: 28px;
     }
+
     /*Rental Page CSS*/
     .rental-page-modal-custom-wrap.rental-page-car-type-wrap {
         flex-direction: row;
@@ -3383,119 +4141,142 @@ background-color: #DAE0E3;
 
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 575px) {
     .andgarivara-hero-img img {
         height: 250px;
     }
+
     .rental-car-list-photo-wrap img {
-        height: 362px!important;
+        height: 362px !important;
     }
 
     /*Rental Page*/
     .andgarivara-rental-page-area .datepicker-search-box-wrap form {
         flex-direction: column;
     }
+
     .andgarivara-rental-page-area .date-time-wrap-box {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .rental-cars-filter-result {
         flex-direction: column;
     }
+
     .rental-cars-filter-result p {
         margin-bottom: 15px;
     }
+
     .andgarivara-rental-page-area .datepicker-search-box {
         width: 77%;
     }
+
     /*Car Leasing Page CSS*/
     .sticky-menu-wrap {
         overflow-x: scroll;
     }
+
     .sticky-menu-wrap {
         display: block;
     }
+
     .new-sticky-nav {
         width: 800px;
         overflow-x: scroll;
         min-width: 100%;
-     }
+    }
+
     .sticky-menu-header ul li a {
         padding: 17px 0 10px;
     }
 
 }
-@media only screen and (max-width: 535px){
+
+@media only screen and (max-width: 535px) {
 
     /*Rides Page CSS*/
-    .date-time-picker-container .input-group, .gj-dropdown {
+    .date-time-picker-container .input-group,
+    .gj-dropdown {
         width: 80%;
     }
+
     .gj-datepicker.gj-datepicker-bootstrap.gj-unselectable.input-group {
         width: 72%;
     }
 
     /*Ride Details Page*/
-    .driver-photo a, .driver-photo {
+    .driver-photo a,
+    .driver-photo {
         height: 100px;
         width: 100px;
     }
+
     .driver-photo a img {
         height: 100px;
     }
+
     .driver-photo a span {
         right: 0;
         bottom: 0;
     }
 }
 
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 510px) {
 
     /*Ride Page  Start*/
     .ride-list-card .ride-list {
         flex-direction: column;
     }
+
     .ride-owner-box {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .ride-owner-img-box {
         height: 60px;
         width: 60px;
         margin: 0 auto;
     }
+
     .ride-owner-img-box img {
         height: auto;
         width: 100%;
     }
+
     .ride-list-card .ride-list .ride-list-middle-content {
         width: 100%;
     }
+
     .ride-list-last-content {
         flex-direction: row;
         min-height: auto;
         width: 100%;
         margin-top: 20px;
     }
+
     /*Ride Page  Start*/
 
 }
 
-  @media only screen and (min-width: 480px) and (max-width: 766px){
+@media only screen and (min-width: 480px) and (max-width: 766px) {
 
-      .rental-car-list-card .ride-list.rental-list {
-          flex-direction: column;
-          overflow: hidden;
-      }
-      .rental-car-list-photo-wrap img {
-          height: 491px;
-      }
-  }
+    .rental-car-list-card .ride-list.rental-list {
+        flex-direction: column;
+        overflow: hidden;
+    }
 
-@media only screen and (max-width:480px){
+    .rental-car-list-photo-wrap img {
+        height: 491px;
+    }
+}
+
+@media only screen and (max-width:480px) {
     .row.login-wrapper {
         margin: 0 5%;
     }
+
     .rental-car-list-photo-wrap img {
         height: 300px !important;
     }
@@ -3505,91 +4286,104 @@ background-color: #DAE0E3;
 /*=========================================
         For very little mobile
 =========================================*/
-  @media only screen and (min-width:300px) and (max-width:479px){
+@media only screen and (min-width:300px) and (max-width:479px) {
+
     /*Header Area*/
-      .play-button {
-          height: 50px!important;
-          width: 50px!important;
-          top: 33% !important;
-          left: 42% !important;
-          font-size: 17px;
-      }
+    .play-button {
+        height: 50px !important;
+        width: 50px !important;
+        top: 33% !important;
+        left: 42% !important;
+        font-size: 17px;
+    }
 
-      h2.section-heading {
-          font-size: 36px;
-      }
+    h2.section-heading {
+        font-size: 36px;
+    }
 
-      /*Home Services CSS*/
-      .andgarivara-hero-img img {
-          height: 164px;
-      }
+    /*Home Services CSS*/
+    .andgarivara-hero-img img {
+        height: 164px;
+    }
 
-      /*Rides Page CSS*/
-      .date-time-picker-container .input-group, .gj-dropdown {
-          width: 70%;
-          overflow: hidden;
-      }
-      .gj-picker.gj-picker-md.datepicker.gj-unselectable[type="month"] {
-          left: -2px!important;
-      }
+    /*Rides Page CSS*/
+    .date-time-picker-container .input-group,
+    .gj-dropdown {
+        width: 70%;
+        overflow: hidden;
+    }
 
-      /*Rides Details Page CSS*/
-      .driver-info-content > div {
-          flex-direction: row;
-      }
-      .driver-information-wrap {
-          flex-direction: column;
-      }
-      .driver-photo {
-          margin-right: 0;
-          width: 105px;
-          margin-bottom: 20px;
-      }
-      .driver-photo a span {
-          right: 0;
-          bottom: 0;
-      }
+    .gj-picker.gj-picker-md.datepicker.gj-unselectable[type="month"] {
+        left: -2px !important;
+    }
 
-      /*Rental Page CSS*/
-      .rental-car-list-photo-wrap img {
-          height: 298px !important;
-      }
-      .ride-list.rental-list.d-flex {
-          overflow: hidden;
-      }
+    /*Rides Details Page CSS*/
+    .driver-info-content>div {
+        flex-direction: row;
+    }
 
-      /*Footer CSS*/
-      .footer-bottom-part {
-          flex-direction: column;
-      }
-      /*.bottom-footer-left ul {*/
-      /*    flex-direction: column;*/
-      /*}*/
-      .bottom-footer-left ul li {
-          margin-bottom: 12px;
-      }
+    .driver-information-wrap {
+        flex-direction: column;
+    }
 
-      .bottom-footer-left ul li a {
-          padding: 0 0 0 8px;
-      }
-      .social-media {
-          margin-top: 15px;
-      }
-      /*Profile Page CSS*/
-      .profile-name-ratings-bar .row > div {
-          display: flex !important;
-          flex-direction: column;
-      }
-      .edit-profile-box {
-          margin-top: 20px;
-      }
+    .driver-photo {
+        margin-right: 0;
+        width: 105px;
+        margin-bottom: 20px;
+    }
 
-  }
-@media only screen and (max-width:320px){
+    .driver-photo a span {
+        right: 0;
+        bottom: 0;
+    }
+
+    /*Rental Page CSS*/
+    .rental-car-list-photo-wrap img {
+        height: 298px !important;
+    }
+
+    .ride-list.rental-list.d-flex {
+        overflow: hidden;
+    }
+
+    /*Footer CSS*/
+    .footer-bottom-part {
+        flex-direction: column;
+    }
+
+    /*.bottom-footer-left ul {*/
+    /*    flex-direction: column;*/
+    /*}*/
+    .bottom-footer-left ul li {
+        margin-bottom: 12px;
+    }
+
+    .bottom-footer-left ul li a {
+        padding: 0 0 0 8px;
+    }
+
+    .social-media {
+        margin-top: 15px;
+    }
+
+    /*Profile Page CSS*/
+    .profile-name-ratings-bar .row>div {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .edit-profile-box {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
     .rental-car-list-photo-wrap img {
         height: 196px !important;
     }
 }
-  /*-------------------------------------------
+
+/*-------------------------------------------
         24. Responsive Design End
   -------------------------------------------*/
